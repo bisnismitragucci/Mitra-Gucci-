@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Translations } from '../types';
@@ -11,22 +9,25 @@ interface VisualGridProps {
 const VisualGrid: React.FC<VisualGridProps> = ({ t }) => {
   const images = [
     {
-      // Advisor Image
+      // Advisor Image (Vertical Portrait) - Needs alignment to top
       src: "https://i.pinimg.com/1200x/ae/98/21/ae98214e6af632200682818c70c10889.jpg", 
       title: t.grid.craftsmanship,
-      isCenter: false
+      isCenter: false,
+      position: "object-top" 
     },
     {
-      // Contemporary Style (Center)
+      // Contemporary Style (Crowd/Landscape) - Center is fine
       src: "https://i.pinimg.com/1200x/8f/75/70/8f757050f65da6fc065d12a0f8c1b06d.jpg", 
       title: t.grid.innovation,
-      isCenter: true
+      isCenter: true,
+      position: "object-center"
     },
     {
-      // Exclusive Collection
+      // Exclusive Collection (Man Standing) - Needs alignment to top
       src: "https://i.pinimg.com/1200x/1b/33/eb/1b33eb6bd6be948bd06f5f7e128b2b75.jpg", 
       title: t.grid.sustainability,
-      isCenter: false
+      isCenter: false,
+      position: "object-top"
     }
   ];
 
@@ -34,10 +35,11 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t }) => {
     <div className="w-full grid grid-cols-1 md:grid-cols-3 h-auto md:h-[90vh]">
       {images.map((item, index) => (
         <div key={index} className="relative group overflow-hidden h-[70vh] md:h-full cursor-pointer border-r border-white/10 last:border-r-0 bg-[#f0f0f0]">
-          {/* Background Image */}
-          <div 
-            className={`absolute inset-0 bg-cover bg-center transition-transform duration-[2s] ease-out group-hover:scale-105 ${item.isCenter ? 'grayscale-0' : 'grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100'}`}
-            style={{ backgroundImage: `url(${item.src})` }}
+          {/* Image Tag for better precision control */}
+          <img 
+            src={item.src}
+            alt={item.title}
+            className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105 ${item.position} ${item.isCenter ? 'grayscale-0' : 'grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100'}`}
           />
           
           {/* Overlay - Darker on center initially for text readability, lighter on sides */}
