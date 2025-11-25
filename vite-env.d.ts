@@ -1,1 +1,1 @@
-// /// <reference types="vite/client" />
+// File emptied to prevent build errors regarding missing types
