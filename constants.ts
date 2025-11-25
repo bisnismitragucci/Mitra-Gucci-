@@ -83,13 +83,6 @@ export const DICTIONARY: Dictionary = {
           image: 'https://i.pinimg.com/736x/a9/e6/fd/a9e6fd622e2ae7c5eb4264d09583858e.jpg'
         },
         {
-          name: 'Vina Muliana',
-          role: 'CAREER STRATEGIST',
-          quote: 'Professional look with Gucci. Meningkatkan personal branding di dunia korporat dengan sentuhan yang elegan.',
-          earnings: 'Rp 185.000.000',
-          image: 'https://cdns.klimg.com/mav-prod-resized/0x0/ori/newsCover/2023/9/11/1694407261345-lt0lg.jpeg'
-        },
-        {
           name: 'Tanboy Kun',
           role: 'CULINARY EXPLORER',
           quote: 'Pedasnya tantangan bisnis ini seenak rasanya! Energi baru buat konten yang lebih berkelas dan "membara".',
@@ -279,13 +272,6 @@ export const DICTIONARY: Dictionary = {
           quote: 'Pak Muh totally agrees that Gucci is the coolest! The most fun and classy endorsement of all time.',
           earnings: 'Rp 520.000.000',
           image: 'https://i.pinimg.com/736x/a9/e6/fd/a9e6fd622e2ae7c5eb4264d09583858e.jpg'
-        },
-        {
-          name: 'Vina Muliana',
-          role: 'CAREER STRATEGIST',
-          quote: 'Professional look with Gucci. Enhancing personal branding in the corporate world with an elegant touch.',
-          earnings: 'Rp 185.000.000',
-          image: 'https://cdns.klimg.com/mav-prod-resized/0x0/ori/newsCover/2023/9/11/1694407261345-lt0lg.jpeg'
         },
         {
           name: 'Tanboy Kun',
