@@ -6,7 +6,7 @@ export const DICTIONARY: Dictionary = {
       people: 'DUNIA GUCCI',
       partners: 'KOLEKSI',
       academy: 'AKUN BISNIS',
-      opportunities: 'PROGRAM AFILIASI',
+      opportunities: 'SISTEM YANG DI GUNAKAN',
       login: 'MASUK',
       backToHome: 'KEMBALI KE BERANDA',
     },
@@ -153,44 +153,40 @@ export const DICTIONARY: Dictionary = {
       ]
     },
     affiliateProgramPage: {
-      title: 'TUJUAN PROGRAM AFILIASI GUCCI',
-      subtitle: 'VISI & MISI KEMITRAAN',
-      intro: 'Program Afiliasi GUCCI dirancang sebagai sebuah inisiatif kolaboratif untuk membuka peluang kemitraan bagi masyarakat yang ingin berkembang bersama ekosistem bisnis GUCCI. Program ini tidak hanya berfokus pada memberikan keuntungan finansial, tetapi juga membangun jaringan pemasaran, meningkatkan kapasitas mitra, dan menciptakan hubungan bisnis yang berkelanjutan. Berikut adalah tujuan utama dari program ini:',
+      title: 'MEKANISME SISTEM GUCCI',
+      subtitle: 'BENEFIT & EKOSISTEM BISNIS',
+      intro: 'Program afiliasi GUCCI dirancang menggunakan strategi bisnis modern berbasis marketing ecosystem, di mana perusahaan, mitra, dan sistem digital saling memberikan nilai. Berikut penjelasan mengapa model ini dapat berjalan menguntungkan, baik bagi peserta maupun bagi perusahaan:',
       points: [
         {
-          title: '1. Memberikan Peluang Penghasilan Tambahan',
-          desc: 'Program Afiliasi GUCCI bertujuan menyediakan jalur pendapatan yang mudah diakses oleh siapa pun. Melalui sistem komisi, mitra dapat memperoleh profit dari setiap aktivitas, penjualan, atau agenda yang berhasil dilakukan sesuai mekanisme program. Tujuan ini membantu masyarakat menciptakan sumber pendapatan alternatif tanpa harus memiliki modal besar atau pengalaman rumit.'
+          title: '1. Sistem Berbasis Distribusi Pemasaran Modern',
+          desc: 'GUCCI mengalokasikan sebagian anggaran promosi dan pemasaran untuk program afiliasi. Daripada membayar biaya iklan besar melalui media tradisional, perusahaan lebih memilih membagikan keuntungan langsung kepada mitra yang aktif menjalankan agenda. Artinya: Perusahaan tidak rugi — mereka hanya memindahkan budget iklan menjadi reward untuk mitra.'
         },
         {
-          title: '2. Mengembangkan Jaringan Kemitraan yang Lebih Luas',
-          desc: 'Afiliasi memungkinkan GUCCI memperluas jangkauan pasar melalui kolaborasi dengan mitra individu maupun kelompok. Setiap mitra menjadi bagian dari ekosistem besar yang bergerak dengan arah yang sama—meningkatkan brand presence dan memperbesar peluang ekspansi.'
+          title: '2. Aktivitas Mitra Memberikan Nilai Bisnis',
+          desc: 'Setiap tugas, agenda, atau interaksi yang dilakukan oleh peserta berkontribusi pada peningkatan trafik digital, peningkatan engagement brand, penguatan citra perusahaan, dan pembukaan peluang pasar baru. Nilai ini jauh lebih efektif dibandingkan metode iklan biasa. Sehingga reward yang diberikan kepada mitra adalah bentuk kompensasi dari nilai bisnis yang tercipta.'
         },
         {
-          title: '3. Menciptakan Sistem Pemasaran yang Efektif dan Modern',
-          desc: 'Melalui model afiliasi, GUCCI mengoptimalkan strategi pemasaran digital yang lebih cepat, terukur, dan hemat biaya. Program ini menjadi jembatan yang menghubungkan teknologi, sistem automasi, dan pola interaksi modern sehingga proses distribusi informasi menjadi lebih efisien.'
+          title: '3. Sistem Benefit Menggunakan Skema Berlapis',
+          desc: 'GUCCI menerapkan struktur agenda berjenjang yang memungkinkan peserta masuk dengan modal kecil atau bahkan gratis (lewat voucher), namun perusahaan tetap memiliki alur pemasukan dari proses validasi, agenda berbayar, atau aktivitas internal lainnya. Dengan demikian, benefit yang diterima peserta bersumber dari alokasi internal GUCCI yang telah dihitung agar tidak menimbulkan kerugian.'
         },
         {
-          title: '4. Memberdayakan Mitra Melalui Pelatihan dan Pembinaan',
-          desc: 'Salah satu tujuan penting program ini adalah membekali setiap mitra dengan pemahaman yang tepat tentang cara kerja sistem, cara menyelesaikan tugas, standar operasional, serta cara mengelola peluang agar menghasilkan keuntungan maksimal. Pembinaan ini dilakukan agar setiap mitra mampu berkembang dan menjalankan aktivitasnya secara profesional.'
+          title: '4. Tidak Semua Peserta Mengambil Paket Tinggi',
+          desc: 'Dalam statistik program afiliasi global, hanya sebagian mitra yang mengambil paket besar atau agenda premium. Perusahaan membuat perhitungan bahwa profit margin dari peserta aktif dapat menutup biaya reward untuk peserta baru. Ini adalah struktur yang umum dipakai di industri digital modern — mirip sistem cashback, reward app, dan program loyalitas.'
         },
         {
-          title: '5. Meningkatkan Loyalitas dan Kepercayaan Mitra',
-          desc: 'Afiliasi bukan hanya soal pendapatan, tetapi juga memenuhi komitmen untuk membangun hubungan yang kuat antara GUCCI dan seluruh partisipan. Dengan keuntungan yang jelas, mekanisme yang transparan, dan dukungan yang konsisten, program ini dirancang untuk menciptakan ikatan jangka panjang yang stabil.'
+          title: '5. Penguatan Ekosistem Brand Memberikan Nilai Jangka Panjang',
+          desc: 'GUCCI memandang program afiliasi bukan sekadar biaya, tetapi investasi jangka panjang untuk memperluas jaringan brand, memperkuat komunitas, membangun loyalitas, dan membuka pintu kolaborasi baru. Nilai jangka panjang ini jauh lebih besar daripada reward yang dibagikan kepada peserta.'
         },
         {
-          title: '6. Menghadirkan Sistem Bisnis yang Mudah dan Ramah Pengguna',
-          desc: 'Program Afiliasi GUCCI disusun agar dapat digunakan oleh semua kalangan, baik pemula maupun profesional. Tujuannya adalah memastikan setiap peserta bisa memahami alur tugas, mengeksekusi proses dengan cepat, mengikuti agenda tanpa kesulitan, dan menikmati pengalaman yang nyaman dalam aplikasi maupun sistem.'
+          title: '6. Sistem Keamanan dan Validasi Mengatur Arus Modal',
+          desc: 'Perusahaan tetap menerapkan validasi data, filter pengguna, pengelolaan agenda, dan kontrol aliran transaksi. Dengan cara ini, semua aktivitas berjalan stabil, terukur, dan tetap menguntungkan tanpa risiko keuangan yang tidak terkendali.'
         },
         {
-          title: '7. Memperkuat Ekosistem Bisnis GUCCI',
-          desc: 'Afiliasi berperan sebagai salah satu fondasi penting dalam memperkuat ekosistem GUCCI secara keseluruhan. Melalui partisipasi aktif para mitra, perusahaan dapat memperluas layanan, menghadirkan inovasi baru, dan memperkuat struktur bisnis agar lebih adaptif menghadapi perkembangan pasar.'
-        },
-        {
-          title: '8. Mendorong Kolaborasi dan Kemandirian Ekonomi',
-          desc: 'Program ini juga memiliki tujuan sosial: memberikan peluang kepada masyarakat untuk meningkatkan kemampuan finansial melalui kerja mandiri. Dengan struktur yang fleksibel dan terarah, mitra bisa bekerja kapan saja, memilih tugas yang sesuai, serta membangun jenjang pendapatan secara bertahap.'
+          title: '7. Keuntungan Perusahaan Tidak Bergantung pada Pembayaran Peserta',
+          desc: 'Ini penting. Perusahaan memperoleh keuntungan dari berbagai aspek, seperti nilai branding, peningkatan traffic global, kolaborasi internasional, data analitik pasar, ekspansi konsumen, dan kampanye produk baru. Jadi meskipun peserta mendapatkan benefit, GUCCI tetap mendapat keuntungan strategis yang jauh lebih besar.'
         }
       ],
-      conclusion: 'Program Afiliasi GUCCI bukan sekadar sistem komisi, tetapi sebuah wadah kolaborasi yang didesain agar setiap mitra dapat bertumbuh secara profesional, mendapatkan penghasilan yang layak, serta membangun pola kerja yang mandiri dan modern. Dengan ekosistem yang kuat dan dukungan yang terstruktur, program ini menjadi peluang nyata bagi siapa saja yang ingin berkembang lebih jauh bersama GUCCI.'
+      conclusion: 'Kesimpulan: Mengapa GUCCI Tidak Merugi? Karena seluruh manfaat yang diberikan ke peserta bukan berasal dari "kerugian perusahaan", tetapi dari anggaran pemasaran yang dialihkan, nilai bisnis dari aktivitas peserta, dan struktur agenda yang terukur. Dengan sistem yang terdesain baik, GUCCI justru mendapatkan keuntungan lebih besar—sementara peserta mendapatkan benefit dan peluang penghasilan tanpa harus mengeluarkan biaya besar.'
     },
     collectionsPage: {
       title: 'KOLEKSI MUSIM INI',
@@ -347,7 +343,7 @@ export const DICTIONARY: Dictionary = {
       people: 'WORLD OF GUCCI',
       partners: 'COLLECTIONS',
       academy: 'BUSINESS ACCOUNT',
-      opportunities: 'AFFILIATE PROGRAM',
+      opportunities: 'SYSTEM USED',
       login: 'SIGN IN',
       backToHome: 'BACK TO HOME',
     },
@@ -494,44 +490,40 @@ export const DICTIONARY: Dictionary = {
       ]
     },
     affiliateProgramPage: {
-      title: 'GUCCI AFFILIATE PROGRAM OBJECTIVES',
-      subtitle: 'VISION & MISSION OF PARTNERSHIP',
-      intro: 'The GUCCI Affiliate Program is designed as a collaborative initiative to open partnership opportunities for people who want to grow together with the GUCCI business ecosystem. This program focuses not only on providing financial benefits but also on building marketing networks, increasing partner capacity, and creating sustainable business relationships. Here are the main objectives of this program:',
+      title: 'WHY THE GUCCI SYSTEM IS PROFITABLE',
+      subtitle: 'BUSINESS MECHANISM & ECOSYSTEM',
+      intro: 'The GUCCI affiliate program is designed using a modern business strategy based on a marketing ecosystem, where the company, partners, and digital systems provide value to each other. Here is an explanation of why this model runs profitably for both participants and the company:',
       points: [
         {
-          title: '1. Provide Additional Income Opportunities',
-          desc: 'The GUCCI Affiliate Program aims to provide an accessible revenue stream for everyone. Through a commission system, partners can earn profit from every activity, sale, or agenda successfully carried out according to the program mechanism. This objective helps the community create alternative income sources without needing large capital or complex experience.'
+          title: '1. System Based on Modern Marketing Distribution',
+          desc: 'GUCCI allocates a portion of its promotion and marketing budget to the affiliate program. Instead of paying huge advertising costs through traditional media, the company prefers to distribute profits directly to partners who actively run the agenda. Meaning: The company does not lose money — they only shift the ad budget into rewards for partners.'
         },
         {
-          title: '2. Expand a Wider Partnership Network',
-          desc: 'Affiliation allows GUCCI to expand market reach through collaboration with individual and group partners. Each partner becomes part of a large ecosystem moving in the same direction—increasing brand presence and enlarging expansion opportunities.'
+          title: '2. Partner Activities Provide Business Value',
+          desc: 'Every task, agenda, or interaction performed by participants contributes to increased digital traffic, brand engagement enhancement, strengthening company image, and opening new market opportunities. This value is far more effective than standard advertising methods. Thus, the reward given to partners is a form of compensation for the business value created.'
         },
         {
-          title: '3. Create an Effective and Modern Marketing System',
-          desc: 'Through the affiliate model, GUCCI optimizes digital marketing strategies that are faster, measurable, and cost-effective. This program serves as a bridge connecting technology, automation systems, and modern interaction patterns so that information distribution processes become more efficient.'
+          title: '3. Benefit System Using Layered Schemes',
+          desc: 'GUCCI implements a tiered agenda structure that allows participants to enter with small capital or even for free (via vouchers), yet the company still has revenue streams from validation processes, paid agendas, or other internal activities. Thus, the benefits received by participants come from internal GUCCI allocations that have been calculated so as not to cause losses.'
         },
         {
-          title: '4. Empower Partners Through Training and Coaching',
-          desc: 'One of the important goals of this program is to equip every partner with a proper understanding of how the system works, how to complete tasks, operational standards, and how to manage opportunities to generate maximum profit. This coaching is done so that every partner can develop and run their activities professionally.'
+          title: '4. Not All Participants Take High Packages',
+          desc: 'In global affiliate program statistics, only a portion of partners take large packages or premium agendas. The company calculates that the profit margin from active participants can cover the reward costs for new participants. This is a structure commonly used in modern digital industries — similar to cashback systems, reward apps, and loyalty programs.'
         },
         {
-          title: '5. Increase Partner Loyalty and Trust',
-          desc: 'Affiliation is not just about income, but also fulfilling the commitment to build strong relationships between GUCCI and all participants. With clear benefits, transparent mechanisms, and consistent support, this program is designed to create stable long-term bonds.'
+          title: '5. Strengthening Brand Ecosystem Provides Long-Term Value',
+          desc: 'GUCCI views the affiliate program not just as a cost, but as a long-term investment to expand the brand network, strengthen the community, build loyalty, and open new collaboration doors. This long-term value is far greater than the rewards distributed to participants.'
         },
         {
-          title: '6. Deliver an Easy and User-Friendly Business System',
-          desc: 'The GUCCI Affiliate Program is structured to be usable by everyone, both beginners and professionals. The goal is to ensure every participant can understand task flows, execute processes quickly, follow agendas without difficulty, and enjoy a comfortable experience within the application or system.'
+          title: '6. Security and Validation Systems Regulate Capital Flow',
+          desc: 'The company maintains data validation, user filtering, agenda management, and transaction flow control. In this way, all activities run stably, measurably, and remain profitable without uncontrolled financial risks.'
         },
         {
-          title: '7. Strengthen the GUCCI Business Ecosystem',
-          desc: 'Affiliation plays a role as one of the important foundations in strengthening the overall GUCCI ecosystem. Through active participation of partners, the company can expand services, present new innovations, and strengthen business structures to be more adaptive in facing market developments.'
-        },
-        {
-          title: '8. Encourage Collaboration and Economic Independence',
-          desc: 'This program also has a social purpose: providing opportunities for the community to improve financial capabilities through independent work. With a flexible and directed structure, partners can work anytime, choose suitable tasks, and build income levels gradually.'
+          title: '7. Company Profits Do Not Depend on Participant Payments',
+          desc: 'This is important. The company gains profits from various aspects, such as branding value, increased global traffic, international collaborations, market analytical data, consumer expansion, and new product campaigns. So even though participants get benefits, GUCCI still gets far greater strategic advantages.'
         }
       ],
-      conclusion: 'The GUCCI Affiliate Program is not just a commission system, but a collaborative platform designed so that every partner can grow professionally, earn a decent income, and build an independent and modern work pattern. With a strong ecosystem and structured support, this program becomes a real opportunity for anyone who wants to develop further with GUCCI.'
+      conclusion: 'Conclusion: Why Does GUCCI Not Lose Money? Because all benefits given to participants do not come from "company losses", but from allocated marketing budgets, business value from partner activities, and structured agendas. With a well-designed system, GUCCI actually gains greater profits—while participants receive benefits and income opportunities without incurring large costs.'
     },
     collectionsPage: {
       title: 'SEASONAL COLLECTIONS',
