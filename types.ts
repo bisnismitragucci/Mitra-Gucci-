@@ -1,5 +1,5 @@
 export type Language = 'id' | 'en';
-export type PageView = 'home' | 'legality';
+export type PageView = 'home' | 'legality' | 'worldOfGucci' | 'collections' | 'businessAccount' | 'affiliateProgram';
 
 export interface Translations {
   nav: {
@@ -45,6 +45,45 @@ export interface Translations {
       image: string;
     }[];
   };
+  collectionsPage: {
+    title: string;
+    subtitle: string;
+    items: {
+      image: string;
+      title: string;
+      description: string;
+      cta: string;
+    }[];
+  };
+  businessAccountPage: {
+    form: {
+      title: string;
+      phonePlaceholder: string;
+      passwordPlaceholder: string;
+      inviteCodePlaceholder: string;
+      submitButton: string;
+      loginLink: string;
+    };
+    info: {
+      title: string;
+      subtitle: string;
+      description: string;
+      features: {
+        title: string;
+        desc: string;
+      }[];
+    };
+  };
+  affiliateProgramPage: {
+    title: string;
+    subtitle: string;
+    intro: string;
+    points: {
+      title: string;
+      desc: string;
+    }[];
+    conclusion: string;
+  };
   legalityDoc: {
     header1: string;
     header2: string;
@@ -71,6 +110,15 @@ export interface Translations {
     datePlace: string;
     signerTitle: string;
     signerName: string;
+  };
+  worldOfGucci: {
+    title: string;
+    intro: string;
+    sections: {
+      title: string;
+      content: string;
+    }[];
+    conclusion: string;
   };
   grid: {
     craftsmanship: string;

@@ -1,16 +1,25 @@
 import React from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Language, Translations } from '../types';
+import { Language, Translations, PageView } from '../types';
 
 interface NavbarProps {
   lang: Language;
   t: Translations;
   setLang: (lang: Language) => void;
+  onNavigate?: (page: PageView) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
+const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const waLink = "https://wa.me/6282310653328?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+
+  const handleNavClick = (page: PageView) => {
+    if (onNavigate) {
+      onNavigate(page);
+      setIsOpen(false);
+      window.scrollTo(0, 0);
+    }
+  };
 
   return (
     <>
@@ -29,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
           </div>
 
           {/* Logo Area - Absolute Center */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+          <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer" onClick={() => handleNavClick('home')}>
             <span className="font-serif text-3xl md:text-4xl tracking-[0.15em] text-white font-bold">
               GUCCI
             </span>
@@ -40,7 +49,9 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
 
           {/* Right Actions (Links) */}
           <div className="hidden lg:flex items-center space-x-8 text-[11px] font-bold tracking-[0.2em] uppercase">
-            <a href="#" className="hover:text-gray-400 transition-colors">{t.nav.opportunities}</a>
+            <button onClick={() => handleNavClick('affiliateProgram')} className="hover:text-gray-400 transition-colors">
+              {t.nav.opportunities}
+            </button>
             <a href={waLink} target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">{t.nav.login}</a>
           </div>
 
@@ -52,18 +63,32 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
 
         {/* Desktop Secondary Nav - Centered below logo */}
         <div className="hidden lg:flex justify-center items-center py-4 space-x-12 text-[10px] font-bold tracking-[0.2em] uppercase border-t border-gray-900">
-            <a href="#" className="hover:text-gray-400 transition-colors">{t.nav.people}</a>
-            <a href="#" className="hover:text-gray-400 transition-colors">{t.nav.partners}</a>
-            <a href="#" className="hover:text-gray-400 transition-colors">{t.nav.academy}</a>
+            <button onClick={() => handleNavClick('worldOfGucci')} className="hover:text-gray-400 transition-colors">
+              {t.nav.people}
+            </button>
+            <button onClick={() => handleNavClick('collections')} className="hover:text-gray-400 transition-colors">
+              {t.nav.partners}
+            </button>
+            <button onClick={() => handleNavClick('businessAccount')} className="hover:text-gray-400 transition-colors">
+              {t.nav.academy}
+            </button>
         </div>
 
         {/* Mobile Menu Dropdown */}
         {isOpen && (
           <div className="lg:hidden bg-black border-t border-gray-800 py-8 px-6 flex flex-col space-y-6 text-xs tracking-widest uppercase">
-            <a href="#" className="block hover:text-gray-400">{t.nav.people}</a>
-            <a href="#" className="block hover:text-gray-400">{t.nav.partners}</a>
-            <a href="#" className="block hover:text-gray-400">{t.nav.academy}</a>
-            <a href="#" className="block hover:text-gray-400">{t.nav.opportunities}</a>
+            <button onClick={() => handleNavClick('worldOfGucci')} className="text-left block hover:text-gray-400">
+              {t.nav.people}
+            </button>
+            <button onClick={() => handleNavClick('collections')} className="text-left block hover:text-gray-400">
+              {t.nav.partners}
+            </button>
+            <button onClick={() => handleNavClick('businessAccount')} className="text-left block hover:text-gray-400">
+              {t.nav.academy}
+            </button>
+            <button onClick={() => handleNavClick('affiliateProgram')} className="text-left block hover:text-gray-400">
+              {t.nav.opportunities}
+            </button>
             <div className="border-t border-gray-800 pt-6 flex justify-between items-center">
               <button 
                   onClick={() => {

@@ -1,5 +1,3 @@
-
-
 import { Dictionary } from './types';
 
 export const DICTIONARY: Dictionary = {
@@ -7,7 +5,7 @@ export const DICTIONARY: Dictionary = {
     nav: {
       people: 'DUNIA GUCCI',
       partners: 'KOLEKSI',
-      academy: 'CERITA',
+      academy: 'AKUN BISNIS',
       opportunities: 'PROGRAM AFILIASI',
       login: 'MASUK',
       backToHome: 'KEMBALI KE BERANDA',
@@ -154,6 +152,117 @@ export const DICTIONARY: Dictionary = {
         }
       ]
     },
+    affiliateProgramPage: {
+      title: 'TUJUAN PROGRAM AFILIASI GUCCI',
+      subtitle: 'VISI & MISI KEMITRAAN',
+      intro: 'Program Afiliasi GUCCI dirancang sebagai sebuah inisiatif kolaboratif untuk membuka peluang kemitraan bagi masyarakat yang ingin berkembang bersama ekosistem bisnis GUCCI. Program ini tidak hanya berfokus pada memberikan keuntungan finansial, tetapi juga membangun jaringan pemasaran, meningkatkan kapasitas mitra, dan menciptakan hubungan bisnis yang berkelanjutan. Berikut adalah tujuan utama dari program ini:',
+      points: [
+        {
+          title: '1. Memberikan Peluang Penghasilan Tambahan',
+          desc: 'Program Afiliasi GUCCI bertujuan menyediakan jalur pendapatan yang mudah diakses oleh siapa pun. Melalui sistem komisi, mitra dapat memperoleh profit dari setiap aktivitas, penjualan, atau agenda yang berhasil dilakukan sesuai mekanisme program. Tujuan ini membantu masyarakat menciptakan sumber pendapatan alternatif tanpa harus memiliki modal besar atau pengalaman rumit.'
+        },
+        {
+          title: '2. Mengembangkan Jaringan Kemitraan yang Lebih Luas',
+          desc: 'Afiliasi memungkinkan GUCCI memperluas jangkauan pasar melalui kolaborasi dengan mitra individu maupun kelompok. Setiap mitra menjadi bagian dari ekosistem besar yang bergerak dengan arah yang sama—meningkatkan brand presence dan memperbesar peluang ekspansi.'
+        },
+        {
+          title: '3. Menciptakan Sistem Pemasaran yang Efektif dan Modern',
+          desc: 'Melalui model afiliasi, GUCCI mengoptimalkan strategi pemasaran digital yang lebih cepat, terukur, dan hemat biaya. Program ini menjadi jembatan yang menghubungkan teknologi, sistem automasi, dan pola interaksi modern sehingga proses distribusi informasi menjadi lebih efisien.'
+        },
+        {
+          title: '4. Memberdayakan Mitra Melalui Pelatihan dan Pembinaan',
+          desc: 'Salah satu tujuan penting program ini adalah membekali setiap mitra dengan pemahaman yang tepat tentang cara kerja sistem, cara menyelesaikan tugas, standar operasional, serta cara mengelola peluang agar menghasilkan keuntungan maksimal. Pembinaan ini dilakukan agar setiap mitra mampu berkembang dan menjalankan aktivitasnya secara profesional.'
+        },
+        {
+          title: '5. Meningkatkan Loyalitas dan Kepercayaan Mitra',
+          desc: 'Afiliasi bukan hanya soal pendapatan, tetapi juga memenuhi komitmen untuk membangun hubungan yang kuat antara GUCCI dan seluruh partisipan. Dengan keuntungan yang jelas, mekanisme yang transparan, dan dukungan yang konsisten, program ini dirancang untuk menciptakan ikatan jangka panjang yang stabil.'
+        },
+        {
+          title: '6. Menghadirkan Sistem Bisnis yang Mudah dan Ramah Pengguna',
+          desc: 'Program Afiliasi GUCCI disusun agar dapat digunakan oleh semua kalangan, baik pemula maupun profesional. Tujuannya adalah memastikan setiap peserta bisa memahami alur tugas, mengeksekusi proses dengan cepat, mengikuti agenda tanpa kesulitan, dan menikmati pengalaman yang nyaman dalam aplikasi maupun sistem.'
+        },
+        {
+          title: '7. Memperkuat Ekosistem Bisnis GUCCI',
+          desc: 'Afiliasi berperan sebagai salah satu fondasi penting dalam memperkuat ekosistem GUCCI secara keseluruhan. Melalui partisipasi aktif para mitra, perusahaan dapat memperluas layanan, menghadirkan inovasi baru, dan memperkuat struktur bisnis agar lebih adaptif menghadapi perkembangan pasar.'
+        },
+        {
+          title: '8. Mendorong Kolaborasi dan Kemandirian Ekonomi',
+          desc: 'Program ini juga memiliki tujuan sosial: memberikan peluang kepada masyarakat untuk meningkatkan kemampuan finansial melalui kerja mandiri. Dengan struktur yang fleksibel dan terarah, mitra bisa bekerja kapan saja, memilih tugas yang sesuai, serta membangun jenjang pendapatan secara bertahap.'
+        }
+      ],
+      conclusion: 'Program Afiliasi GUCCI bukan sekadar sistem komisi, tetapi sebuah wadah kolaborasi yang didesain agar setiap mitra dapat bertumbuh secara profesional, mendapatkan penghasilan yang layak, serta membangun pola kerja yang mandiri dan modern. Dengan ekosistem yang kuat dan dukungan yang terstruktur, program ini menjadi peluang nyata bagi siapa saja yang ingin berkembang lebih jauh bersama GUCCI.'
+    },
+    collectionsPage: {
+      title: 'KOLEKSI MUSIM INI',
+      subtitle: 'TEMUKAN KEMEWAHAN DALAM SETIAP DETAIL',
+      items: [
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/7sdms9peH2MtRWaqHVjwh6/1a80a2fe051c9173ccb8f55b5929f837/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'EDISI LIBURAN',
+          description: 'Elegan dalam warna merah khas, simbol perayaan abadi dan kehangatan musim.',
+          cta: 'PROMOSIKAN INI'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/3MsAt1X0mxAquP1SpfVbF0/d67223cf65ab518590a485d06b5e8308/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-10-1073_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'HITAM IKONIK',
+          description: 'Kemewahan klasik dengan sentuhan emas yang tegas. Sempurna untuk pernyataan gaya.',
+          cta: 'PROMOSIKAN INI'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/547nzjykuXxvm1IZnPdQVA/fdac09150bfed8ad3a4c7d8ef59f9f77/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-03-0320-E_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'KILAU METALIK',
+          description: 'Pernyataan gaya futuristik untuk malam yang tak terlupakan. Bersinar dalam setiap langkah.',
+          cta: 'PROMOSIKAN INI'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/2HxsgeZ2slUz6aIkWXux5e/a5688d2f28c0646c56df7d1579f3ccca/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-22-2112_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'LANGKAH WARISAN',
+          description: 'Perpaduan kenyamanan dan desain arsip yang legendaris. Sepatu yang bercerita.',
+          cta: 'PROMOSIKAN INI'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/3emmmS72uGIdZTHqqmGvEb/45c3cae7d419659d5088479b9a31add4/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-20-0725-B_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'AROMA MEMIKAT',
+          description: 'Esensi keanggunan dalam setiap semprotan. Wewangian yang meninggalkan jejak kemewahan.',
+          cta: 'PROMOSIKAN INI'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/fFFK1pBjONMTnA8gNCv69/41dbf1fb662e94e96050f6eafa9ea5e7/HeroCategory-Mobile_Gucci-HORSEBIT-JWL-OCT25-2025-06-12-15-05-21-B-R8-S4-V03_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'KILAU HORSEBIT',
+          description: 'Desain arsip yang diimajinasikan ulang dalam emas berkilau. Simbol keanggunan yang tak lekang oleh waktu.',
+          cta: 'PROMOSIKAN INI'
+        }
+      ]
+    },
+    businessAccountPage: {
+      form: {
+        title: 'Guccio Gucci S.p.A',
+        phonePlaceholder: 'Silakan masukkan nomor telepon',
+        passwordPlaceholder: 'Silahkan masukan password',
+        inviteCodePlaceholder: 'Kode Undangan',
+        submitButton: 'Daftar sekarang',
+        loginLink: 'Sudah Memiliki Akun??'
+      },
+      info: {
+        title: 'MENGAPA ANDA MEMBUTUHKAN AKUN BISNIS?',
+        subtitle: 'TRANSFORMASI DARI PESERTA MENJADI MITRA STRATEGIS',
+        description: 'Akun Bisnis Gucci Affiliate bukan sekadar akses login, melainkan pusat komando untuk karir Anda di ekosistem Gucci. Ini adalah alat profesional yang dirancang untuk memisahkan hobi dari bisnis yang serius.',
+        features: [
+          {
+            title: 'DASHBOARD PENDAPATAN REAL-TIME',
+            desc: 'Pantau komisi, bonus kinerja, dan pembayaran secara transparan. Analisis performa kampanye Anda dalam satu tampilan yang terintegrasi.'
+          },
+          {
+            title: 'AKSES MATERI EKSKLUSIF',
+            desc: 'Dapatkan akses prioritas ke aset kampanye terbaru, panduan brand, dan materi promosi high-resolution sebelum dirilis ke publik.'
+          },
+          {
+            title: 'LEGALITAS & KONTRAK DIGITAL',
+            desc: 'Kelola perjanjian kerjasama, tanda tangan kontrak digital, dan dokumen pajak secara aman dan terverifikasi sesuai standar hukum yang berlaku.'
+          }
+        ]
+      }
+    },
     legalityDoc: {
       header1: 'PEMERINTAH REPUBLIK INDONESIA',
       header2: 'PERIZINAN BERUSAHA BERBASIS RISIKO',
@@ -181,6 +290,45 @@ export const DICTIONARY: Dictionary = {
       signerTitle: 'Menteri Investasi /\nKepala Badan Koordinasi\nPenanaman Modal',
       signerName: 'Bahlil Lahadalia',
     },
+    worldOfGucci: {
+      title: "Penjelasan Lengkap Tentang Dunia GUCCI",
+      intro: "Dunia GUCCI bukan sekadar industri fashion mewah — ia adalah sebuah ekosistem budaya, estetika, inovasi, dan gaya hidup yang telah berkembang selama lebih dari satu abad. Di balik setiap produk, kampanye, dan kolaborasi, terdapat nilai, cerita, dan filosofi yang membentuk identitas GUCCI sebagai salah satu ikon luxury fashion paling berpengaruh di dunia.",
+      sections: [
+        {
+          title: "1. Sejarah yang Mengakar Kuat",
+          content: "GUCCI didirikan oleh Guccio Gucci pada tahun 1921 di Florence, Italia. Awalnya, merek ini fokus pada barang kulit premium, terutama tas, koper, dan perlengkapan berkuda. Inspirasi Guccio lahir dari pengamatannya terhadap para pelancong aristokrat di hotel tempat ia bekerja. Ia melihat bagaimana kualitas, keanggunan, dan craftmanship mampu mengekspresikan status seseorang. Dari sanalah GUCCI memulai perjalanan panjangnya. Selama bertahun-tahun, dunia GUCCI berkembang menjadi simbol kemewahan klasik yang memadukan tradisi artisan Italia dengan gaya modern yang berani."
+        },
+        {
+          title: "2. Identitas Estetika yang Kuat dan Ikonik",
+          content: "GUCCI dikenal memiliki ciri visual yang langsung dikenali: Motif GG Monogram, Detail Web Stripe (merah–hijau), kombinasi desain vintage dan kontemporer, pemilihan warna dan tekstur berani namun tetap elegan, serta penggunaan elemen flora, fauna, dan simbolisme artistik. Estetika ini membedakan GUCCI dari brand lain, menjadikannya dunia yang penuh karakter, artistik, dan tidak pernah takut bereksperimen."
+        },
+        {
+          title: "3. Filosofi Desain: Berani, Artistik, dan Tidak Konvensional",
+          content: "Dunia GUCCI dibangun di atas prinsip kreatif yang selalu terbuka pada inovasi. Dalam banyak era, GUCCI menunjukkan keberanian untuk melampaui batas tradisional — menghadirkan desain yang unik, teatrikal, dan penuh cerita. Setiap koleksi tidak hanya sekadar “pakaian”, tetapi karya seni dengan pesan visual yang kuat, seringkali menyatukan konsep budaya, sejarah, dan modernitas."
+        },
+        {
+          title: "4. Pengaruh Budaya Global",
+          content: "GUCCI mampu menjadi fenomena global bukan hanya karena produknya, tetapi juga karena kekuatan narasi dan pengaruh budaya. Merek ini menginspirasi dunia pop culture, bekerja sama dengan seniman, aktor, musisi, dan kreator terkemuka, serta menghadirkan kampanye yang mengangkat keberagaman, kebebasan berekspresi, dan kreativitas. Dunia GUCCI selalu berkembang mengikuti perubahan zaman sambil menjaga keaslian mereknya."
+        },
+        {
+          title: "5. Inovasi Digital dan Modernisasi Brand",
+          content: "Di era digital, GUCCI termasuk brand yang paling agresif berinovasi melalui pengalaman virtual fashion show, teknologi AR (Augmented Reality) untuk mencoba produk, integrasi story-telling visual yang kuat di platform digital, serta program komunitas dan kolaborasi global. Semua ini menjadikan dunia GUCCI relevan bagi generasi baru yang hidup dalam ekosistem digital."
+        },
+        {
+          title: "6. Komitmen pada Sustainability",
+          content: "Dunia GUCCI juga terikat pada komitmen untuk menciptakan perubahan positif melalui material ramah lingkungan, proses produksi berkelanjutan, kampanye “Gucci Equilibrium”, dan dukungan untuk komunitas global serta program sosial. GUCCI ingin membuktikan bahwa kemewahan tidak harus bertentangan dengan tanggung jawab lingkungan dan sosial."
+        },
+        {
+          title: "7. Dunia GUCCI Sebagai Gaya Hidup",
+          content: "Lebih dari sekadar fashion, GUCCI berkembang sebagai lifestyle universe yang meliputi Fashion & Leather Goods, Beauty & Fragrances, Jewelry & Watch Collections, Home Décor, Digital Experiences, hingga Program Kemitraan dan Komunitas. Bagi banyak orang, memiliki produk GUCCI adalah bentuk ekspresi diri — mencerminkan rasa percaya diri, kreativitas, dan apresiasi terhadap seni."
+        },
+        {
+          title: "8. GUCCI dan Masa Depan",
+          content: "Dunia GUCCI terus bertransformasi menuju masa depan yang lebih modern, inklusif, dan futuristik. GUCCI ingin menjadi jembatan antara tradisi artisan Italia, inovasi digital, budaya populer, serta aspirasi global generasi baru. Dengan pendekatan yang visioner, GUCCI tidak hanya membangun produk tetapi membangun budaya, komunitas, dan ekosistem yang hidup dan berkembang."
+        }
+      ],
+      conclusion: "Dunia GUCCI adalah perpaduan antara warisan sejarah yang kaya, kreativitas tanpa batas, nilai estetika yang kuat, inovasi teknologi, dan komitmen pada kualitas serta keberlanjutan. Itulah yang membuat GUCCI bukan hanya brand fashion, tetapi simbol global dari seni, kemewahan, identitas, dan gaya hidup modern."
+    },
     grid: {
       craftsmanship: 'KONSULTAN AHLI',
       innovation: 'GAYA KONTEMPORER',
@@ -198,7 +346,7 @@ export const DICTIONARY: Dictionary = {
     nav: {
       people: 'WORLD OF GUCCI',
       partners: 'COLLECTIONS',
-      academy: 'STORIES',
+      academy: 'BUSINESS ACCOUNT',
       opportunities: 'AFFILIATE PROGRAM',
       login: 'SIGN IN',
       backToHome: 'BACK TO HOME',
@@ -345,6 +493,117 @@ export const DICTIONARY: Dictionary = {
         }
       ]
     },
+    affiliateProgramPage: {
+      title: 'GUCCI AFFILIATE PROGRAM OBJECTIVES',
+      subtitle: 'VISION & MISSION OF PARTNERSHIP',
+      intro: 'The GUCCI Affiliate Program is designed as a collaborative initiative to open partnership opportunities for people who want to grow together with the GUCCI business ecosystem. This program focuses not only on providing financial benefits but also on building marketing networks, increasing partner capacity, and creating sustainable business relationships. Here are the main objectives of this program:',
+      points: [
+        {
+          title: '1. Provide Additional Income Opportunities',
+          desc: 'The GUCCI Affiliate Program aims to provide an accessible revenue stream for everyone. Through a commission system, partners can earn profit from every activity, sale, or agenda successfully carried out according to the program mechanism. This objective helps the community create alternative income sources without needing large capital or complex experience.'
+        },
+        {
+          title: '2. Expand a Wider Partnership Network',
+          desc: 'Affiliation allows GUCCI to expand market reach through collaboration with individual and group partners. Each partner becomes part of a large ecosystem moving in the same direction—increasing brand presence and enlarging expansion opportunities.'
+        },
+        {
+          title: '3. Create an Effective and Modern Marketing System',
+          desc: 'Through the affiliate model, GUCCI optimizes digital marketing strategies that are faster, measurable, and cost-effective. This program serves as a bridge connecting technology, automation systems, and modern interaction patterns so that information distribution processes become more efficient.'
+        },
+        {
+          title: '4. Empower Partners Through Training and Coaching',
+          desc: 'One of the important goals of this program is to equip every partner with a proper understanding of how the system works, how to complete tasks, operational standards, and how to manage opportunities to generate maximum profit. This coaching is done so that every partner can develop and run their activities professionally.'
+        },
+        {
+          title: '5. Increase Partner Loyalty and Trust',
+          desc: 'Affiliation is not just about income, but also fulfilling the commitment to build strong relationships between GUCCI and all participants. With clear benefits, transparent mechanisms, and consistent support, this program is designed to create stable long-term bonds.'
+        },
+        {
+          title: '6. Deliver an Easy and User-Friendly Business System',
+          desc: 'The GUCCI Affiliate Program is structured to be usable by everyone, both beginners and professionals. The goal is to ensure every participant can understand task flows, execute processes quickly, follow agendas without difficulty, and enjoy a comfortable experience within the application or system.'
+        },
+        {
+          title: '7. Strengthen the GUCCI Business Ecosystem',
+          desc: 'Affiliation plays a role as one of the important foundations in strengthening the overall GUCCI ecosystem. Through active participation of partners, the company can expand services, present new innovations, and strengthen business structures to be more adaptive in facing market developments.'
+        },
+        {
+          title: '8. Encourage Collaboration and Economic Independence',
+          desc: 'This program also has a social purpose: providing opportunities for the community to improve financial capabilities through independent work. With a flexible and directed structure, partners can work anytime, choose suitable tasks, and build income levels gradually.'
+        }
+      ],
+      conclusion: 'The GUCCI Affiliate Program is not just a commission system, but a collaborative platform designed so that every partner can grow professionally, earn a decent income, and build an independent and modern work pattern. With a strong ecosystem and structured support, this program becomes a real opportunity for anyone who wants to develop further with GUCCI.'
+    },
+    collectionsPage: {
+      title: 'SEASONAL COLLECTIONS',
+      subtitle: 'DISCOVER LUXURY IN EVERY DETAIL',
+      items: [
+         {
+          image: 'https://images.ctfassets.net/brzb6u29244a/7sdms9peH2MtRWaqHVjwh6/1a80a2fe051c9173ccb8f55b5929f837/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'THE HOLIDAY EDIT',
+          description: 'Elegant in signature red, a symbol of timeless celebration and seasonal warmth.',
+          cta: 'PROMOTE THIS'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/3MsAt1X0mxAquP1SpfVbF0/d67223cf65ab518590a485d06b5e8308/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-10-1073_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'ICONIC BLACK',
+          description: 'Classic luxury with bold gold accents. Perfect for a style statement.',
+          cta: 'PROMOTE THIS'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/547nzjykuXxvm1IZnPdQVA/fdac09150bfed8ad3a4c7d8ef59f9f77/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-03-0320-E_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'METALLIC SHINE',
+          description: 'Futuristic style statement for an unforgettable night. Shine in every step.',
+          cta: 'PROMOTE THIS'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/2HxsgeZ2slUz6aIkWXux5e/a5688d2f28c0646c56df7d1579f3ccca/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-22-2112_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'HERITAGE STEPS',
+          description: 'A blend of comfort and legendary archival design. Shoes that tell a story.',
+          cta: 'PROMOTE THIS'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/3emmmS72uGIdZTHqqmGvEb/45c3cae7d419659d5088479b9a31add4/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-20-0725-B_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'SCENT OF ALLURE',
+          description: 'The essence of elegance in every spray. A fragrance that leaves a luxurious trail.',
+          cta: 'PROMOTE THIS'
+        },
+        {
+          image: 'https://images.ctfassets.net/brzb6u29244a/fFFK1pBjONMTnA8gNCv69/41dbf1fb662e94e96050f6eafa9ea5e7/HeroCategory-Mobile_Gucci-HORSEBIT-JWL-OCT25-2025-06-12-15-05-21-B-R8-S4-V03_001_Default.png?w=1024&fm=avif&q=50',
+          title: 'HORSEBIT SHINE',
+          description: 'Archival design reimagined in gleaming gold. A symbol of timeless elegance.',
+          cta: 'PROMOTE THIS'
+        }
+      ]
+    },
+    businessAccountPage: {
+      form: {
+        title: 'Guccio Gucci S.p.A',
+        phonePlaceholder: 'Silakan masukkan nomor telepon',
+        passwordPlaceholder: 'Silahkan masukan password',
+        inviteCodePlaceholder: 'Kode Undangan',
+        submitButton: 'Daftar sekarang',
+        loginLink: 'Sudah Memiliki Akun??'
+      },
+      info: {
+        title: 'WHY DO YOU NEED A BUSINESS ACCOUNT?',
+        subtitle: 'TRANSFORMATION FROM PARTICIPANT TO STRATEGIC PARTNER',
+        description: 'The Gucci Affiliate Business Account is not just a login access, but the command center for your career in the Gucci ecosystem. It is a professional tool designed to separate hobbies from serious business.',
+        features: [
+          {
+            title: 'REAL-TIME EARNINGS DASHBOARD',
+            desc: 'Monitor commissions, performance bonuses, and payments transparently. Analyze your campaign performance in one integrated view.'
+          },
+          {
+            title: 'EXCLUSIVE ASSET ACCESS',
+            desc: 'Get priority access to the latest campaign assets, brand guidelines, and high-resolution promotional materials before public release.'
+          },
+          {
+            title: 'LEGALITY & DIGITAL CONTRACTS',
+            desc: 'Manage cooperation agreements, sign digital contracts, and tax documents securely and verified according to applicable legal standards.'
+          }
+        ]
+      }
+    },
     legalityDoc: {
       header1: 'GOVERNMENT OF THE REPUBLIC OF INDONESIA',
       header2: 'RISK-BASED BUSINESS LICENSING',
@@ -371,6 +630,45 @@ export const DICTIONARY: Dictionary = {
       datePlace: 'Issued in Jakarta, date: November 25, 2025',
       signerTitle: 'Minister of Investment /\nHead of Investment Coordinating Board',
       signerName: 'Bahlil Lahadalia',
+    },
+    worldOfGucci: {
+      title: "Comprehensive Explanation of The World of GUCCI",
+      intro: "The World of GUCCI is not merely a luxury fashion industry—it is an ecosystem of culture, aesthetics, innovation, and lifestyle that has evolved for over a century. Behind every product, campaign, and collaboration, there are values, stories, and philosophies that shape GUCCI's identity as one of the most influential luxury fashion icons in the world.",
+      sections: [
+        {
+          title: "1. A Deeply Rooted History",
+          content: "GUCCI was founded by Guccio Gucci in 1921 in Florence, Italy. Initially, the brand focused on premium leather goods, particularly bags, luggage, and equestrian equipment. Guccio's inspiration was born from his observations of aristocratic travelers at the hotel where he worked. He saw how quality, elegance, and craftsmanship could express one's status. From there, GUCCI began its long journey. Over the years, the world of GUCCI has evolved into a symbol of classic luxury that blends Italian artisan tradition with bold modern style."
+        },
+        {
+          title: "2. A Strong and Iconic Aesthetic Identity",
+          content: "GUCCI is known for its instantly recognizable visual hallmarks: The GG Monogram motif, the Web Stripe detail (red-green), a combination of vintage and contemporary designs, bold yet elegant choices of color and texture, and the use of floral, faunal, and artistic symbolism. This aesthetic distinguishes GUCCI from other brands, making it a world full of character, artistic flair, and never afraid to experiment."
+        },
+        {
+          title: "3. Design Philosophy: Bold, Artistic, and Unconventional",
+          content: "The World of GUCCI is built on creative principles that are always open to innovation. In many eras, GUCCI has shown the courage to transcend traditional boundaries—presenting designs that are unique, theatrical, and full of storytelling. Each collection is not just 'clothing', but a work of art with a strong visual message, often uniting concepts of culture, history, and modernity."
+        },
+        {
+          title: "4. Global Cultural Influence",
+          content: "GUCCI has become a global phenomenon not only because of its products but also because of the power of its narrative and cultural influence. The brand inspires pop culture, collaborates with leading artists, actors, musicians, and creators, and presents campaigns that highlight diversity, freedom of expression, and creativity. The World of GUCCI always evolves with the times while maintaining the brand's authenticity."
+        },
+        {
+          title: "5. Digital Innovation and Brand Modernization",
+          content: "In the digital era, GUCCI is among the most aggressive brands in innovation through virtual fashion show experiences, AR (Augmented Reality) technology for trying on products, strong visual storytelling integration on digital platforms, as well as global community programs and collaborations. All of this makes the world of GUCCI relevant to the new generation living in the digital ecosystem."
+        },
+        {
+          title: "6. Commitment to Sustainability",
+          content: "The World of GUCCI is also bound by a commitment to create positive change through eco-friendly materials, sustainable production processes, the 'Gucci Equilibrium' campaign, and support for global communities and social programs. GUCCI wants to prove that luxury does not have to conflict with environmental and social responsibility."
+        },
+        {
+          title: "7. The World of GUCCI as a Lifestyle",
+          content: "More than just fashion, GUCCI has developed as a lifestyle universe covering Fashion & Leather Goods, Beauty & Fragrances, Jewelry & Watch Collections, Home Décor, Digital Experiences, to Partnership Programs and Communities. For many, owning a GUCCI product is a form of self-expression—reflecting confidence, creativity, and appreciation for art."
+        },
+        {
+          title: "8. GUCCI and the Future",
+          content: "The World of GUCCI continues to transform towards a more modern, inclusive, and futuristic future. GUCCI aims to bridge Italian artisan tradition, digital innovation, popular culture, and the global aspirations of the new generation. With a visionary approach, GUCCI not only builds products but builds a living and thriving culture, community, and ecosystem."
+        }
+      ],
+      conclusion: "The World of GUCCI is a blend of rich historical heritage, boundless creativity, strong aesthetic value, technological innovation, and a commitment to quality and sustainability. That is what makes GUCCI not just a fashion brand, but a global symbol of art, luxury, identity, and modern lifestyle."
     },
     grid: {
       craftsmanship: 'EXPERT ADVISOR',

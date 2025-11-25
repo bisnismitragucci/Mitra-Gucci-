@@ -5,6 +5,10 @@ import FilterBar from './components/FilterBar';
 import VisualGrid from './components/VisualGrid';
 import Footer from './components/Footer';
 import LegalityPage from './components/LegalityPage';
+import WorldOfGucciPage from './components/WorldOfGucciPage';
+import CollectionsPage from './components/CollectionsPage';
+import BusinessAccountPage from './components/BusinessAccountPage';
+import AffiliateProgramPage from './components/AffiliateProgramPage';
 import TestimonialTicker from './components/TestimonialTicker';
 import { DICTIONARY } from './constants';
 import { Language, PageView } from './types';
@@ -20,7 +24,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
-      <Navbar lang={lang} t={t} setLang={setLang} />
+      <Navbar lang={lang} t={t} setLang={setLang} onNavigate={setPage} />
       
       <main className="flex-grow">
         {page === 'home' ? (
@@ -30,8 +34,16 @@ function App() {
             <TestimonialTicker t={t} />
             <VisualGrid t={t} />
           </>
-        ) : (
+        ) : page === 'legality' ? (
           <LegalityPage t={t} onBack={goHome} />
+        ) : page === 'worldOfGucci' ? (
+          <WorldOfGucciPage t={t} onBack={goHome} />
+        ) : page === 'businessAccount' ? (
+          <BusinessAccountPage t={t} onBack={goHome} />
+        ) : page === 'affiliateProgram' ? (
+          <AffiliateProgramPage t={t} onBack={goHome} />
+        ) : (
+          <CollectionsPage t={t} onBack={goHome} />
         )}
       </main>
 
