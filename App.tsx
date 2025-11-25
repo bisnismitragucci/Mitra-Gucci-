@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -9,6 +10,8 @@ import WorldOfGucciPage from './components/WorldOfGucciPage';
 import CollectionsPage from './components/CollectionsPage';
 import BusinessAccountPage from './components/BusinessAccountPage';
 import AffiliateProgramPage from './components/AffiliateProgramPage';
+import ExpertAdvisorPage from './components/ExpertAdvisorPage';
+import ContemporaryStylePage from './components/ContemporaryStylePage';
 import TestimonialTicker from './components/TestimonialTicker';
 import { DICTIONARY } from './constants';
 import { Language, PageView } from './types';
@@ -32,7 +35,7 @@ function App() {
             <Hero t={t} />
             <FilterBar lang={lang} t={t} onViewLegality={() => setPage('legality')} />
             <TestimonialTicker t={t} />
-            <VisualGrid t={t} />
+            <VisualGrid t={t} onNavigate={setPage} />
           </>
         ) : page === 'legality' ? (
           <LegalityPage t={t} onBack={goHome} />
@@ -42,6 +45,10 @@ function App() {
           <BusinessAccountPage t={t} onBack={goHome} />
         ) : page === 'affiliateProgram' ? (
           <AffiliateProgramPage t={t} onBack={goHome} />
+        ) : page === 'expertAdvisor' ? (
+          <ExpertAdvisorPage t={t} onBack={goHome} />
+        ) : page === 'contemporaryStyle' ? (
+          <ContemporaryStylePage t={t} onBack={goHome} />
         ) : (
           <CollectionsPage t={t} onBack={goHome} />
         )}

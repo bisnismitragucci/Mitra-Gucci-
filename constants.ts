@@ -1,3 +1,4 @@
+
 import { Dictionary } from './types';
 
 export const DICTIONARY: Dictionary = {
@@ -36,121 +37,136 @@ export const DICTIONARY: Dictionary = {
     },
     testimonials: {
       title: 'SUARA DARI KOMUNITAS',
-      earningLabel: 'MENGHASILKAN',
       items: [
         {
           name: 'Raffi Ahmad',
           role: 'MEDIA ENTREPRENEUR',
           quote: 'Kolaborasi dengan Gucci membawa RANS Entertainment ke level kemewahan baru. Sinergi bisnis yang luar biasa.',
-          earnings: 'Rp 980.500.000',
           image: 'https://i.pinimg.com/736x/62/3a/60/623a60ebb2b74f90addfc8449324cf9f.jpg'
         },
         {
           name: 'Deddy Corbuzier',
           role: 'PODCAST MOGUL',
           quote: 'Smart people choose quality. Program ini memberikan nilai eksklusif yang tidak main-main. Konsistensi adalah kunci.',
-          earnings: 'Rp 850.000.000',
           image: 'https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/245/2025/11/02/WhatsApp-Image-2025-11-02-at-151748_a27e18cf-2454101546.jpg'
         },
         {
           name: 'Mahalini',
           role: 'SOULFUL DIVA',
           quote: 'Setiap detail koleksi Gucci menyempurnakan penampilan panggung saya. Cinta yang mendalam untuk seni fashion ini.',
-          earnings: 'Rp 475.000.000',
           image: 'https://i.pinimg.com/736x/f4/d4/d5/f4d4d56d63a4e98e7e30592bfed61e84.jpg'
         },
         {
           name: 'Reza Arap',
           role: 'GAMING ICON',
           quote: 'Style gak ada batasnya. Gucci ngasih gue kebebasan buat ekspresi diri yang gila abis. This is the real game.',
-          earnings: 'Rp 390.000.000',
           image: 'https://i.pinimg.com/1200x/d0/c5/ad/d0c5ad88af24e460c502560a65605f56.jpg'
         },
         {
           name: 'Willie Salim',
           role: 'VIRAL CREATOR',
           quote: 'Borong Gucci buat bagi-bagi ke followers setia! Semangat berbagi dalam kemewahan bareng komunitas.',
-          earnings: 'Rp 650.000.000',
           image: 'https://awsimages.detik.net.id/community/media/visual/2024/07/19/willie-salim-2_43.jpeg?w=1200'
         },
         {
           name: 'Fadil Jaidi',
           role: 'FAMILY ENTERTAINER',
           quote: 'Pak Muh setuju banget kalau Gucci emang paling keren! Endorse paling seru dan berkelas sepanjang masa.',
-          earnings: 'Rp 520.000.000',
           image: 'https://i.pinimg.com/736x/a9/e6/fd/a9e6fd622e2ae7c5eb4264d09583858e.jpg'
         },
         {
           name: 'Tanboy Kun',
           role: 'CULINARY EXPLORER',
           quote: 'Pedasnya tantangan bisnis ini seenak rasanya! Energi baru buat konten yang lebih berkelas dan "membara".',
-          earnings: 'Rp 225.000.000',
           image: 'https://upload.wikimedia.org/wikipedia/id/d/dc/Foto_Tanboy_Kun.jpeg'
         },
         {
           name: 'Elena R.',
           role: 'KURATOR VINTAGE',
           quote: 'Pilihan unik dari koleksi warisan memungkinkan saya terhubung dengan audiens yang sangat terlibat. Hasilnya fenomenal.',
-          earnings: 'Rp 45.000.000',
           image: 'https://i.pinimg.com/1200x/1c/f3/d9/1cf3d9054ed828fc8557c2d27f91c21c.jpg'
         },
         {
           name: 'Sarah & Jen',
           role: 'DUO FASHION',
           quote: 'Bekerja dengan Gucci sebagai tim telah menggandakan jangkauan kami. Kampanyenya selalu menjadi pembuka percakapan.',
-          earnings: 'Rp 120.000.000',
           image: 'https://i.pinimg.com/736x/55/c6/ad/55c6ad10b1534f926be43abb1152e95a.jpg'
         },
         {
           name: 'Davide L.',
           role: 'PENATA GAYA MEWAH',
           quote: 'Keaslian adalah kuncinya. Pengikut saya mempercayai rekomendasi saya karena kualitasnya berbicara sendiri.',
-          earnings: 'Rp 68.000.000',
           image: 'https://i.pinimg.com/736x/16/bf/d7/16bfd7e405c2d29836710e21fbc82fe3.jpg'
         },
         {
           name: 'Wei Chen',
           role: 'IKON MINIMALIS',
           quote: 'Lebih dari sekadar komisi, ini tentang menyelaraskan dengan merek yang mendefinisikan estetika modern.',
-          earnings: 'Rp 95.000.000',
           image: 'https://i.pinimg.com/736x/1f/48/d5/1f48d540589158e3592b894bffdd50cd.jpg'
         },
         {
           name: 'Amara K.',
           role: 'EDITOR GAYA HIDUP',
           quote: 'Dukungan dari tim Gucci tak tertandingi. Integrasi produk ke dalam konten editorial saya terasa sangat alami.',
-          earnings: 'Rp 32.500.000',
           image: 'https://i.pinimg.com/736x/50/9d/a4/509da454c64e0e00ae0bda4644af163d.jpg'
         },
         {
           name: 'Marco D.',
           role: 'DIREKTUR VISUAL',
           quote: 'Setiap kampanye membuka peluang baru untuk ekspresi artistik yang radikal. Ini adalah kemitraan yang memberdayakan.',
-          earnings: 'Rp 150.000.000',
           image: 'https://i.pinimg.com/1200x/f7/40/0b/f7400bff077eb8bad53837b576dd6f28.jpg'
         },
         {
           name: 'Budi Santoso',
           role: 'MODEL INFLUENCER',
           quote: 'Menjadi bagian dari keluarga ini adalah pencapaian terbesar dalam karir saya. Gucci bukan sekadar merek, tapi gaya hidup.',
-          earnings: 'Rp 88.000.000',
           image: 'https://i.pinimg.com/736x/ca/4e/7a/ca4e7ad4c2e7638a05a3ad77a9146834.jpg'
         },
         {
           name: 'Adi Nugraha',
           role: 'KREATOR DIGITAL',
           quote: 'Sinergi antara visi kreatif saya dan warisan Gucci menciptakan dampak visual yang luar biasa di media sosial.',
-          earnings: 'Rp 175.000.000',
           image: 'https://i.pinimg.com/736x/47/3e/bb/473ebb208cc3e92c13f63499d8888ab5.jpg'
         },
         {
           name: 'Sofia M.',
           role: 'TRAVEL BLOGGER',
           quote: 'Membawa kemewahan ke setiap sudut dunia bersama komunitas yang suportif. Pengalaman yang tak ternilai.',
-          earnings: 'Rp 55.000.000',
           image: 'https://i.pinimg.com/736x/c4/53/7d/c4537d3c2e979096ce2b09bdc18c9ca3.jpg'
         }
       ]
+    },
+    contemporaryStylePage: {
+      title: 'STRATEGI BISNIS MODERN',
+      subtitle: 'LOGIKA EKOSISTEM WIN-WIN SOLUTION',
+      intro: 'Dalam dunia bisnis modern, GUCCI menghadirkan sebuah ekosistem afiliasi yang dirancang dengan cara berpikir baru—lebih adaptif, lebih inklusif, dan benar-benar relevan dengan dinamika digital saat ini. Sistem ini memungkinkan setiap mitra memperoleh penghasilan dan benefit tanpa harus mempertanyakan apakah perusahaan akan mengalami kerugian.',
+      sections: [
+        {
+          title: '1. Kolaborasi Sebagai Mata Uang Baru',
+          content: 'Di era kontemporer, interaksi dan kolaborasi menjadi aset yang jauh lebih berharga daripada strategi iklan tradisional. GUCCI mengalihkan sebagian anggaran promosi ke dalam sistem afiliasi, sehingga mitra mendapatkan benefit langsung sebagai bagian dari kontribusi mereka. Alih-alih membayar iklan besar di billboard atau majalah, GUCCI memilih membayar orang-orang yang benar-benar terlibat, aktif, dan memberikan dampak nyata. Elegant and smart—persis seperti DNA brand-nya.'
+        },
+        {
+          title: '2. Aktivitas Mitra = Nilai Tambah Digital',
+          content: 'Dalam ekosistem modern, setiap klik, interaksi, engagement, dan partisipasi memiliki nilai ekonomi. Saat mitra menjalankan tugas atau agenda, aktivitas itu meningkatkan eksposur brand, jejak digital, relevansi pasar, dan daya tarik produk. Dengan kata lain, GUCCI mendapatkan nilai marketing yang kuat, sementara peserta menerima kompensasi dalam bentuk benefit dan reward. It’s a win-win situation.'
+        },
+        {
+          title: '3. Sistem Fleksibel yang Menguntungkan Kedua Sisi',
+          content: 'Salah satu fondasi utama sistem kontemporer adalah fleksibilitas. GUCCI memahami bahwa tidak semua orang masuk dengan kemampuan yang sama. Maka struktur agenda dibuat bertahap: ada paket entry-level, ada juga paket lanjutan. Mitra bisa memulai dari yang paling ringan, lalu berkembang sesuai kemampuan. Sementara itu, perusahaan tetap mendapatkan stabilitas finansial dari perputaran agenda yang sudah dihitung matang.'
+        },
+        {
+          title: '4. Benefit Bukan Beban, Tapi Strategi Investasi',
+          content: 'Benefit yang diberikan kepada peserta bukanlah biaya yang hilang begitu saja. Dalam perspektif bisnis modern, benefit adalah strategic investment—investasi untuk memperluas komunitas, memperkuat loyalitas, meningkatkan brand presence, dan membuka hubungan jangka panjang. Perusahaan besar dunia melakukan strategi ini, dan GUCCI menerapkannya dengan sentuhan khas: eksklusif, premium, dan efisien.'
+        },
+        {
+          title: '5. Nilai Besar Ada pada Jejak Digital Jangka Panjang',
+          content: 'Brand global seperti GUCCI tidak hanya menghitung keuntungan jangka pendek. Yang lebih penting adalah nilai jangka panjang: kestabilan identitas brand, kekuatan komunitas, dan kemampuan menciptakan kultur baru di ruang digital. Setiap peserta menjadi bagian dari narasi besar yang memperluas pengaruh GUCCI ke ranah online dan offline. Inilah yang membuat perusahaan tidak dirugikan—justru semakin kokoh.'
+        },
+        {
+          title: '6. Sistem Kontemporer Mengandalkan Data, Bukan Spekulasi',
+          content: 'Perhitungan dalam program afiliasi sudah berbasis data real: tingkat partisipasi, skala transaksi, pola kinerja peserta, dan rute aktivitas paling efektif. Dengan pendekatan berbasis data, GUCCI dapat menjaga ekosistem tetap stabil sekaligus memastikan benefit yang diberikan tidak mengganggu struktur finansial perusahaan.'
+        }
+      ],
+      conclusion: 'Kesimpulan (Dalam Nada Kontemporer): Program afiliasi GUCCI bukan sekadar sistem reward—ini adalah bagian dari strategi bisnis modern yang mengutamakan kolaborasi dan kreativitas. Peserta mendapatkan kesempatan untuk berkembang dan menghasilkan, sementara GUCCI memperkuat ekosistem digital globalnya. Tidak ada pihak yang dirugikan. Yang ada justru sebuah ruang baru: ruang untuk bertumbuh, berkreasi, dan mendapatkan nilai bersama.'
     },
     affiliateProgramPage: {
       title: 'MEKANISME SISTEM GUCCI',
@@ -187,6 +203,46 @@ export const DICTIONARY: Dictionary = {
         }
       ],
       conclusion: 'Kesimpulan: Mengapa GUCCI Tidak Merugi? Karena seluruh manfaat yang diberikan ke peserta bukan berasal dari "kerugian perusahaan", tetapi dari anggaran pemasaran yang dialihkan, nilai bisnis dari aktivitas peserta, dan struktur agenda yang terukur. Dengan sistem yang terdesain baik, GUCCI justru mendapatkan keuntungan lebih besar—sementara peserta mendapatkan benefit dan peluang penghasilan tanpa harus mengeluarkan biaya besar.'
+    },
+    expertAdvisorPage: {
+      title: 'TUGAS KONSULTAN AHLI',
+      subtitle: 'ARSITEK KESUKSESAN EKOSISTEM GUCCI',
+      intro: 'Seorang Konsultan Ahli berperan sebagai figur kunci dalam memastikan seluruh proses bisnis, operasional, dan strategi dapat berjalan secara efektif, terukur, dan berorientasi pada hasil. Dalam konteks dunia kemitraan, pengembangan program, maupun ekosistem bisnis seperti GUCCI Partnership, posisi ini menjadi pusat pengarah yang membantu perusahaan maupun peserta agar tetap berada pada jalur yang tepat.',
+      duties: [
+        {
+          title: '1. Memberikan Analisis Profesional',
+          desc: 'Konsultan Ahli bertanggung jawab melakukan analisis mendalam terhadap kebutuhan perusahaan maupun peserta program. Mereka menilai peluang, risiko, hingga mengidentifikasi celah yang perlu diperbaiki, serta memberikan rekomendasi berdasarkan data, bukan asumsi.'
+        },
+        {
+          title: '2. Menjadi Pengambil Keputusan Teknis',
+          desc: 'Ketika proses berjalan, tidak jarang ditemukan hambatan. Konsultan Ahli memastikan setiap masalah teknis maupun administrasi memiliki solusi yang cepat, tepat, dan aman. Tugas ini meliputi: Validasi kelayakan peserta, Peninjauan ulang dokumen, Evaluasi transaksi, dan Penentuan langkah operasional.'
+        },
+        {
+          title: '3. Mengedukasi Peserta Program',
+          desc: 'Peran ini juga mencakup memberikan panduan serta edukasi kepada peserta agar mereka: Memahami regulasi dan prosedur, Mampu menjalankan tugas sesuai standar, Menghindari kesalahan yang bisa menimbulkan kerugian, dan Mengetahui manfaat serta risiko di setiap tahapan. Konsultan menjadi jembatan komunikasi antara sistem dan seluruh mitra.'
+        },
+        {
+          title: '4. Menjaga Kepatuhan Regulasi',
+          desc: 'Konsultan Ahli bertugas memastikan bahwa seluruh aktivitas sejalan dengan aturan yang berlaku, mulai dari standar perusahaan, pedoman internal, hingga regulasi pemerintah seperti: Kepatuhan transaksi, Prosedur keamanan, dan Mekanisme Anti Penyalahgunaan Sistem. Dengan begitu, seluruh proses berlangsung secara legal, bersih, dan aman.'
+        },
+        {
+          title: '5. Menyusun Strategi Pengembangan',
+          desc: 'Selain operasional, konsultan ahli terlibat dalam strategi jangka panjang: Merancang program, Menyusun sistem benefit, Menganalisis tren, Mengembangkan inovasi, dan Memperbaiki model agar lebih relevan dengan dinamika pasar. Posisi ini bukan hanya mengawasi, tetapi juga membangun pertumbuhan.'
+        },
+        {
+          title: '6. Mengkoordinasi Tim dan Peserta',
+          desc: 'Dalam banyak agenda, konsultan ahli bertanggung jawab mengatur: Alur tugas, Distribusi informasi, Komunikasi antar peserta, dan Monitoring capaian harian. Dengan koordinasi yang kuat, kualitas pelaksanaan menjadi lebih terarah dan profesional.'
+        },
+        {
+          title: '7. Menjaga Kualitas Layanan',
+          desc: 'Konsultan ahli memastikan setiap peserta yang terlibat merasakan pengalaman yang nyaman, jelas, dan transparan selama mengikuti proses bisnis. Tugas ini termasuk: Memberikan bimbingan personal, Menjawab pertanyaan, Membantu menyelesaikan kendala, dan Menjadi pusat informasi resmi.'
+        },
+        {
+          title: '8. Menyusun Laporan dan Evaluasi',
+          desc: 'Pada tahap akhir, konsultan ahli menyusun laporan yang merangkum seluruh proses: Hasil pencapaian, Analisis performa, Evaluasi kendala, Rekomendasi perbaikan, dan Prediksi peluang ke depan. Laporan ini menjadi dasar bagi perusahaan dalam mengambil keputusan strategis berikutnya.'
+        }
+      ],
+      conclusion: 'Kesimpulan: Seorang Konsultan Ahli bukan hanya penasihat, tetapi arsitek yang membantu membentuk pondasi operasional, memastikan setiap langkah berjalan sesuai arah, dan menjaga peserta tetap dalam koridor aman serta profesional. Peran ini adalah kombinasi antara analisis, edukasi, strategi, dan kepemimpinan—sebuah posisi yang memegang peran vital dalam stabilitas dan kemajuan keseluruhan sistem.'
     },
     collectionsPage: {
       title: 'KOLEKSI MUSIM INI',
@@ -292,7 +348,7 @@ export const DICTIONARY: Dictionary = {
       sections: [
         {
           title: "1. Sejarah yang Mengakar Kuat",
-          content: "GUCCI didirikan oleh Guccio Gucci pada tahun 1921 di Florence, Italia. Awalnya, merek ini fokus pada barang kulit premium, terutama tas, koper, dan perlengkapan berkuda. Inspirasi Guccio lahir dari pengamatannya terhadap para pelancong aristokrat di hotel tempat ia bekerja. Ia melihat bagaimana kualitas, keanggunan, dan craftmanship mampu mengekspresikan status seseorang. Dari sanalah GUCCI memulai perjalanan panjangnya. Selama bertahun-tahun, dunia GUCCI berkembang menjadi simbol kemewahan klasik yang memadukan tradisi artisan Italia dengan gaya modern yang berani."
+          content: "GUCCI didirikan oleh Guccio Gucci pada tahun 1921 di Florence, Italy. Awalnya, merek ini fokus pada barang kulit premium, terutama tas, koper, dan perlengkapan berkuda. Inspirasi Guccio lahir dari pengamatannya terhadap para pelancong aristokrat di hotel tempat ia bekerja. Ia melihat bagaimana kualitas, keanggunan, dan craftmanship mampu mengekspresikan status seseorang. Dari sanalah GUCCI memulai perjalanan panjangnya. Selama bertahun-tahun, dunia GUCCI berkembang menjadi simbol kemewahan klasik yang memadukan tradisi artisan Italia dengan gaya modern yang berani."
         },
         {
           title: "2. Identitas Estetika yang Kuat dan Ikonik",
@@ -373,121 +429,136 @@ export const DICTIONARY: Dictionary = {
     },
     testimonials: {
       title: 'VOICES OF THE COMMUNITY',
-      earningLabel: 'EARNINGS',
       items: [
         {
           name: 'Raffi Ahmad',
           role: 'MEDIA ENTREPRENEUR',
           quote: 'Collaboration with Gucci brings RANS Entertainment to a new level of luxury. An extraordinary business synergy.',
-          earnings: 'Rp 980.500.000',
           image: 'https://i.pinimg.com/736x/62/3a/60/623a60ebb2b74f90addfc8449324cf9f.jpg'
         },
         {
           name: 'Deddy Corbuzier',
           role: 'PODCAST MOGUL',
           quote: 'Smart people choose quality. This program offers exclusive value that is no joke. Consistency is key.',
-          earnings: 'Rp 850.000.000',
           image: 'https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/245/2025/11/02/WhatsApp-Image-2025-11-02-at-151748_a27e18cf-2454101546.jpg'
         },
         {
           name: 'Mahalini',
           role: 'SOULFUL DIVA',
           quote: 'Every detail of the Gucci collection perfects my stage performance. Deep love for this fashion art.',
-          earnings: 'Rp 475.000.000',
           image: 'https://i.pinimg.com/736x/f4/d4/d5/f4d4d56d63a4e98e7e30592bfed61e84.jpg'
         },
         {
           name: 'Reza Arap',
           role: 'GAMING ICON',
           quote: 'Style has no limits. Gucci gives me the freedom for crazy self-expression. This is the real game.',
-          earnings: 'Rp 390.000.000',
           image: 'https://i.pinimg.com/1200x/d0/c5/ad/d0c5ad88af24e460c502560a65605f56.jpg'
         },
         {
           name: 'Willie Salim',
           role: 'VIRAL CREATOR',
           quote: 'Buying out Gucci to share with loyal followers! The spirit of sharing within the community luxury.',
-          earnings: 'Rp 650.000.000',
           image: 'https://awsimages.detik.net.id/community/media/visual/2024/07/19/willie-salim-2_43.jpeg?w=1200'
         },
         {
           name: 'Fadil Jaidi',
           role: 'FAMILY ENTERTAINER',
           quote: 'Pak Muh totally agrees that Gucci is the coolest! The most fun and classy endorsement of all time.',
-          earnings: 'Rp 520.000.000',
           image: 'https://i.pinimg.com/736x/a9/e6/fd/a9e6fd622e2ae7c5eb4264d09583858e.jpg'
         },
         {
           name: 'Tanboy Kun',
           role: 'CULINARY EXPLORER',
           quote: 'The heat of this business challenge is as tasty as it gets! New energy for classier and "fiery" content.',
-          earnings: 'Rp 225.000.000',
           image: 'https://upload.wikimedia.org/wikipedia/id/d/dc/Foto_Tanboy_Kun.jpeg'
         },
         {
           name: 'Elena R.',
           role: 'VINTAGE CURATOR',
           quote: 'The unique selection from heritage collections allows me to connect with a highly engaged audience. The results are phenomenal.',
-          earnings: 'Rp 45.000.000',
           image: 'https://i.pinimg.com/1200x/1c/f3/d9/1cf3d9054ed828fc8557c2d27f91c21c.jpg'
         },
         {
           name: 'Sarah & Jen',
           role: 'FASHION DUO',
           quote: 'Working with Gucci as a team has doubled our reach. The campaigns are always a conversation starter.',
-          earnings: 'Rp 120.000.000',
           image: 'https://i.pinimg.com/736x/55/c6/ad/55c6ad10b1534f926be43abb1152e95a.jpg'
         },
         {
           name: 'Davide L.',
           role: 'LUXURY STYLIST',
           quote: 'Authenticity is key. My followers trust my recommendations because the quality speaks for itself.',
-          earnings: 'Rp 68.000.000',
           image: 'https://i.pinimg.com/736x/16/bf/d7/16bfd7e405c2d29836710e21fbc82fe3.jpg'
         },
         {
           name: 'Wei Chen',
           role: 'MINIMALIST ICON',
           quote: 'More than just commissions, it is about aligning with a brand that defines modern aesthetics.',
-          earnings: 'Rp 95.000.000',
           image: 'https://i.pinimg.com/736x/1f/48/d5/1f48d540589158e3592b894bffdd50cd.jpg'
         },
         {
           name: 'Amara K.',
           role: 'LIFESTYLE EDITOR',
           quote: 'The support from the Gucci team is unmatched. Integrating products into my editorial content feels completely natural.',
-          earnings: 'Rp 32.500.000',
           image: 'https://i.pinimg.com/736x/50/9d/a4/509da454c64e0e00ae0bda4644af163d.jpg'
         },
         {
           name: 'Marco D.',
           role: 'VISUAL DIRECTOR',
           quote: 'Every campaign opens new opportunities for radical artistic expression. It is an empowering partnership.',
-          earnings: 'Rp 150.000.000',
           image: 'https://i.pinimg.com/1200x/f7/40/0b/f7400bff077eb8bad53837b576dd6f28.jpg'
         },
         {
           name: 'Budi Santoso',
           role: 'MODEL INFLUENCER',
           quote: 'Being part of this family is the biggest achievement in my career. Gucci is not just a brand, it is a lifestyle.',
-          earnings: 'Rp 88.000.000',
           image: 'https://i.pinimg.com/736x/ca/4e/7a/ca4e7ad4c2e7638a05a3ad77a9146834.jpg'
         },
         {
           name: 'Adi Nugraha',
           role: 'DIGITAL CREATOR',
           quote: 'The synergy between my creative vision and Gucci heritage creates incredible visual impact on social media.',
-          earnings: 'Rp 175.000.000',
           image: 'https://i.pinimg.com/736x/47/3e/bb/473ebb208cc3e92c13f63499d8888ab5.jpg'
         },
         {
           name: 'Sofia M.',
           role: 'TRAVEL BLOGGER',
           quote: 'Bringing luxury to every corner of the world with a supportive community. A priceless experience.',
-          earnings: 'Rp 55.000.000',
           image: 'https://i.pinimg.com/736x/c4/53/7d/c4537d3c2e979096ce2b09bdc18c9ca3.jpg'
         }
       ]
+    },
+    contemporaryStylePage: {
+      title: 'MODERN BUSINESS STRATEGY',
+      subtitle: 'WIN-WIN ECOSYSTEM LOGIC',
+      intro: 'In the modern business world, GUCCI presents an affiliate ecosystem designed with a new way of thinking—more adaptive, more inclusive, and truly relevant to today\'s digital dynamics. This system allows every partner to earn income and benefits without having to question whether the company will suffer a loss.',
+      sections: [
+        {
+          title: '1. Collaboration as New Currency',
+          content: 'In the contemporary era, interaction and collaboration are assets far more valuable than traditional advertising strategies. GUCCI shifts a portion of its promotional budget into the affiliate system, so partners receive direct benefits as part of their contribution. Instead of paying huge ads on billboards or magazines, GUCCI chooses to pay people who are truly engaged, active, and making a real impact. Elegant and smart—just like its brand DNA.'
+        },
+        {
+          title: '2. Partner Activity = Digital Value Add',
+          content: 'In a modern ecosystem, every click, interaction, engagement, and participation has economic value. When partners carry out tasks or agendas, that activity increases brand exposure, digital footprint, market relevance, and product appeal. In other words, GUCCI gains strong marketing value, while participants receive compensation in the form of benefits and rewards. It\'s a win-win situation.'
+        },
+        {
+          title: '3. Flexible System Benefiting Both Sides',
+          content: 'One of the main foundations of a contemporary system is flexibility. GUCCI understands that not everyone enters with the same capabilities. So the agenda structure is made gradual: there are entry-level packages, there are also advanced packages. Partners can start from the lightest, then develop according to ability. Meanwhile, the company maintains financial stability from the calculated agenda turnover.'
+        },
+        {
+          title: '4. Benefits Are Not Expenses, But Strategic Investments',
+          content: 'Benefits given to participants are not costs that just disappear. In a modern business perspective, benefits are strategic investments—investments to expand the community, strengthen loyalty, increase brand presence, and open long-term relationships. Major world companies do this strategy, and GUCCI applies it with a distinctive touch: exclusive, premium, and efficient.'
+        },
+        {
+          title: '5. Major Value Lies in Long-Term Digital Footprint',
+          content: 'Global brands like GUCCI do not just calculate short-term profits. More important is long-term value: stability of brand identity, community strength, and the ability to create new culture in the digital space. Each participant becomes part of a larger narrative that expands GUCCI\'s influence online and offline. This is what makes the company not harmed—but rather stronger.'
+        },
+        {
+          title: '6. Contemporary Systems Rely on Data, Not Speculation',
+          content: 'Calculations in the affiliate program are based on real data: participation rates, transaction scales, participant performance patterns, and most effective activity routes. With a data-driven approach, GUCCI can keep the ecosystem stable while ensuring benefits given do not disrupt the company\'s financial structure.'
+        }
+      ],
+      conclusion: 'Conclusion (In Contemporary Tone): The GUCCI affiliate program is not just a reward system—it is part of a modern business strategy that prioritizes collaboration and creativity. Participants get the opportunity to grow and earn, while GUCCI strengthens its global digital ecosystem. No party is harmed. What exists is a new space: a space to grow, create, and gain value together.'
     },
     affiliateProgramPage: {
       title: 'WHY THE GUCCI SYSTEM IS PROFITABLE',
@@ -524,6 +595,46 @@ export const DICTIONARY: Dictionary = {
         }
       ],
       conclusion: 'Conclusion: Why Does GUCCI Not Lose Money? Because all benefits given to participants do not come from "company losses", but from allocated marketing budgets, business value from partner activities, and structured agendas. With a well-designed system, GUCCI actually gains greater profits—while participants receive benefits and income opportunities without incurring large costs.'
+    },
+    expertAdvisorPage: {
+      title: 'EXPERT ADVISOR DUTIES',
+      subtitle: 'ARCHITECT OF GUCCI ECOSYSTEM SUCCESS',
+      intro: 'An Expert Advisor plays a key role in ensuring that all business processes, operations, and strategies run effectively, measurably, and are results-oriented. In the context of partnerships, program development, or business ecosystems like the GUCCI Partnership, this position serves as a central guide helping both the company and participants stay on the right track.',
+      duties: [
+        {
+          title: '1. Provide Professional Analysis',
+          desc: 'Expert Advisors are responsible for conducting in-depth analysis of the needs of the company and program participants. They assess opportunities and risks, identify gaps that need improvement, and provide recommendations based on data, not assumptions.'
+        },
+        {
+          title: '2. Technical Decision Maker',
+          desc: 'When processes are running, obstacles are often encountered. Expert Advisors ensure that every technical or administrative issue has a fast, precise, and secure solution. This task includes: Participant eligibility validation, Document review, Transaction evaluation, and Operational step determination.'
+        },
+        {
+          title: '3. Educate Program Participants',
+          desc: 'This role also includes providing guidance and education to participants so they: Understand regulations and procedures, Can execute tasks according to standards, Avoid errors that could cause losses, and Know the benefits and risks at each stage. The consultant acts as a communication bridge between the system and all partners.'
+        },
+        {
+          title: '4. Maintain Regulatory Compliance',
+          desc: 'Expert Advisors are tasked with ensuring that all activities align with applicable rules, from company standards and internal guidelines to government regulations such as: Transaction compliance, Security procedures, and Anti-System Abuse Mechanisms. This ensures the entire process runs legally, cleanly, and securely.'
+        },
+        {
+          title: '5. Formulate Development Strategies',
+          desc: 'Beyond operations, expert advisors are involved in long-term strategies: Designing programs, Structuring benefit systems, Analyzing trends, Developing innovations, and Improving models to be more relevant to market dynamics. This position is not just about oversight, but also building growth.'
+        },
+        {
+          title: '6. Coordinate Teams and Participants',
+          desc: 'In many agendas, expert advisors are responsible for managing: Task flow, Information distribution, Communication between participants, and Daily achievement monitoring. With strong coordination, the quality of execution becomes more directed and professional.'
+        },
+        {
+          title: '7. Maintain Service Quality',
+          desc: 'Expert advisors ensure that every participant involved experiences a comfortable, clear, and transparent journey while following the business process. This task includes: Providing personal guidance, Answering questions, Helping resolve issues, and Serving as an official information center.'
+        },
+        {
+          title: '8. Compile Reports and Evaluations',
+          desc: 'In the final stage, expert advisors compile reports summarizing the entire process: Achievement results, Performance analysis, Obstacle evaluation, Improvement recommendations, and Future opportunity predictions. This report becomes the basis for the company in making subsequent strategic decisions.'
+        }
+      ],
+      conclusion: 'Conclusion: An Expert Advisor is not just an advisor, but an architect who helps form the operational foundation, ensuring every step goes in the right direction, and keeping participants within a safe and professional corridor. This role is a combination of analysis, education, strategy, and leadership—a position that holds a vital role in the stability and progress of the entire system.'
     },
     collectionsPage: {
       title: 'SEASONAL COLLECTIONS',

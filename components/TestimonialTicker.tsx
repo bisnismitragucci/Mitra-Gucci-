@@ -47,11 +47,6 @@ const TestimonialTicker: React.FC<TestimonialTickerProps> = ({ t }) => {
             {/* Content */}
             <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
               
-              {/* Earnings Badge */}
-              <div className="absolute top-8 right-8 bg-[#c5a059] text-black px-3 py-1 text-[9px] font-bold tracking-widest uppercase shadow-lg z-20">
-                {t.testimonials.earningLabel}: {item.earnings}
-              </div>
-
               <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                 <Quote className="w-8 h-8 text-[#c5a059] mb-4 opacity-80" />
                 

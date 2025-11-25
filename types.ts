@@ -1,5 +1,6 @@
+
 export type Language = 'id' | 'en';
-export type PageView = 'home' | 'legality' | 'worldOfGucci' | 'collections' | 'businessAccount' | 'affiliateProgram';
+export type PageView = 'home' | 'legality' | 'worldOfGucci' | 'collections' | 'businessAccount' | 'affiliateProgram' | 'expertAdvisor' | 'contemporaryStyle';
 
 export interface Translations {
   nav: {
@@ -36,12 +37,10 @@ export interface Translations {
   };
   testimonials: {
     title: string;
-    earningLabel: string;
     items: {
       name: string;
       role: string;
       quote: string;
-      earnings: string;
       image: string;
     }[];
   };
@@ -79,6 +78,26 @@ export interface Translations {
     subtitle: string;
     intro: string;
     points: {
+      title: string;
+      desc: string;
+    }[];
+    conclusion: string;
+  };
+  contemporaryStylePage: {
+    title: string;
+    subtitle: string;
+    intro: string;
+    sections: {
+      title: string;
+      content: string;
+    }[];
+    conclusion: string;
+  };
+  expertAdvisorPage: {
+    title: string;
+    subtitle: string;
+    intro: string;
+    duties: {
       title: string;
       desc: string;
     }[];
