@@ -155,10 +155,10 @@ const LegalityPage: React.FC<LegalityPageProps> = ({ t, onBack }) => {
                 {doc.signerTitle}
               </p>
               
-              {/* Realistic QR Code Image */}
+              {/* Realistic QR Code Image - DATA CENSORED IN QR URL */}
               <div className="w-20 h-20 md:w-28 md:h-28 mx-auto mb-3 flex items-center justify-center border border-gray-200 bg-white p-1">
                  <img 
-                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=NIB:1217000132315;PT.GRAHA_CITRA_PRIMA-GUCCI;STATUS:VERIFIED" 
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=NIB:1217XXXXXXXXX;PT.GRAHA_CITRA_PRIMA-GUCCI;STATUS:VERIFIED" 
                     alt="QR Validation" 
                     className="w-full h-full object-contain mix-blend-multiply"
                  />

@@ -18,7 +18,7 @@ export const DICTIONARY: Dictionary = {
     hero: {
       subtitle: 'PROGRAM KEMITRAAN EKSKLUSIF',
       title: 'GUCCI MITRA BISNIS AFFILIATE',
-      description: 'Bergabunglah dengan visi artistik kami. Sebuah undangan untuk para PESERTA dan bisnis visioner untuk mendefinisikan kembali kemewahan kontemporer.',
+      description: 'Bergabunglah dengan visi artistik kami. Sebuah undangan untuk para peserta dan bisnis visioner untuk mendefinisikan kembali kemewahan kontemporer.',
       websiteLink: 'DAFTAR MENJADI MITRA'
     },
     stats: {
@@ -319,7 +319,8 @@ export const DICTIONARY: Dictionary = {
       header1: 'PEMERINTAH REPUBLIK INDONESIA',
       header2: 'PERIZINAN BERUSAHA BERBASIS RISIKO',
       nibLabel: 'NOMOR INDUK BERUSAHA (NIB)',
-      nibNumber: '1 2 1 7 0 0 0 1 3 2 3 1 5',
+      // CENSOR SENSITIVE DATA
+      nibNumber: '1 2 1 7 X X X X X X X X X', 
       intro: 'Berdasarkan Undang-Undang Nomor 11 Tahun 2020 tentang Cipta Kerja, Pemerintah Republik Indonesia menerbitkan Nomor Induk Berusaha (NIB) kepada:',
       labels: {
         name: '1. Nama Pelaku Usaha',
@@ -332,7 +333,8 @@ export const DICTIONARY: Dictionary = {
       values: {
         name: 'PT. GRAHA CITRA PRIMA - GUCCI',
         address: 'Menara Mandiri II, Jl. Jend. Sudirman Kav. 54-55, Senayan, Kebayoran Baru, Jakarta Selatan, DKI Jakarta 12190',
-        npwp: '88.291.405.1-012.000',
+        // CENSOR SENSITIVE DATA
+        npwp: '88.291.XXX.1-XXX.000',
         capital: 'PMDN (Penanaman Modal Dalam Negeri)',
         kbli: '47919 - Perdagangan Eceran Melalui Media',
         status: 'TERVERIFIKASI & AKTIF',
@@ -410,7 +412,7 @@ export const DICTIONARY: Dictionary = {
     hero: {
       subtitle: 'EXCLUSIVE PARTNERSHIP PROGRAM',
       title: 'GUCCI BUSINESS AFFILIATE',
-      description: 'Join our artistic vision. An invitation for PARTICIPANTS and visionary businesses to redefine contemporary luxury.',
+      description: 'Join our artistic vision. An invitation for participants and visionary businesses to redefine contemporary luxury.',
       websiteLink: 'BECOME A PARTNER'
     },
     stats: {
@@ -591,7 +593,7 @@ export const DICTIONARY: Dictionary = {
         },
         {
           title: '7. Company Profits Do Not Depend on Participant Payments',
-          desc: 'This is important. The company gains profits from various aspects, such as branding value, increased global traffic, international collaborations, market analytical data, consumer expansion, and new product campaigns. So even though participants get benefits, GUCCI still gets far greater strategic advantages.'
+          desc: 'This is important. The company gains profits from various aspects, such branding value, increased global traffic, international collaborations, market analytical data, consumer expansion, and new product campaigns. So even though participants get benefits, GUCCI still gets far greater strategic advantages.'
         }
       ],
       conclusion: 'Conclusion: Why Does GUCCI Not Lose Money? Because all benefits given to participants do not come from "company losses", but from allocated marketing budgets, business value from partner activities, and structured agendas. With a well-designed system, GUCCI actually gains greater profits—while participants receive benefits and income opportunities without incurring large costs.'
@@ -711,7 +713,8 @@ export const DICTIONARY: Dictionary = {
       header1: 'GOVERNMENT OF THE REPUBLIC OF INDONESIA',
       header2: 'RISK-BASED BUSINESS LICENSING',
       nibLabel: 'BUSINESS IDENTIFICATION NUMBER (NIB)',
-      nibNumber: '1 2 1 7 0 0 0 1 3 2 3 1 5',
+      // CENSOR SENSITIVE DATA
+      nibNumber: '1 2 1 7 X X X X X X X X X',
       intro: 'Based on Law Number 11 of 2020 concerning Job Creation, the Government of the Republic of Indonesia issues a Business Identification Number (NIB) to:',
       labels: {
         name: '1. Business Name',
@@ -724,7 +727,8 @@ export const DICTIONARY: Dictionary = {
       values: {
         name: 'PT. GRAHA CITRA PRIMA - GUCCI',
         address: 'Menara Mandiri II, Jl. Jend. Sudirman Kav. 54-55, Senayan, Kebayoran Baru, South Jakarta, DKI Jakarta 12190',
-        npwp: '88.291.405.1-012.000',
+        // CENSOR SENSITIVE DATA
+        npwp: '88.291.XXX.1-XXX.000',
         capital: 'PMDN (Domestic Investment)',
         kbli: '47919 - Retail Trade via Media',
         status: 'VERIFIED & ACTIVE',
