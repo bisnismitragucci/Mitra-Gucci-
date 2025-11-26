@@ -9,20 +9,26 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ t }) => {
   const waLink = "https://wa.me/6285381914493?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+  
+  // URL Video Baru
+  const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/bfb943ac-a9bb-4202-8d1c-fa7d10e9c3c6/cec6f69d-1edf-4a79-b3b9-150a2114c5a3/main.mp4?fastly_token=NjkyNmE4YjhfMDdkYzY5YjEzNjE3ZTEyNmJhMWNlOTJhMWEzOWZiZTU1ZDljZTMzZTYxZWFiOWIyMDBlMDkxMDEyMDA3ODM1N18vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS9iZmI5NDNhYy1hOWJiLTQyMDItOGQxYy1mYTdkMTBlOWMzYzYvY2VjNmY2OWQtMWVkZi00YTc5LWIzYjktMTUwYTIxMTRjNWEzL21haW4ubXA0";
+  
+  // Fallback Image (Toko Gucci) jika video loading/gagal
+  const fallbackImage = "https://i.pinimg.com/1200x/09/9c/09/099c090c3650a179bf1bb40a53db20c9.jpg";
 
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
       {/* High Fashion / Warm Tone Video Background */}
       <video 
+        key={videoUrl} // Force re-render if URL changes
         autoPlay 
         loop 
         muted 
         playsInline 
-        className="w-full h-full object-cover opacity-90 scale-105"
-      >
-        <source src="https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/df6c33dd-3053-4b11-a5ce-a30101d2de5c/03a49d28-3a6a-4bca-bb30-1d405bf54bc0/main.mp4?fastly_token=NjkyNjgxMTdfZjQ0OTI1YmQyNjIyMWY3ZGMwN2ZkNDVkOGVlNzM5ZGFiYjgzYzg4OTdlMzkxYzE3NmFhOTg5MmFjYjljNWVhNl8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS9kZjZjMzNkZC0zMDUzLTRiMTEtYTVjZS1hMzAxMDFkMmRlNWMvMDNhNDlkMjgtM2E2YS00YmNhLWJiMzAtMWQ0MDViZjU0YmMwL21haW4ubXA0" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        poster={fallbackImage} 
+        className="absolute inset-0 w-full h-full object-cover opacity-90 scale-105 transition-opacity duration-1000 ease-in-out"
+        src={videoUrl}
+      />
       
       {/* Center Content - No White Box, Just Text for Editorial Look */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
@@ -44,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         </a>
       </div>
 
-      {/* Subtle Gradient */}
+      {/* Subtle Gradient Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
     </div>
   );
