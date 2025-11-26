@@ -1,3 +1,61 @@
-// The following line is commented out to resolve the "Cannot find type definition file for 'vite/client'" error
-// when the vite package types are not available in the environment.
-// /// <reference types="vite/client" />
+
+declare module '*.png' {
+  const src: string
+  export default src
+}
+
+declare module '*.jpg' {
+  const src: string
+  export default src
+}
+
+declare module '*.jpeg' {
+  const src: string
+  export default src
+}
+
+declare module '*.gif' {
+  const src: string
+  export default src
+}
+
+declare module '*.svg' {
+  import * as React from 'react'
+  export const ReactComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>
+  const src: string
+  export default src
+}
+
+declare module '*.ico' {
+  const src: string
+  export default src
+}
+
+declare module '*.webp' {
+  const src: string
+  export default src
+}
+
+declare module '*.avif' {
+  const src: string
+  export default src
+}
+
+declare module '*.module.css' {
+  const classes: { readonly [key: string]: string }
+  export default classes
+}
+
+declare module '*.module.scss' {
+  const classes: { readonly [key: string]: string }
+  export default classes
+}
+
+interface ImportMetaEnv {
+  readonly VITE_APP_TITLE: string
+  [key: string]: string | boolean | undefined
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}

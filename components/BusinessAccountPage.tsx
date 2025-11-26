@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Smartphone, Lock, Eye, EyeOff, Smartphone as MobileIcon } from 'lucide-react';
+import { ArrowLeft, Smartphone, Lock, Eye, EyeOff } from 'lucide-react';
 import { Translations } from '../types';
 
 interface BusinessAccountPageProps {
@@ -53,7 +53,7 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
                   {/* Phone Input */}
                   <div className="relative flex items-center bg-black border border-gray-600 rounded-md overflow-hidden h-12">
                       <div className="w-10 h-full flex items-center justify-center text-white border-r border-gray-600">
-                          <MobileIcon size={18} />
+                          <Smartphone size={18} />
                       </div>
                       <div className="h-full flex items-center justify-center px-3 bg-[#2a2a2a] text-white text-sm font-semibold border-r border-gray-600">
                         +62
@@ -117,7 +117,7 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
             </div>
         </div>
 
-        {/* Right Side: Explanation Text (Kept as requested in previous prompt) */}
+        {/* Right Side: Explanation Text */}
         <div className="w-full lg:w-1/2 text-left">
            <div className="border-l-2 border-[#c5a059] pl-8">
               <p className="text-[10px] font-bold tracking-[0.25em] uppercase text-[#c5a059] mb-4">
