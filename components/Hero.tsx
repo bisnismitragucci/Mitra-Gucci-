@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   
   // URL Video (Versi yang diminta)
-  const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/df6c33dd-3053-4b11-a5ce-a30101d2de5c/03a49d28-3a6a-4bca-bb30-1d405bf54bc0/main.mp4?fastly_token=NjkyNmFlMjNfOTJmNzBjZmFlODBjMzM1ZTQwZjYxZWNlMDY0YjE0Nzc5ZjI2ZGU0NjBjMGQ4ZDdkMTVmZGI2MjJkNjM5ZjZkMl8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS9kZjZjMzNkZC0zMDUzLTRiMTEtYTVjZS1hMzAxMDFkMmRlNWMvMDNhNDlkMjgtM2E2YS00YmNhLWJiMzAtMWQ0MDViZjU0YmMwL21haW4ubXA0";
+  const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/71f1d2ac-bcc9-4210-bd04-9f2c9c856224/33cb203f-4057-4143-ba70-dfadc0ca402a/main.mp4?fastly_token=NjkyNmRhNThfM2M4NjZlOWU5YTU2OWJkMGQyMWRjYzA3ODA1YTJkMDdjYzg1MTg4YmI1NjlhMzExZmRmZGQ0NTQ5ZTBlZjJkMl8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS83MWYxZDJhYy1iY2M5LTQyMTAtYmQwNC05ZjJjOWM4NTYyMjQvMzNjYjIwM2YtNDA1Ny00MTQzLWJhNzAtZGZhZGMwY2E0MDJhL21haW4ubXA0";
   
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
