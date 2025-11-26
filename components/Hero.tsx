@@ -7,7 +7,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ t }) => {
-  const waLink = "https://wa.me/6282310653328?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+  const waLink = "https://wa.me/6282234293361?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
 
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
