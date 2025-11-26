@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Smartphone, Lock, Eye, EyeOff, Smartphone as MobileIcon, User } from 'lucide-react';
+import { ArrowLeft, Smartphone, Lock, Eye, EyeOff, Smartphone as MobileIcon } from 'lucide-react';
 import { Translations } from '../types';
 
 interface BusinessAccountPageProps {
