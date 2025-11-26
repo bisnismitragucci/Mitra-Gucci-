@@ -151,17 +151,41 @@ const LegalityPage: React.FC<LegalityPageProps> = ({ t, onBack }) => {
           <div className="flex flex-col items-center md:items-end mt-8 md:mt-16 pr-0 md:pr-4">
             <div className="text-center w-full md:w-72">
               <p className="text-xs md:text-sm text-gray-800 mb-1">{doc.datePlace}</p>
-              <p className="text-xs md:text-sm font-bold mb-4 md:mb-6 whitespace-pre-line text-black leading-tight">
+              <p className="text-xs md:text-sm font-bold mb-2 md:mb-2 whitespace-pre-line text-black leading-tight">
                 {doc.signerTitle}
               </p>
               
-              {/* Realistic QR Code Image - DATA CENSORED IN QR URL */}
-              <div className="w-20 h-20 md:w-28 md:h-28 mx-auto mb-3 flex items-center justify-center border border-gray-200 bg-white p-1">
-                 <img 
-                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=NIB:1217XXXXXXXXX;PT.GRAHA_CITRA_PRIMA-GUCCI;STATUS:VERIFIED" 
-                    alt="QR Validation" 
-                    className="w-full h-full object-contain mix-blend-multiply"
-                 />
+              {/* Digital Signature SVG - Custom Drawn for perfect transparency */}
+              <div className="w-48 h-28 mx-auto flex items-center justify-center relative -my-4">
+                 <svg 
+                    viewBox="0 0 300 150" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-full h-full"
+                 >
+                    {/* Artistic Signature Path mimicking 'Bahlil' style */}
+                    <path 
+                      d="M40,100 C30,70 60,30 80,40 C90,45 70,80 60,90 C50,100 40,110 70,100 C90,93 120,60 140,60 C160,60 150,90 170,80 C190,70 210,50 230,60" 
+                      stroke="#000000" 
+                      strokeWidth="3" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                      style={{ filter: 'drop-shadow(1px 1px 1px rgba(0,0,0,0.1))' }}
+                    />
+                    <path 
+                      d="M20,110 C50,105 100,100 250,100" 
+                      stroke="#000000" 
+                      strokeWidth="2" 
+                      strokeLinecap="round"
+                      opacity="0.8"
+                    />
+                    <path 
+                      d="M140,60 C145,50 155,40 160,50" 
+                      stroke="#000000" 
+                      strokeWidth="3" 
+                      strokeLinecap="round"
+                    />
+                 </svg>
               </div>
               
               <div className="text-[9px] md:text-[10px] text-gray-500 mb-2 md:mb-4 font-medium">Ditandatangani secara elektronik</div>
