@@ -8,7 +8,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ t }) => {
-  const waLink = "https://wa.me/6285381914493?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+  const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   
   // URL Video Baru
   const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/71f1d2ac-bcc9-4210-bd04-9f2c9c856224/33cb203f-4057-4143-ba70-dfadc0ca402a/main.mp4?fastly_token=NjkyNmFlMjNfZWE0Y2ZmOGVmNmUyMzI4MWEyZmZlYjNmMmVkZWIyYTU1NjBjNDc2ZWU4MzA1OGZjNmNlY2NkYzE1YmRlYjQ2Nl8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS83MWYxZDJhYy1iY2M5LTQyMTAtYmQwNC05ZjJjOWM4NTYyMjQvMzNjYjIwM2YtNDA1Ny00MTQzLWJhNzAtZGZhZGMwY2E0MDJhL21haW4ubXA0";
