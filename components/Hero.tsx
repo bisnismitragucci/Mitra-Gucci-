@@ -13,9 +13,6 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
   // URL Video Baru
   const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/bfb943ac-a9bb-4202-8d1c-fa7d10e9c3c6/cec6f69d-1edf-4a79-b3b9-150a2114c5a3/main.mp4?fastly_token=NjkyNmE4YjhfMDdkYzY5YjEzNjE3ZTEyNmJhMWNlOTJhMWEzOWZiZTU1ZDljZTMzZTYxZWFiOWIyMDBlMDkxMDEyMDA3ODM1N18vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS9iZmI5NDNhYy1hOWJiLTQyMDItOGQxYy1mYTdkMTBlOWMzYzYvY2VjNmY2OWQtMWVkZi00YTc5LWIzYjktMTUwYTIxMTRjNWEzL21haW4ubXA0";
   
-  // Fallback Image (Toko Gucci) jika video loading/gagal
-  const fallbackImage = "https://i.pinimg.com/1200x/09/9c/09/099c090c3650a179bf1bb40a53db20c9.jpg";
-
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
       {/* High Fashion / Warm Tone Video Background */}
@@ -25,7 +22,6 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         loop 
         muted 
         playsInline 
-        poster={fallbackImage} 
         className="absolute inset-0 w-full h-full object-cover opacity-90 scale-105 transition-opacity duration-1000 ease-in-out"
         src={videoUrl}
       />
