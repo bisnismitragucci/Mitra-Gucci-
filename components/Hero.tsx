@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Translations } from '../types';
@@ -11,12 +12,17 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
 
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
-      {/* High Fashion / Warm Tone Image */}
-      <img 
-        src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=2073&auto=format&fit=crop" 
-        alt="Gucci Campaign Aesthetic" 
+      {/* High Fashion / Warm Tone Video Background */}
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
         className="w-full h-full object-cover opacity-90 scale-105"
-      />
+      >
+        <source src="https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/df6c33dd-3053-4b11-a5ce-a30101d2de5c/03a49d28-3a6a-4bca-bb30-1d405bf54bc0/main.mp4?fastly_token=NjkyNjgxMTdfZjQ0OTI1YmQyNjIyMWY3ZGMwN2ZkNDVkOGVlNzM5ZGFiYjgzYzg4OTdlMzkxYzE3NmFhOTg5MmFjYjljNWVhNl8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS9kZjZjMzNkZC0zMDUzLTRiMTEtYTVjZS1hMzAxMDFkMmRlNWMvMDNhNDlkMjgtM2E2YS00YmNhLWJiMzAtMWQ0MDViZjU0YmMwL21haW4ubXA0" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       
       {/* Center Content - No White Box, Just Text for Editorial Look */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
