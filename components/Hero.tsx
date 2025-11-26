@@ -11,8 +11,11 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
   const waLink = "https://wa.me/6285381914493?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   
   // URL Video Baru
-  const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/bfb943ac-a9bb-4202-8d1c-fa7d10e9c3c6/cec6f69d-1edf-4a79-b3b9-150a2114c5a3/main.mp4?fastly_token=NjkyNmE4YjhfMDdkYzY5YjEzNjE3ZTEyNmJhMWNlOTJhMWEzOWZiZTU1ZDljZTMzZTYxZWFiOWIyMDBlMDkxMDEyMDA3ODM1N18vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS9iZmI5NDNhYy1hOWJiLTQyMDItOGQxYy1mYTdkMTBlOWMzYzYvY2VjNmY2OWQtMWVkZi00YTc5LWIzYjktMTUwYTIxMTRjNWEzL21haW4ubXA0";
+  const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/71f1d2ac-bcc9-4210-bd04-9f2c9c856224/33cb203f-4057-4143-ba70-dfadc0ca402a/main.mp4?fastly_token=NjkyNmFlMjNfZWE0Y2ZmOGVmNmUyMzI4MWEyZmZlYjNmMmVkZWIyYTU1NjBjNDc2ZWU4MzA1OGZjNmNlY2NkYzE1YmRlYjQ2Nl8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS83MWYxZDJhYy1iY2M5LTQyMTAtYmQwNC05ZjJjOWM4NTYyMjQvMzNjYjIwM2YtNDA1Ny00MTQzLWJhNzAtZGZhZGMwY2E0MDJhL21haW4ubXA0";
   
+  // Gambar Fallback (Ditampilkan saat video loading atau jika error)
+  const fallbackImage = "https://i.pinimg.com/1200x/09/9c/09/099c090c3650a179bf1bb40a53db20c9.jpg";
+
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
       {/* High Fashion / Warm Tone Video Background */}
@@ -22,11 +25,12 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         loop 
         muted 
         playsInline 
+        poster={fallbackImage} // Prevents black screen
         className="absolute inset-0 w-full h-full object-cover opacity-90 scale-105 transition-opacity duration-1000 ease-in-out"
         src={videoUrl}
       />
       
-      {/* Center Content - No White Box, Just Text for Editorial Look */}
+      {/* Center Content - Clean Editorial Look */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
         <h5 className="text-white text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-4 shadow-black drop-shadow-md">
            {t.hero.subtitle}
@@ -46,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         </a>
       </div>
 
-      {/* Subtle Gradient Overlay for better text readability */}
+      {/* Gradient Overlay for Text Readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
     </div>
   );
