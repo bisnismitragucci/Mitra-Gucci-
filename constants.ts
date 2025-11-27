@@ -336,6 +336,13 @@ export const DICTIONARY: Dictionary = {
       heroCta: "JELAJAHI",
       mainHeadline: "DIGITAL PRINT VERTICAL BOX",
       mainDesc: "Dengan lima desain unik, masing-masing tersedia dalam sepuluh pilihan warna terbaik & dilengkapi box putih vertical yang simpel dan elegan.",
+      narrative: {
+        subtitle: "KETIKA WARISAN ITALIA BERTEMU KEANGGUNAN NUSANTARA",
+        title: "HARMONI DUA DUNIA",
+        p1: "Kolaborasi ini menandai tonggak sejarah baru dalam dunia fashion, di mana kemewahan maksimalis dan keberanian artistik Gucci berpadu harmonis dengan estetika santun dan kelembutan Umama Scarf. Ini adalah pertemuan antara tradisi artisan Italia yang legendaris dengan nilai-nilai modest fashion yang modern.",
+        p2: "Setiap helai scarf dalam koleksi ini menceritakan kisah penyatuan budaya. Motif ikonik Flora dan GG monogram ditafsirkan ulang dengan sentuhan warna-warna tanah yang hangat dan material premium voile yang ringan namun mewah. Menciptakan aksesori yang tidak hanya indah dipandang, namun juga sarat akan makna dan kenyamanan.",
+        p3: "Lebih dari sekadar produk, GUCCI x UMAMA adalah sebuah pernyataan bahwa modest fashion telah memiliki tempat terhormat di panggung kemewahan global. Ini adalah perayaan bagi wanita modern yang ingin tampil berkelas tanpa meninggalkan jati dirinya."
+      },
       boxFeature: {
         title: "KEMASAN EKSKLUSIF",
         desc: "Dilengkapi dengan box putih vertikal yang simpel dan elegan, merepresentasikan standar kualitas Gucci yang tak lekang oleh waktu."
@@ -698,6 +705,13 @@ export const DICTIONARY: Dictionary = {
       heroCta: "EXPLORE",
       mainHeadline: "DIGITAL PRINT VERTICAL BOX",
       mainDesc: "Featuring five unique designs, each available in ten of the best color choices & equipped with a simple and elegant white vertical box.",
+      narrative: {
+        subtitle: "WHEN ITALIAN HERITAGE MEETS INDONESIAN ELEGANCE",
+        title: "A HARMONY OF TWO WORLDS",
+        p1: "This collaboration marks a new milestone in the fashion world, where Gucci's maximalist luxury and artistic boldness blend harmoniously with the modest aesthetics and softness of Umama Scarf. It is a meeting between legendary Italian artisan traditions and modern modest fashion values.",
+        p2: "Every strand of scarf in this collection tells a story of cultural unification. Iconic Flora motifs and GG monograms are reinterpreted with warm earth tones and premium voile material that is light yet luxurious. Creating accessories that are not only beautiful to behold, but also full of meaning and comfort.",
+        p3: "More than just a product, GUCCI x UMAMA is a statement that modest fashion has a prestigious place on the global luxury stage. It is a celebration for modern women who want to look classy without leaving their identity behind."
+      },
       boxFeature: {
         title: "EXCLUSIVE PACKAGING",
         desc: "Equipped with a simple and elegant white vertical box, representing the timeless Gucci quality standard."

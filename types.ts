@@ -148,6 +148,13 @@ export interface Translations {
     heroCta: string;
     mainHeadline: string;
     mainDesc: string;
+    narrative: {
+      subtitle: string;
+      title: string;
+      p1: string;
+      p2: string;
+      p3: string;
+    };
     boxFeature: {
       title: string;
       desc: string;

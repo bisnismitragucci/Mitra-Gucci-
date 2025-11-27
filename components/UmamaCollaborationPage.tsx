@@ -64,8 +64,26 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
          </div>
       </div>
 
-      {/* 3. Detailed Features Grid */}
-      <div className="py-24 px-6 md:px-12 bg-white">
+      {/* 3. NEW: Editorial Narrative Section */}
+      <div className="py-24 px-6 md:px-12 bg-white text-center">
+        <div className="max-w-4xl mx-auto">
+            <span className="text-[#b91c1c] text-[10px] font-bold tracking-[0.3em] uppercase mb-6 block">
+              {content.narrative.subtitle}
+            </span>
+            <h2 className="font-serif text-3xl md:text-5xl font-medium mb-10 text-black leading-tight">
+              {content.narrative.title}
+            </h2>
+            <div className="space-y-6 text-gray-600 text-sm md:text-lg leading-relaxed font-serif max-w-3xl mx-auto">
+                <p>{content.narrative.p1}</p>
+                <p>{content.narrative.p2}</p>
+                <p className="font-bold text-black pt-4">{content.narrative.p3}</p>
+            </div>
+            <div className="w-24 h-[1px] bg-[#b91c1c] mx-auto mt-12"></div>
+        </div>
+      </div>
+
+      {/* 4. Detailed Features Grid */}
+      <div className="pb-24 px-6 md:px-12 bg-white">
         <div className="max-w-[1920px] mx-auto">
           
           {/* Modified: Only Images as requested ("Teks nya hilangkan saja") */}
