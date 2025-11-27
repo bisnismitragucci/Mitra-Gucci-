@@ -10,20 +10,15 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ t }) => {
   const waLink = "https://wa.me/6281385616100?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   
-  // URL Video (Versi yang diminta)
-  const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/15f754d2-c039-4d97-a401-82d1b378e7f4/ac5a26d0-7ad1-44d5-ad3d-7fcb5d22c912/main.mp4?fastly_token=NjkyNzBiZGFfYjI5MDVlZWFlMzBlZDcwN2RmMmM2ZTJhYzMyMjJjYWM4ZTkyYWY3Mjc3MTdiYmZhYmNhZDNlMzI5OGQ5ODc3OF8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS8xNWY3NTRkMi1jMDM5LTRkOTctYTQwMS04MmQxYjM3OGU3ZjQvYWM1YTI2ZDAtN2FkMS00NGQ1LWFkM2QtN2ZjYjVkMjJjOTEyL21haW4ubXA0";
-  
+  // URL Gambar Background Baru
+  const bgImage = "https://i.pinimg.com/1200x/a7/aa/07/a7aa07ceb345373550f004b449bb831d.jpg";
+
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
-      {/* High Fashion / Warm Tone Video Background */}
-      <video 
-        key={videoUrl} // Force re-render if URL changes
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        className="absolute inset-0 w-full h-full object-cover opacity-90 scale-105 transition-opacity duration-1000 ease-in-out"
-        src={videoUrl}
+      {/* Background Image with Zoom Effect */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-[3s] ease-out hover:scale-105"
+        style={{ backgroundImage: `url(${bgImage})` }}
       />
       
       {/* Center Content - Clean Editorial Look */}
