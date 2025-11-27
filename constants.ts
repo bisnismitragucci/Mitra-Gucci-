@@ -150,6 +150,8 @@ export const DICTIONARY: Dictionary = {
         title: 'MENGAPA ANDA MEMBUTUHKAN AKUN BISNIS?',
         subtitle: 'TRANSFORMASI DARI PESERTA MENJADI MITRA STRATEGIS',
         description: 'Akun Bisnis Gucci Affiliate bukan sekadar akses login, melainkan pusat komando untuk karir Anda di ekosistem Gucci. Ini adalah alat profesional yang dirancang untuk memisahkan hobi dari bisnis yang serius.',
+        activationTitle: 'LANGKAH AWAL KEMITRAAN',
+        activationDesc: 'Untuk menjadi mitra resmi, Anda hanya perlu mendaftar Akun Bisnis. Mulai agenda bisnis pertama Anda dengan biaya aktivasi hanya Rp 100.000. Setelah bergabung, Anda langsung berhak mendapatkan benefit eksklusif dan keuntungan dari program ini.',
         features: [
           {
             title: 'DASHBOARD PENDAPATAN REAL-TIME',
@@ -510,6 +512,8 @@ export const DICTIONARY: Dictionary = {
         title: 'WHY DO YOU NEED A BUSINESS ACCOUNT?',
         subtitle: 'TRANSFORMATION FROM PARTICIPANT TO STRATEGIC PARTNER',
         description: 'The Gucci Affiliate Business Account is not just a login access, but the command center for your career in the Gucci ecosystem. It is a professional tool designed to separate hobbies from serious business.',
+        activationTitle: 'PARTNERSHIP INITIATION',
+        activationDesc: 'To become an official partner, simply register a Business Account. Start your first business agenda with an activation fee of only IDR 100,000. Once joined, you are immediately entitled to exclusive benefits and profits from this program.',
         features: [
           {
             title: 'REAL-TIME EARNINGS DASHBOARD',

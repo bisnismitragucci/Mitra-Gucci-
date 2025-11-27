@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Smartphone, Lock, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, Smartphone, Lock, Eye, EyeOff, Sparkles } from 'lucide-react';
 import { Translations } from '../types';
 
 interface BusinessAccountPageProps {
@@ -126,6 +126,20 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
               <h2 className="font-serif text-3xl md:text-5xl font-bold leading-tight mb-8">
                  {content.info.title}
               </h2>
+              
+              {/* NEW ACTIVATION INFO BOX */}
+              <div className="mb-10 p-6 border border-[#c5a059] bg-[#c5a059]/5 rounded-sm relative">
+                <div className="absolute top-0 right-0 p-4 opacity-20">
+                   <Sparkles className="w-8 h-8 text-[#c5a059]" />
+                </div>
+                <h3 className="text-[#c5a059] font-bold tracking-widest text-sm uppercase mb-3 flex items-center gap-2">
+                   {content.info.activationTitle}
+                </h3>
+                <p className="text-gray-300 text-sm md:text-base leading-relaxed font-medium">
+                   {content.info.activationDesc}
+                </p>
+              </div>
+
               <p className="text-gray-400 leading-relaxed text-lg mb-10">
                  {content.info.description}
               </p>
