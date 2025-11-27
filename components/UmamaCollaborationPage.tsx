@@ -115,7 +115,7 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
              <div className="max-w-2xl w-full">
                  <div className="aspect-square bg-white p-8 shadow-xl mx-auto">
                       <img 
-                        src="https://www.umamascarves.co.id/wp-content/uploads/2024/04/limited-stock-51-300x300.jpg" 
+                        src="https://www.umamascarves.co.id/wp-content/uploads/2024/04/cover-summer-08-300x300.jpg" 
                         alt="Swarovski Detail" 
                         className="w-full h-full object-cover"
                       />

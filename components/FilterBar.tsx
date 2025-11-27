@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Star, ShieldCheck, Users, ArrowRight } from 'lucide-react';
 import { Language, Translations } from '../types';
 
@@ -9,6 +10,36 @@ interface FilterBarProps {
 }
 
 const FilterBar: React.FC<FilterBarProps> = ({ lang, t, onViewLegality }) => {
+  const [followerDisplay, setFollowerDisplay] = useState(t.stats.followersValue);
+
+  useEffect(() => {
+    // Configuration for auto-updating follower count
+    // Base count established on May 22, 2024
+    const ANCHOR_DATE = new Date('2024-05-22').getTime();
+    const BASE_COUNT = 654000;
+    const DAILY_INCREMENT = 3000;
+
+    const updateFollowers = () => {
+      const now = Date.now();
+      const diffTime = now - ANCHOR_DATE;
+      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+      
+      // Calculate total: Base + (Days Passed * 3000)
+      // Math.max(0, diffDays) ensures we don't subtract if system date is wrong/old
+      const currentTotal = BASE_COUNT + (Math.max(0, diffDays) * DAILY_INCREMENT);
+      
+      // Format logic
+      if (currentTotal >= 1000000) {
+        setFollowerDisplay((currentTotal / 1000000).toFixed(1) + 'M+');
+      } else {
+        setFollowerDisplay(Math.floor(currentTotal / 1000) + 'K+');
+      }
+    };
+
+    updateFollowers();
+    // Optional: Update interval could be added if the app stays open for days, 
+    // but calculating on mount is sufficient for this requirement.
+  }, []);
   
   return (
     <div className="w-full bg-white pt-24 pb-24 px-6 md:px-12 flex flex-col items-center justify-center fade-in">
@@ -34,8 +65,8 @@ const FilterBar: React.FC<FilterBarProps> = ({ lang, t, onViewLegality }) => {
             <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-4">
               {t.stats.followersLabel}
             </h4>
-            <div className="text-3xl md:text-4xl font-serif text-black mb-2">
-              {t.stats.followersValue}
+            <div className="text-3xl md:text-4xl font-serif text-black mb-2 transition-all duration-500">
+              {followerDisplay}
             </div>
             <p className="text-xs text-gray-500 font-medium tracking-wide">
               {t.stats.followersDesc}
@@ -46,7 +77,7 @@ const FilterBar: React.FC<FilterBarProps> = ({ lang, t, onViewLegality }) => {
           <div className="flex flex-col items-center text-center px-4 md:border-r border-gray-100">
             <div className="flex gap-1 mb-6">
                {[1, 2, 3, 4, 5].map((star) => (
-                 <Star key={star} className="w-5 h-5 fill-black text-black" />
+                 <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400 drop-shadow-md" />
                ))}
             </div>
             <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-4">
@@ -62,7 +93,7 @@ const FilterBar: React.FC<FilterBarProps> = ({ lang, t, onViewLegality }) => {
 
           {/* Column 3: Legality - Clickable Feature */}
           <div className="flex flex-col items-center text-center px-4">
-            <ShieldCheck className="w-8 h-8 text-black mb-6 opacity-80" strokeWidth={1} />
+            <ShieldCheck className="w-8 h-8 text-green-600 mb-6 drop-shadow-sm" strokeWidth={1.5} />
             <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-4">
               {t.stats.legalityLabel}
             </h4>
