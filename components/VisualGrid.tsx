@@ -20,7 +20,7 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
     },
     {
       // Main Highlight: Gucci x Umama (Sorotan Utama)
-      src: "https://i.pinimg.com/736x/f6/c1/9d/f6c19d45e9985390919575e7a915570d.jpg", 
+      src: "https://www.umamascarves.co.id/wp-content/uploads/2024/04/id-11134207-7r98p-lovyat593yxa9f.jpg", 
       title: t.grid.innovation, // "GUCCI x UMAMA"
       isCenter: true,
       position: "object-center",
