@@ -93,14 +93,25 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
                 </div>
              </div>
 
-             {/* Visual Image */}
-             <div className="order-1 md:order-2 relative h-[400px] md:h-[600px] overflow-hidden bg-gray-100">
-                <img 
-                  src="https://www.umamascarves.co.id/wp-content/uploads/2024/04/IMG-20231214-WA0008.jpg" 
-                  alt="Umama Box Vertical" 
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+             {/* Visual Images - Updated to include the new product shot */}
+             <div className="order-1 md:order-2 grid grid-rows-2 gap-4 h-[600px] md:h-[800px]">
+                {/* Image 1: Box Stack */}
+                <div className="relative overflow-hidden bg-gray-100 rounded-sm w-full h-full">
+                    <img 
+                      src="https://www.umamascarves.co.id/wp-content/uploads/2024/04/IMG-20231214-WA0008.jpg" 
+                      alt="Umama Box Vertical Stack" 
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                </div>
+                {/* Image 2: Product Detail */}
+                <div className="relative overflow-hidden bg-gray-100 rounded-sm w-full h-full">
+                    <img 
+                      src="https://www.umamascarves.co.id/wp-content/uploads/2025/04/ginee_20241120091038258_2951882380-1.jpeg" 
+                      alt="Umama Scarf Detail" 
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
+                    />
+                </div>
              </div>
           </div>
 
@@ -113,7 +124,7 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
                 <div className="w-full md:w-1/2 relative">
                    <div className="aspect-square bg-white p-8 shadow-xl rotate-3 transition-transform hover:rotate-0 duration-500">
                       <img 
-                        src="https://i.pinimg.com/736x/21/2b/96/212b96cc28782a20b080b06b0d91d09e.jpg" 
+                        src="https://www.umamascarves.co.id/wp-content/uploads/2024/04/limited-stock-51-300x300.jpg" 
                         alt="Swarovski Detail" 
                         className="w-full h-full object-cover"
                       />
