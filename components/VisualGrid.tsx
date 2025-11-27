@@ -51,11 +51,11 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
           onClick={() => handleItemClick(item.link)}
           className={`relative group overflow-hidden h-[70vh] md:h-full border-r border-white/10 last:border-r-0 bg-[#f0f0f0] ${item.link ? 'cursor-pointer' : 'cursor-default'}`}
         >
-          {/* Image Tag for better precision control */}
+          {/* Image Tag for better precision control - Removed scale animation */}
           <img 
             src={item.src}
             alt={item.title}
-            className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105 ${item.position} ${item.isCenter ? 'grayscale-0' : 'grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100'}`}
+            className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out ${item.position} ${item.isCenter ? 'grayscale-0' : 'grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100'}`}
           />
           
           {/* Overlay - Darker on center initially for text readability, lighter on sides */}

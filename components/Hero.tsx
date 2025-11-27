@@ -15,9 +15,9 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
 
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
-      {/* Background Image with Zoom Effect */}
+      {/* Background Image with Zoom Effect Removed */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-[3s] ease-out hover:scale-105"
+        className="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-[3s] ease-out"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
       

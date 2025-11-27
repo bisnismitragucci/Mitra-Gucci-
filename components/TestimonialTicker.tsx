@@ -35,9 +35,9 @@ const TestimonialTicker: React.FC<TestimonialTickerProps> = ({ t }) => {
             key={index} 
             className="w-[300px] md:w-[400px] h-[500px] mx-4 relative group flex-shrink-0 cursor-pointer overflow-hidden border border-white/10 block"
           >
-            {/* Background Image */}
+            {/* Background Image - Scale effect removed */}
             <div 
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700"
               style={{ backgroundImage: `url(${item.image})` }}
             />
             

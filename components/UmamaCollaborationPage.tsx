@@ -33,7 +33,7 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
             <img 
               src={bannerUrl} 
               alt="Gucci x Umama Banner" 
-              className="w-full h-auto object-cover transform transition-transform duration-[2s] ease-out group-hover:scale-105"
+              className="w-full h-auto object-cover transition-transform duration-[2s] ease-out"
             />
          </div>
          
@@ -75,7 +75,7 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
                   <img 
                     src="https://www.umamascarves.co.id/wp-content/uploads/2024/04/IMG-20231214-WA0008.jpg" 
                     alt="Umama Box Vertical Stack" 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
+                    className="w-full h-full object-cover transition-transform duration-1000"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
               </div>
@@ -84,7 +84,7 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
                   <img 
                     src="https://www.umamascarves.co.id/wp-content/uploads/2025/04/ginee_20241120091038258_2951882380-1.jpeg" 
                     alt="Umama Scarf Detail" 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
+                    className="w-full h-full object-cover transition-transform duration-1000"
                   />
               </div>
           </div>

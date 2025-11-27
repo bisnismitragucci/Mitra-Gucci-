@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Translations } from '../types';
@@ -42,10 +43,11 @@ const CollectionsPage: React.FC<CollectionsPageProps> = ({ t, onBack }) => {
                 
                 {/* Image Container */}
                 <div className="aspect-[3/4] overflow-hidden bg-gray-100 relative">
+                   {/* Removed scale on hover */}
                    <img 
                       src={item.image} 
                       alt={item.title} 
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-[1.5s] ease-out"
+                      className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out"
                    />
                    
                    {/* Overlay CTA on Hover */}
