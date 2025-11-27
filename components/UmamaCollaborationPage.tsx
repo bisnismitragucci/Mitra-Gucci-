@@ -11,7 +11,7 @@ interface UmamaCollaborationPageProps {
 const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBack }) => {
   const content = t.umamaCollab;
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20tertarik%20dengan%20koleksi%20Gucci%20x%20Umama";
-  const bannerUrl = "https://www.umamascarves.co.id/wp-content/uploads/2024/07/banner-umamascarves-new-2-1024x375.jpg";
+  const bannerUrl = "https://www.umamascarves.co.id/wp-content/uploads/2024/07/ummama-rev-3.png";
 
   return (
     <div className="min-h-screen bg-white text-black fade-in font-sans selection:bg-[#b91c1c] selection:text-white">
