@@ -35,32 +35,6 @@ export const DICTIONARY: Dictionary = {
       legalityDesc: 'Dioperasikan oleh PT. Graha Citra Prima - GUCCI. Entitas bisnis terdaftar yang mematuhi regulasi perdagangan internasional dan hukum yang berlaku.',
       viewLegality: 'LIHAT DETAIL LEGALITAS',
     },
-    collaboration: {
-      subtitle: 'MEMBANGUN KOLABORASI ASIA',
-      title: 'GUCCI x UMAMA SCARVES',
-      description: 'Sebuah langkah monumental dalam sejarah mode. Gucci menjalin aliansi strategis dengan Umama Scarves untuk mendefinisikan ulang kemewahan dalam balutan modest fashion. Sinergi ini menggabungkan warisan kerajinan Italia dengan estetika budaya Asia yang dinamis, menciptakan simbol baru keanggunan global.',
-      cta: 'JELAJAHI KOLABORASI'
-    },
-    umamaProducts: {
-      title: 'PRODUK UMAMA SCARVES',
-      items: [
-        {
-          title: 'Jacquard Voile',
-          description: 'Jacquard Voile dibuat dengan pola timbul, menambah keanggunan pada pakaian Anda. Setiap pembelian akan disertakan dengan box yang sesuai dengan warna hijab.',
-          image: 'https://i.pinimg.com/736x/b2/a6/8e/b2a68e89289a3f022b73f22762024104.jpg'
-        },
-        {
-          title: 'Digital Scarf',
-          description: 'Digital scarf premium mengacu pada koleksi hijab kelas atas yang dapat memberikan warna-warna cerah dan detail yang tepat, menghasilkan pola yang menarik.',
-          image: 'https://i.pinimg.com/736x/c7/85/9e/c7859e5d370042d0c30b90a063589109.jpg'
-        },
-        {
-          title: 'Paris Original Posh Syar’i',
-          description: 'Pilihan hijab syar’i untuk mengekspresikan gaya pribadi Anda dengan tetap mengikuti pedoman berpakaian yang sopan.',
-          image: 'https://i.pinimg.com/736x/6d/29/50/6d2950f7d8640f6593740781d790f435.jpg'
-        }
-      ]
-    },
     testimonials: {
       title: 'SUARA DARI KOMUNITAS',
       items: [
@@ -191,6 +165,102 @@ export const DICTIONARY: Dictionary = {
         ]
       }
     },
+    collectionsPage: {
+      title: 'KOLEKSI EKSKLUSIF',
+      subtitle: 'TEMUKAN KEINDAHAN',
+      items: [
+        {
+          image: 'https://i.pinimg.com/736x/1b/33/eb/1b33eb6bd6be948bd06f5f7e128b2b75.jpg',
+          title: 'Gucci Ancora',
+          description: 'Ekspresi kebebasan melalui siluet klasik yang didefinisikan ulang untuk era modern.',
+          cta: 'LIHAT KOLEKSI'
+        },
+        {
+          image: 'https://i.pinimg.com/736x/8f/75/70/8f757050f65da6fc065d12a0f8c1b06d.jpg',
+          title: 'Valigeria',
+          description: 'Warisan perjalanan yang dihidupkan kembali dengan sentuhan kontemporer.',
+          cta: 'LIHAT KOLEKSI'
+        },
+        {
+          image: 'https://i.pinimg.com/736x/e2/eb/fb/e2ebfb79c21cf0ca9ca64d94950cc7d2.jpg',
+          title: 'Gucci Horsebit',
+          description: 'Ikon abadi yang terus berevolusi, merayakan keanggunan detail.',
+          cta: 'LIHAT KOLEKSI'
+        }
+      ]
+    },
+    affiliateProgramPage: {
+      title: 'SISTEM YANG DI GUNAKAN',
+      subtitle: 'PELUANG KEMITRAAN',
+      intro: 'Bergabunglah dengan ekosistem bisnis eksklusif yang dirancang untuk memaksimalkan potensi Anda melalui kolaborasi strategis dengan brand mewah dunia.',
+      points: [
+        {
+          title: 'STRUKTUR KOMISI PROGRESIF',
+          desc: 'Dapatkan penghasilan yang terus meningkat seiring dengan performa penjualan dan pengembangan jaringan Anda.'
+        },
+        {
+          title: 'DUKUNGAN PEMASARAN GLOBAL',
+          desc: 'Akses penuh ke materi promosi kelas dunia, strategi digital, dan panduan branding langsung dari kantor pusat.'
+        },
+        {
+          title: 'JARINGAN EKSKLUSIF',
+          desc: 'Terhubung dengan para profesional dan influencer terkemuka dalam komunitas Gucci Affiliate.'
+        },
+        {
+          title: 'PELATIHAN & PENGEMBANGAN',
+          desc: 'Program edukasi berkelanjutan mengenai tren fashion, strategi bisnis, dan personal branding.'
+        }
+      ],
+      conclusion: 'Jadilah bagian dari revolusi ritel mewah. Sukses Anda adalah prioritas kami.'
+    },
+    contemporaryStylePage: {
+      title: 'GAYA KONTEMPORER',
+      subtitle: 'INOVASI & ESTETIKA',
+      intro: 'Gucci terus memimpin arah mode global dengan memadukan warisan artisan Italia dan visi futuristik yang berani.',
+      sections: [
+        {
+          title: 'EKLEKTIK & MODERN',
+          content: 'Penggabungan motif tak terduga dengan potongan klasik menciptakan bahasa visual baru yang unik dan personal.'
+        },
+        {
+          title: 'FLUIDITAS GENDER',
+          content: 'Mendobrak batasan tradisional dengan koleksi yang merayakan kebebasan berekspresi tanpa sekat.'
+        },
+        {
+          title: 'SUSTAINABLE LUXURY',
+          content: 'Komitmen terhadap material ramah lingkungan dan proses produksi yang etis tanpa mengorbankan kualitas.'
+        },
+        {
+          title: 'DIGITAL CRAFTSMANSHIP',
+          content: 'Memanfaatkan teknologi untuk menciptakan pengalaman mode yang imersif dan interaktif.'
+        }
+      ],
+      conclusion: 'Gaya bukan hanya tentang apa yang Anda kenakan, tetapi bagaimana Anda menceritakan kisah Anda kepada dunia.'
+    },
+    expertAdvisorPage: {
+      title: 'KONSULTAN AHLI',
+      subtitle: 'BIMBINGAN PROFESIONAL',
+      intro: 'Peran Expert Advisor adalah jembatan vital antara brand dan komunitas, memastikan setiap langkah bisnis Anda terarah dan efektif.',
+      duties: [
+        {
+          title: 'ANALISIS PASAR',
+          desc: 'Memantau tren global dan lokal untuk memberikan rekomendasi produk yang tepat sasaran.'
+        },
+        {
+          title: 'STRATEGI PENJUALAN',
+          desc: 'Merancang pendekatan personal untuk memaksimalkan konversi dan kepuasan pelanggan.'
+        },
+        {
+          title: 'MENTORING PERSONAL',
+          desc: 'Memberikan bimbingan one-on-one untuk membantu Anda mengatasi tantangan dan mencapai target.'
+        },
+        {
+          title: 'MANAJEMEN RELASI',
+          desc: 'Membangun hubungan jangka panjang yang kuat dengan klien dan mitra bisnis.'
+        }
+      ],
+      conclusion: 'Dengan didampingi oleh para ahli, perjalanan bisnis Anda akan lebih terukur, efisien, dan menguntungkan.'
+    },
     legalityDoc: {
       header1: 'PEMERINTAH REPUBLIK INDONESIA',
       header2: 'PERIZINAN BERUSAHA BERBASIS RISIKO',
@@ -303,32 +373,6 @@ export const DICTIONARY: Dictionary = {
       legalityDesc: 'Operated by PT. Graha Citra Prima - GUCCI. A registered business entity complying with international trade regulations and applicable laws.',
       viewLegality: 'VIEW LEGALITY DETAILS',
     },
-    collaboration: {
-      subtitle: 'BUILDING ASIAN COLLABORATION',
-      title: 'GUCCI x UMAMA SCARVES',
-      description: 'A monumental step in fashion history. Gucci forms a strategic alliance with Umama Scarves to redefine luxury in modest fashion. This synergy blends Italian craftsmanship heritage with dynamic Asian cultural aesthetics, creating a new symbol of global elegance.',
-      cta: 'EXPLORE COLLABORATION'
-    },
-    umamaProducts: {
-      title: 'UMAMA SCARVES PRODUCTS',
-      items: [
-        {
-          title: 'Jacquard Voile',
-          description: 'Jacquard Voile is made with embossed patterns, adding elegance to your attire. Every purchase comes with a box matching the hijab color.',
-          image: 'https://i.pinimg.com/736x/b2/a6/8e/b2a68e89289a3f022b73f22762024104.jpg'
-        },
-        {
-          title: 'Digital Scarf',
-          description: 'High-end hijab collection providing bright colors and precise details, resulting in eye-catching patterns.',
-          image: 'https://i.pinimg.com/736x/c7/85/9e/c7859e5d370042d0c30b90a063589109.jpg'
-        },
-        {
-          title: 'Paris Original Posh Syar’i',
-          description: 'A Syar’i hijab choice to express your personal style while adhering to modest dress guidelines.',
-          image: 'https://i.pinimg.com/736x/6d/29/50/6d2950f7d8640f6593740781d790f435.jpg'
-        }
-      ]
-    },
     testimonials: {
       title: 'VOICES OF THE COMMUNITY',
       items: [
@@ -430,156 +474,6 @@ export const DICTIONARY: Dictionary = {
         }
       ]
     },
-    contemporaryStylePage: {
-      title: 'MODERN BUSINESS STRATEGY',
-      subtitle: 'WIN-WIN ECOSYSTEM LOGIC',
-      intro: 'In the modern business world, GUCCI presents an affiliate ecosystem designed with a new way of thinking—more adaptive, more inclusive, and truly relevant to today\'s digital dynamics. This system allows every partner to earn income and benefits without having to question whether the company will suffer a loss.',
-      sections: [
-        {
-          title: '1. Collaboration as New Currency',
-          content: 'In the contemporary era, interaction and collaboration are assets far more valuable than traditional advertising strategies. GUCCI shifts a portion of its promotional budget into the affiliate system, so partners receive direct benefits as part of their contribution. Instead of paying huge ads on billboards or magazines, GUCCI chooses to pay people who are truly engaged, active, and making a real impact. Elegant and smart—just like its brand DNA.'
-        },
-        {
-          title: '2. Partner Activity = Digital Value Add',
-          content: 'In a modern ecosystem, every click, interaction, engagement, and participation has economic value. When partners carry out tasks or agendas, that activity increases brand exposure, digital footprint, market relevance, and product appeal. In other words, GUCCI gains strong marketing value, while participants receive compensation in the form of benefits and rewards. It\'s a win-win situation.'
-        },
-        {
-          title: '3. Flexible System Benefiting Both Sides',
-          content: 'One of the main foundations of a contemporary system is flexibility. GUCCI understands that not everyone enters with the same capabilities. So the agenda structure is made gradual: there are entry-level packages, there are also advanced packages. Partners can start from the lightest, then develop according to ability. Meanwhile, the company maintains financial stability from the calculated agenda turnover.'
-        },
-        {
-          title: '4. Benefits Are Not Expenses, But Strategic Investments',
-          content: 'Benefits given to participants are not costs that just disappear. In a modern business perspective, benefits are strategic investments—investments to expand the community, strengthen loyalty, increase brand presence, and open long-term relationships. Major world companies do this strategy, and GUCCI applies it with a distinctive touch: exclusive, premium, and efficient.'
-        },
-        {
-          title: '5. Major Value Lies in Long-Term Digital Footprint',
-          content: 'Global brands like GUCCI do not just calculate short-term profits. More important is long-term value: stability of brand identity, community strength, and the ability to create new culture in the digital space. Each participant becomes part of a larger narrative that expands GUCCI\'s influence online and offline. This is what makes the company not harmed—but rather stronger.'
-        },
-        {
-          title: '6. Contemporary Systems Rely on Data, Not Speculation',
-          content: 'Calculations in the affiliate program are based on real data: participation rates, transaction scales, participant performance patterns, and most effective activity routes. With a data-driven approach, GUCCI can keep the ecosystem stable while ensuring benefits given do not disrupt the company\'s financial structure.'
-        }
-      ],
-      conclusion: 'Conclusion (In Contemporary Tone): The GUCCI affiliate program is not just a reward system—it is part of a modern business strategy that prioritizes collaboration and creativity. Participants get the opportunity to grow and earn, while GUCCI strengthens its global digital ecosystem. No party is harmed. What exists is a new space: a space to grow, create, and gain value together.'
-    },
-    affiliateProgramPage: {
-      title: 'WHY THE GUCCI SYSTEM IS PROFITABLE',
-      subtitle: 'BUSINESS MECHANISM & ECOSYSTEM',
-      intro: 'The GUCCI affiliate program is designed using a modern business strategy based on a marketing ecosystem, where the company, partners, and digital systems provide value to each other. Here is an explanation of why this model runs profitably for both participants and the company:',
-      points: [
-        {
-          title: '1. System Based on Modern Marketing Distribution',
-          desc: 'GUCCI allocates a portion of its promotion and marketing budget to the affiliate program. Instead of paying huge advertising costs through traditional media, the company prefers to distribute profits directly to partners who actively run the agenda. Meaning: The company does not lose money — they only shift the ad budget into rewards for partners.'
-        },
-        {
-          title: '2. Partner Activities Provide Business Value',
-          desc: 'Every task, agenda, or interaction performed by participants contributes to increased digital traffic, brand engagement enhancement, strengthening company image, and opening new market opportunities. This value is far more effective than standard advertising methods. Thus, the reward given to partners is a form of compensation for the business value created.'
-        },
-        {
-          title: '3. Benefit System Using Layered Schemes',
-          desc: 'GUCCI implements a tiered agenda structure that allows participants to enter with small capital or even for free (via vouchers), yet the company still has revenue streams from validation processes, paid agendas, or other internal activities. Thus, the benefits received by participants come from internal GUCCI allocations that have been calculated so as not to cause losses.'
-        },
-        {
-          title: '4. Not All Participants Take High Packages',
-          desc: 'In global affiliate program statistics, only a portion of partners take large packages or premium agendas. The company calculates that the profit margin from active participants can cover the reward costs for new participants. This is a structure commonly used in modern digital industries — similar to cashback systems, reward apps, and loyalty programs.'
-        },
-        {
-          title: '5. Strengthening Brand Ecosystem Provides Long-Term Value',
-          desc: 'GUCCI views the affiliate program not just as a cost, but as a long-term investment to expand the brand network, strengthen the community, build loyalty, and open new collaboration doors. This long-term value is far greater than the rewards distributed to participants.'
-        },
-        {
-          title: '6. Security and Validation Systems Regulate Capital Flow',
-          desc: 'The company maintains data validation, user filtering, agenda management, and transaction flow control. In this way, all activities run stably, measurably, and remain profitable without uncontrolled financial risks.'
-        },
-        {
-          title: '7. Company Profits Do Not Depend on Participant Payments',
-          desc: 'This is important. The company gains profits from various aspects, such branding value, increased global traffic, international collaborations, market analytical data, consumer expansion, and new product campaigns. So even though participants get benefits, GUCCI still gets far greater strategic advantages.'
-        }
-      ],
-      conclusion: 'Conclusion: Why Does GUCCI Not Lose Money? Because all benefits given to participants do not come from "company losses", but from allocated marketing budgets, business value from partner activities, and structured agendas. With a well-designed system, GUCCI actually gains greater profits—while participants receive benefits and income opportunities without incurring large costs.'
-    },
-    expertAdvisorPage: {
-      title: 'EXPERT ADVISOR DUTIES',
-      subtitle: 'ARCHITECT OF GUCCI ECOSYSTEM SUCCESS',
-      intro: 'An Expert Advisor plays a key role in ensuring that all business processes, operations, and strategies run effectively, measurably, and are results-oriented. In the context of partnerships, program development, or business ecosystems like the GUCCI Partnership, this position serves as a central guide helping both the company and participants stay on the right track.',
-      duties: [
-        {
-          title: '1. Provide Professional Analysis',
-          desc: 'Expert Advisors are responsible for conducting in-depth analysis of the needs of the company and program participants. They assess opportunities and risks, identify gaps that need improvement, and provide recommendations based on data, not assumptions.'
-        },
-        {
-          title: '2. Technical Decision Maker',
-          desc: 'When processes are running, obstacles are often encountered. Expert Advisors ensure that every technical or administrative issue has a fast, precise, and secure solution. This task includes: Participant eligibility validation, Document review, Transaction evaluation, and Operational step determination.'
-        },
-        {
-          title: '3. Educate Program Participants',
-          desc: 'This role also includes providing guidance and education to participants so they: Understand regulations and procedures, Can execute tasks according to standards, Avoid errors that could cause losses, and Know the benefits and risks at each stage. The consultant acts as a communication bridge between the system and all partners.'
-        },
-        {
-          title: '4. Maintain Regulatory Compliance',
-          desc: 'Expert Advisors are tasked with ensuring that all activities align with applicable rules, from company standards and internal guidelines to government regulations such as: Transaction compliance, Security procedures, and Anti-System Abuse Mechanisms. This ensures the entire process runs legally, cleanly, and securely.'
-        },
-        {
-          title: '5. Formulate Development Strategies',
-          desc: 'Beyond operations, expert advisors are involved in long-term strategies: Designing programs, Structuring benefit systems, Analyzing trends, Developing innovations, and Improving models to be more relevant to market dynamics. This position is not just about oversight, but also building growth.'
-        },
-        {
-          title: '6. Coordinate Teams and Participants',
-          desc: 'In many agendas, expert advisors are responsible for managing: Task flow, Information distribution, Communication between participants, and Daily achievement monitoring. With strong coordination, the quality of execution becomes more directed and professional.'
-        },
-        {
-          title: '7. Maintain Service Quality',
-          desc: 'Expert advisors ensure that every participant involved experiences a comfortable, clear, and transparent journey while following the business process. This task includes: Providing personal guidance, Answering questions, Helping resolve issues, and Serving as an official information center.'
-        },
-        {
-          title: '8. Compile Reports and Evaluations',
-          desc: 'In the final stage, expert advisors compile reports summarizing the entire process: Achievement results, Performance analysis, Obstacle evaluation, Improvement recommendations, and Future opportunity predictions. This report becomes the basis for the company in making subsequent strategic decisions.'
-        }
-      ],
-      conclusion: 'Conclusion: An Expert Advisor is not just an advisor, but an architect who helps form the operational foundation, ensuring every step goes in the right direction, and keeping participants within a safe and professional corridor. This role is a combination of analysis, education, strategy, and leadership—a position that holds a vital role in the stability and progress of the entire system.'
-    },
-    collectionsPage: {
-      title: 'SEASONAL COLLECTIONS',
-      subtitle: 'DISCOVER LUXURY IN EVERY DETAIL',
-      items: [
-         {
-          image: 'https://images.ctfassets.net/brzb6u29244a/7sdms9peH2MtRWaqHVjwh6/1a80a2fe051c9173ccb8f55b5929f837/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'THE HOLIDAY EDIT',
-          description: 'Elegant in signature red, a symbol of timeless celebration and seasonal warmth.',
-          cta: 'PROMOTE THIS'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/3MsAt1X0mxAquP1SpfVbF0/d67223cf65ab518590a485d06b5e8308/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-10-1073_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'ICONIC BLACK',
-          description: 'Classic luxury with bold gold accents. Perfect for a style statement.',
-          cta: 'PROMOTE THIS'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/547nzjykuXxvm1IZnPdQVA/fdac09150bfed8ad3a4c7d8ef59f9f77/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-03-0320-E_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'METALLIC SHINE',
-          description: 'Futuristic style statement for an unforgettable night. Shine in every step.',
-          cta: 'PROMOTE THIS'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/2HxsgeZ2slUz6aIkWXux5e/a5688d2f28c0646c56df7d1579f3ccca/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-22-2112_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'HERITAGE STEPS',
-          description: 'A blend of comfort and legendary archival design. Shoes that tell a story.',
-          cta: 'PROMOTE THIS'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/3emmmS72uGIdZTHqqmGvEb/45c3cae7d419659d5088479b9a31add4/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-20-0725-B_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'SCENT OF ALLURE',
-          description: 'The essence of elegance in every spray. A fragrance that leaves a luxurious trail.',
-          cta: 'PROMOTE THIS'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/fFFK1pBjONMTnA8gNCv69/41dbf1fb662e94e96050f6eafa9ea5e7/HeroCategory-Mobile_Gucci-HORSEBIT-JWL-OCT25-2025-06-12-15-05-21-B-R8-S4-V03_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'HORSEBIT SHINE',
-          description: 'Archival design reimagined in gleaming gold. A symbol of timeless elegance.',
-          cta: 'PROMOTE THIS'
-        }
-      ]
-    },
     businessAccountPage: {
       form: {
         title: 'Guccio Gucci S.p.A',
@@ -608,6 +502,102 @@ export const DICTIONARY: Dictionary = {
           }
         ]
       }
+    },
+    collectionsPage: {
+      title: 'EXCLUSIVE COLLECTIONS',
+      subtitle: 'DISCOVER BEAUTY',
+      items: [
+        {
+          image: 'https://i.pinimg.com/736x/1b/33/eb/1b33eb6bd6be948bd06f5f7e128b2b75.jpg',
+          title: 'Gucci Ancora',
+          description: 'An expression of freedom through classic silhouettes redefined for the modern era.',
+          cta: 'VIEW COLLECTION'
+        },
+        {
+          image: 'https://i.pinimg.com/736x/8f/75/70/8f757050f65da6fc065d12a0f8c1b06d.jpg',
+          title: 'Valigeria',
+          description: 'A heritage of travel revived with a contemporary touch.',
+          cta: 'VIEW COLLECTION'
+        },
+        {
+          image: 'https://i.pinimg.com/736x/e2/eb/fb/e2ebfb79c21cf0ca9ca64d94950cc7d2.jpg',
+          title: 'Gucci Horsebit',
+          description: 'A timeless icon that continues to evolve, celebrating the elegance of detail.',
+          cta: 'VIEW COLLECTION'
+        }
+      ]
+    },
+    affiliateProgramPage: {
+      title: 'SYSTEM USED',
+      subtitle: 'PARTNERSHIP OPPORTUNITIES',
+      intro: 'Join an exclusive business ecosystem designed to maximize your potential through strategic collaboration with a world-class luxury brand.',
+      points: [
+        {
+          title: 'PROGRESSIVE COMMISSION STRUCTURE',
+          desc: 'Earn income that continues to grow along with your sales performance and network development.'
+        },
+        {
+          title: 'GLOBAL MARKETING SUPPORT',
+          desc: 'Full access to world-class promotional materials, digital strategies, and branding guidelines directly from headquarters.'
+        },
+        {
+          title: 'EXCLUSIVE NETWORK',
+          desc: 'Connect with leading professionals and influencers within the Gucci Affiliate community.'
+        },
+        {
+          title: 'TRAINING & DEVELOPMENT',
+          desc: 'Continuous education programs on fashion trends, business strategies, and personal branding.'
+        }
+      ],
+      conclusion: 'Be part of the luxury retail revolution. Your success is our priority.'
+    },
+    contemporaryStylePage: {
+      title: 'CONTEMPORARY STYLE',
+      subtitle: 'INNOVATION & AESTHETICS',
+      intro: 'Gucci continues to lead global fashion direction by blending Italian artisan heritage with bold futuristic vision.',
+      sections: [
+        {
+          title: 'ECLECTIC & MODERN',
+          content: 'The fusion of unexpected motifs with classic cuts creates a new visual language that is unique and personal.'
+        },
+        {
+          title: 'GENDER FLUIDITY',
+          content: 'Breaking traditional boundaries with collections that celebrate freedom of expression without barriers.'
+        },
+        {
+          title: 'SUSTAINABLE LUXURY',
+          content: 'Commitment to eco-friendly materials and ethical production processes without compromising quality.'
+        },
+        {
+          title: 'DIGITAL CRAFTSMANSHIP',
+          content: 'Utilizing technology to create immersive and interactive fashion experiences.'
+        }
+      ],
+      conclusion: 'Style is not just about what you wear, but how you tell your story to the world.'
+    },
+    expertAdvisorPage: {
+      title: 'EXPERT ADVISOR',
+      subtitle: 'PROFESSIONAL GUIDANCE',
+      intro: 'The role of the Expert Advisor is a vital bridge between the brand and the community, ensuring every step of your business is directed and effective.',
+      duties: [
+        {
+          title: 'MARKET ANALYSIS',
+          desc: 'Monitoring global and local trends to provide targeted product recommendations.'
+        },
+        {
+          title: 'SALES STRATEGY',
+          desc: 'Designing personal approaches to maximize conversion and customer satisfaction.'
+        },
+        {
+          title: 'PERSONAL MENTORING',
+          desc: 'Providing one-on-one guidance to help you overcome challenges and achieve targets.'
+        },
+        {
+          title: 'RELATIONSHIP MANAGEMENT',
+          desc: 'Building strong long-term relationships with clients and business partners.'
+        }
+      ],
+      conclusion: 'Accompanied by experts, your business journey will be more measurable, efficient, and profitable.'
     },
     legalityDoc: {
       header1: 'GOVERNMENT OF THE REPUBLIC OF INDONESIA',

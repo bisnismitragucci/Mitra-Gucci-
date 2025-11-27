@@ -35,20 +35,6 @@ export interface Translations {
     legalityDesc: string;
     viewLegality: string;
   };
-  collaboration: {
-    subtitle: string;
-    title: string;
-    description: string;
-    cta: string;
-  };
-  umamaProducts: {
-    title: string;
-    items: {
-      title: string;
-      description: string;
-      image: string;
-    }[];
-  };
   testimonials: {
     title: string;
     items: {
