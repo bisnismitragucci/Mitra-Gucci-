@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Language, Translations, PageView } from '../types';
@@ -69,6 +70,9 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
             <button onClick={() => handleNavClick('collections')} className="hover:text-gray-400 transition-colors">
               {t.nav.partners}
             </button>
+            <button onClick={() => handleNavClick('umamaCollab')} className="hover:text-[#c5a059] transition-colors text-[#c5a059]">
+              {t.nav.collab}
+            </button>
             <button onClick={() => handleNavClick('businessAccount')} className="hover:text-gray-400 transition-colors">
               {t.nav.academy}
             </button>
@@ -79,6 +83,9 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
           <div className="lg:hidden bg-black border-t border-gray-800 py-8 px-6 flex flex-col space-y-6 text-xs tracking-widest uppercase">
             <button onClick={() => handleNavClick('worldOfGucci')} className="text-left block hover:text-gray-400">
               {t.nav.people}
+            </button>
+            <button onClick={() => handleNavClick('umamaCollab')} className="text-left block hover:text-[#c5a059] text-[#c5a059] font-bold">
+              {t.nav.collab}
             </button>
             <button onClick={() => handleNavClick('collections')} className="text-left block hover:text-gray-400">
               {t.nav.partners}

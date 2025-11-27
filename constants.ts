@@ -7,7 +7,8 @@ export const DICTIONARY: Dictionary = {
       people: 'DUNIA GUCCI',
       partners: 'KOLEKSI',
       academy: 'AKUN BISNIS',
-      opportunities: 'SISTEM YANG DI GUNAKAN',
+      opportunities: 'SISTEM',
+      collab: 'GUCCI x UMAMA',
       login: 'MASUK',
       backToHome: 'KEMBALI KE BERANDA',
     },
@@ -327,9 +328,30 @@ export const DICTIONARY: Dictionary = {
       ],
       conclusion: "Dunia GUCCI adalah perpaduan antara warisan sejarah yang kaya, kreativitas tanpa batas, nilai estetika yang kuat, inovasi teknologi, dan komitmen pada kualitas serta keberlanjutan. Itulah yang membuat GUCCI bukan hanya brand fashion, tetapi simbol global dari seni, kemewahan, identitas, dan gaya hidup modern."
     },
+    umamaCollab: {
+      heroTitle: "GUCCI x UMAMA",
+      heroSubtitle: "KOLABORASI EKSKLUSIF",
+      heroCta: "JELAJAHI",
+      mainHeadline: "DIGITAL PRINT VERTICAL BOX",
+      mainDesc: "Dengan lima desain unik, masing-masing tersedia dalam sepuluh pilihan warna terbaik & dilengkapi box putih vertical yang simpel dan elegan.",
+      boxFeature: {
+        title: "KEMASAN EKSKLUSIF",
+        desc: "Dilengkapi dengan box putih vertikal yang simpel dan elegan, merepresentasikan standar kualitas Gucci yang tak lekang oleh waktu."
+      },
+      swarovski: {
+        title: "DETAIL SWAROVSKI ICON",
+        desc: "Setiap scarf diperindah dengan logo UM crystal Swarovski asli, memberikan kilauan subtle yang memancarkan kelas dan eksklusivitas."
+      },
+      details: {
+        material: "Premium Voile",
+        size: "115 x 115 cm",
+        packaging: "Vertical Hard Box"
+      },
+      shopNow: "SHOP NOW"
+    },
     grid: {
       craftsmanship: 'KONSULTAN AHLI',
-      innovation: 'GAYA KONTEMPORER',
+      innovation: 'GUCCI x UMAMA',
       sustainability: 'KOLEKSI EKSKLUSIF',
       readMore: 'JELAJAHI',
     },
@@ -345,7 +367,8 @@ export const DICTIONARY: Dictionary = {
       people: 'WORLD OF GUCCI',
       partners: 'COLLECTIONS',
       academy: 'BUSINESS ACCOUNT',
-      opportunities: 'SYSTEM USED',
+      opportunities: 'SYSTEM',
+      collab: 'GUCCI x UMAMA',
       login: 'SIGN IN',
       backToHome: 'BACK TO HOME',
     },
@@ -665,9 +688,30 @@ export const DICTIONARY: Dictionary = {
       ],
       conclusion: "The World of GUCCI is a blend of rich historical heritage, boundless creativity, strong aesthetic value, technological innovation, and a commitment to quality and sustainability. That is what makes GUCCI not just a fashion brand, but a global symbol of art, luxury, identity, and modern lifestyle."
     },
+    umamaCollab: {
+      heroTitle: "GUCCI x UMAMA",
+      heroSubtitle: "EXCLUSIVE COLLABORATION",
+      heroCta: "EXPLORE",
+      mainHeadline: "DIGITAL PRINT VERTICAL BOX",
+      mainDesc: "Featuring five unique designs, each available in ten of the best color choices & equipped with a simple and elegant white vertical box.",
+      boxFeature: {
+        title: "EXCLUSIVE PACKAGING",
+        desc: "Equipped with a simple and elegant white vertical box, representing the timeless Gucci quality standard."
+      },
+      swarovski: {
+        title: "SWAROVSKI ICON DETAIL",
+        desc: "Each scarf is embellished with genuine Swarovski crystals with the UM logo, providing a subtle sparkle that radiates class and exclusivity."
+      },
+      details: {
+        material: "Premium Voile",
+        size: "115 x 115 cm",
+        packaging: "Vertical Hard Box"
+      },
+      shopNow: "SHOP NOW"
+    },
     grid: {
       craftsmanship: 'EXPERT ADVISOR',
-      innovation: 'CONTEMPORARY STYLE',
+      innovation: 'GUCCI x UMAMA',
       sustainability: 'EXCLUSIVE COLLECTION',
       readMore: 'EXPLORE',
     },

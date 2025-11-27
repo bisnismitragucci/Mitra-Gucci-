@@ -11,7 +11,7 @@ interface VisualGridProps {
 const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
   const images = [
     {
-      // Advisor Image (Vertical Portrait) - Needs alignment to top
+      // Advisor Image (Vertical Portrait)
       src: "https://i.pinimg.com/736x/e2/eb/fb/e2ebfb79c21cf0ca9ca64d94950cc7d2.jpg", 
       title: t.grid.craftsmanship,
       isCenter: false,
@@ -19,15 +19,15 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
       link: 'expertAdvisor' as PageView
     },
     {
-      // Contemporary Style (Crowd/Landscape) - Center is fine
-      src: "https://i.pinimg.com/1200x/8f/75/70/8f757050f65da6fc065d12a0f8c1b06d.jpg", 
-      title: t.grid.innovation,
+      // Main Highlight: Gucci x Umama (Sorotan Utama)
+      src: "https://i.pinimg.com/736x/f6/c1/9d/f6c19d45e9985390919575e7a915570d.jpg", 
+      title: t.grid.innovation, // "GUCCI x UMAMA"
       isCenter: true,
       position: "object-center",
-      link: 'contemporaryStyle' as PageView
+      link: 'umamaCollab' as PageView
     },
     {
-      // Exclusive Collection (Man Standing) - Needs alignment to top
+      // Exclusive Collection
       src: "https://i.pinimg.com/1200x/1b/33/eb/1b33eb6bd6be948bd06f5f7e128b2b75.jpg", 
       title: t.grid.sustainability,
       isCenter: false,
@@ -59,12 +59,12 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
           />
           
           {/* Overlay - Darker on center initially for text readability, lighter on sides */}
-          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-500" />
+          <div className={`absolute inset-0 transition-colors duration-500 ${item.isCenter ? 'bg-black/10 group-hover:bg-black/0' : 'bg-black/10 group-hover:bg-black/20'}`} />
 
           {/* Text Content - Ultra Minimalist Editorial Style */}
           <div className="absolute inset-x-0 bottom-0 pb-12 flex flex-col items-center justify-end text-white text-center z-10 p-6">
             
-            <h3 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase mb-4 drop-shadow-md">
+            <h3 className={`font-bold tracking-[0.3em] uppercase mb-4 drop-shadow-md ${item.isCenter ? 'text-sm md:text-base text-white bg-black/50 px-4 py-2 backdrop-blur-sm' : 'text-[10px] md:text-xs'}`}>
               {item.title}
             </h3>
             
