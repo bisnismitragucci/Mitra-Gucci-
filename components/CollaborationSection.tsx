@@ -9,7 +9,7 @@ interface CollaborationSectionProps {
 
 const CollaborationSection: React.FC<CollaborationSectionProps> = ({ t }) => {
   const content = t.collaboration;
-  const waLink = "https://wa.me/6281374192171?text=Hallo%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20kolaborasi%20Gucci%20x%20Umama";
+  const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20kolaborasi%20Gucci%20x%20Umama";
   const image = "https://www.umamascarves.co.id/wp-content/uploads/2025/02/39042006-d280-4cc6-b5ef-8bd8ae98b21e.jpg";
 
   return (
