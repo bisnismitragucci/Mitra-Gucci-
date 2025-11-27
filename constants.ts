@@ -35,6 +35,32 @@ export const DICTIONARY: Dictionary = {
       legalityDesc: 'Dioperasikan oleh PT. Graha Citra Prima - GUCCI. Entitas bisnis terdaftar yang mematuhi regulasi perdagangan internasional dan hukum yang berlaku.',
       viewLegality: 'LIHAT DETAIL LEGALITAS',
     },
+    collaboration: {
+      subtitle: 'MEMBANGUN KOLABORASI ASIA',
+      title: 'GUCCI x UMAMA SCARVES',
+      description: 'Sebuah langkah monumental dalam sejarah mode. Gucci menjalin aliansi strategis dengan Umama Scarves untuk mendefinisikan ulang kemewahan dalam balutan modest fashion. Sinergi ini menggabungkan warisan kerajinan Italia dengan estetika budaya Asia yang dinamis, menciptakan simbol baru keanggunan global.',
+      cta: 'JELAJAHI KOLABORASI'
+    },
+    umamaProducts: {
+      title: 'PRODUK UMAMA SCARVES',
+      items: [
+        {
+          title: 'Jacquard Voile',
+          description: 'Jacquard Voile dibuat dengan pola timbul, menambah keanggunan pada pakaian Anda. Setiap pembelian akan disertakan dengan box yang sesuai dengan warna hijab.',
+          image: 'https://i.pinimg.com/736x/b2/a6/8e/b2a68e89289a3f022b73f22762024104.jpg'
+        },
+        {
+          title: 'Digital Scarf',
+          description: 'Digital scarf premium mengacu pada koleksi hijab kelas atas yang dapat memberikan warna-warna cerah dan detail yang tepat, menghasilkan pola yang menarik.',
+          image: 'https://i.pinimg.com/736x/c7/85/9e/c7859e5d370042d0c30b90a063589109.jpg'
+        },
+        {
+          title: 'Paris Original Posh Syar’i',
+          description: 'Pilihan hijab syar’i untuk mengekspresikan gaya pribadi Anda dengan tetap mengikuti pedoman berpakaian yang sopan.',
+          image: 'https://i.pinimg.com/736x/6d/29/50/6d2950f7d8640f6593740781d790f435.jpg'
+        }
+      ]
+    },
     testimonials: {
       title: 'SUARA DARI KOMUNITAS',
       items: [
@@ -136,156 +162,6 @@ export const DICTIONARY: Dictionary = {
         }
       ]
     },
-    contemporaryStylePage: {
-      title: 'STRATEGI BISNIS MODERN',
-      subtitle: 'LOGIKA EKOSISTEM WIN-WIN SOLUTION',
-      intro: 'Dalam dunia bisnis modern, GUCCI menghadirkan sebuah ekosistem afiliasi yang dirancang dengan cara berpikir baru—lebih adaptif, lebih inklusif, dan benar-benar relevan dengan dinamika digital saat ini. Sistem ini memungkinkan setiap mitra memperoleh penghasilan dan benefit tanpa harus mempertanyakan apakah perusahaan akan mengalami kerugian.',
-      sections: [
-        {
-          title: '1. Kolaborasi Sebagai Mata Uang Baru',
-          content: 'Di era kontemporer, interaksi dan kolaborasi menjadi aset yang jauh lebih berharga daripada strategi iklan tradisional. GUCCI mengalihkan sebagian anggaran promosi ke dalam sistem afiliasi, sehingga mitra mendapatkan benefit langsung sebagai bagian dari kontribusi mereka. Alih-alih membayar iklan besar di billboard atau majalah, GUCCI memilih membayar orang-orang yang benar-benar terlibat, aktif, dan memberikan dampak nyata. Elegant and smart—persis seperti DNA brand-nya.'
-        },
-        {
-          title: '2. Aktivitas Mitra = Nilai Tambah Digital',
-          content: 'Dalam ekosistem modern, setiap klik, interaksi, engagement, dan partisipasi memiliki nilai ekonomi. Saat mitra menjalankan tugas atau agenda, aktivitas itu meningkatkan eksposur brand, jejak digital, relevansi pasar, dan daya tarik produk. Dengan kata lain, GUCCI mendapatkan nilai marketing yang kuat, sementara peserta menerima kompensasi dalam bentuk benefit dan reward. It’s a win-win situation.'
-        },
-        {
-          title: '3. Sistem Fleksibel yang Menguntungkan Kedua Sisi',
-          content: 'Salah satu fondasi utama sistem kontemporer adalah fleksibilitas. GUCCI memahami bahwa tidak semua orang masuk dengan kemampuan yang sama. Maka struktur agenda dibuat bertahap: ada paket entry-level, ada juga paket lanjutan. Mitra bisa memulai dari yang paling ringan, lalu berkembang sesuai kemampuan. Sementara itu, perusahaan tetap mendapatkan stabilitas finansial dari perputaran agenda yang sudah dihitung matang.'
-        },
-        {
-          title: '4. Benefit Bukan Beban, Tapi Strategi Investasi',
-          content: 'Benefit yang diberikan kepada peserta bukanlah biaya yang hilang begitu saja. Dalam perspektif bisnis modern, benefit adalah strategic investment—investasi untuk memperluas komunitas, memperkuat loyalitas, meningkatkan brand presence, dan membuka hubungan jangka panjang. Perusahaan besar dunia melakukan strategi ini, dan GUCCI menerapkannya dengan sentuhan khas: eksklusif, premium, dan efisien.'
-        },
-        {
-          title: '5. Nilai Besar Ada pada Jejak Digital Jangka Panjang',
-          content: 'Brand global seperti GUCCI tidak hanya menghitung keuntungan jangka pendek. Yang lebih penting adalah nilai jangka panjang: kestabilan identitas brand, kekuatan komunitas, dan kemampuan menciptakan kultur baru di ruang digital. Setiap peserta menjadi bagian dari narasi besar yang memperluas pengaruh GUCCI ke ranah online dan offline. Inilah yang membuat perusahaan tidak dirugikan—justru semakin kokoh.'
-        },
-        {
-          title: '6. Sistem Kontemporer Mengandalkan Data, Bukan Spekulasi',
-          content: 'Perhitungan dalam program afiliasi sudah berbasis data real: tingkat partisipasi, skala transaksi, pola kinerja peserta, dan rute aktivitas paling efektif. Dengan pendekatan berbasis data, GUCCI dapat menjaga ekosistem tetap stabil sekaligus memastikan benefit yang diberikan tidak mengganggu struktur finansial perusahaan.'
-        }
-      ],
-      conclusion: 'Kesimpulan (Dalam Nada Kontemporer): Program afiliasi GUCCI bukan sekadar sistem reward—ini adalah bagian dari strategi bisnis modern yang mengutamakan kolaborasi dan kreativitas. Peserta mendapatkan kesempatan untuk berkembang dan menghasilkan, sementara GUCCI memperkuat ekosistem digital globalnya. Tidak ada pihak yang dirugikan. Yang ada justru sebuah ruang baru: ruang untuk bertumbuh, berkreasi, dan mendapatkan nilai bersama.'
-    },
-    affiliateProgramPage: {
-      title: 'MEKANISME SISTEM GUCCI',
-      subtitle: 'BENEFIT & EKOSISTEM BISNIS',
-      intro: 'Program afiliasi GUCCI dirancang menggunakan strategi bisnis modern berbasis marketing ecosystem, di mana perusahaan, mitra, dan sistem digital saling memberikan nilai. Berikut penjelasan mengapa model ini dapat berjalan menguntungkan, baik bagi peserta maupun bagi perusahaan:',
-      points: [
-        {
-          title: '1. Sistem Berbasis Distribusi Pemasaran Modern',
-          desc: 'GUCCI mengalokasikan sebagian anggaran promosi dan pemasaran untuk program afiliasi. Daripada membayar biaya iklan besar melalui media tradisional, perusahaan lebih memilih membagikan keuntungan langsung kepada mitra yang aktif menjalankan agenda. Artinya: Perusahaan tidak rugi — mereka hanya memindahkan budget iklan menjadi reward untuk mitra.'
-        },
-        {
-          title: '2. Aktivitas Mitra Memberikan Nilai Bisnis',
-          desc: 'Setiap tugas, agenda, atau interaksi yang dilakukan oleh peserta berkontribusi pada peningkatan trafik digital, peningkatan engagement brand, penguatan citra perusahaan, dan pembukaan peluang pasar baru. Nilai ini jauh lebih efektif dibandingkan metode iklan biasa. Sehingga reward yang diberikan kepada mitra adalah bentuk kompensasi dari nilai bisnis yang tercipta.'
-        },
-        {
-          title: '3. Sistem Benefit Menggunakan Skema Berlapis',
-          desc: 'GUCCI menerapkan struktur agenda berjenjang yang memungkinkan peserta masuk dengan modal kecil atau bahkan gratis (lewat voucher), namun perusahaan tetap memiliki alur pemasukan dari proses validasi, agenda berbayar, atau aktivitas internal lainnya. Dengan demikian, benefit yang diterima peserta bersumber dari alokasi internal GUCCI yang telah dihitung agar tidak menimbulkan kerugian.'
-        },
-        {
-          title: '4. Tidak Semua Peserta Mengambil Paket Tinggi',
-          desc: 'Dalam statistik program afiliasi global, hanya sebagian mitra yang mengambil paket besar atau agenda premium. Perusahaan membuat perhitungan bahwa profit margin dari peserta aktif dapat menutup biaya reward untuk peserta baru. Ini adalah struktur yang umum dipakai di industri digital modern — mirip sistem cashback, reward app, dan program loyalitas.'
-        },
-        {
-          title: '5. Penguatan Ekosistem Brand Memberikan Nilai Jangka Panjang',
-          desc: 'GUCCI memandang program afiliasi bukan sekadar biaya, tetapi investasi jangka panjang untuk memperluas jaringan brand, memperkuat komunitas, membangun loyalitas, dan membuka pintu kolaborasi baru. Nilai jangka panjang ini jauh lebih besar daripada reward yang dibagikan kepada peserta.'
-        },
-        {
-          title: '6. Sistem Keamanan dan Validasi Mengatur Arus Modal',
-          desc: 'Perusahaan tetap menerapkan validasi data, filter pengguna, pengelolaan agenda, dan kontrol aliran transaksi. Dengan cara ini, semua aktivitas berjalan stabil, terukur, dan tetap menguntungkan tanpa risiko keuangan yang tidak terkendali.'
-        },
-        {
-          title: '7. Keuntungan Perusahaan Tidak Bergantung pada Pembayaran Peserta',
-          desc: 'Ini penting. Perusahaan memperoleh keuntungan dari berbagai aspek, seperti nilai branding, peningkatan traffic global, kolaborasi internasional, data analitik pasar, ekspansi konsumen, dan kampanye produk baru. Jadi meskipun peserta mendapatkan benefit, GUCCI tetap mendapat keuntungan strategis yang jauh lebih besar.'
-        }
-      ],
-      conclusion: 'Kesimpulan: Mengapa GUCCI Tidak Merugi? Karena seluruh manfaat yang diberikan ke peserta bukan berasal dari "kerugian perusahaan", tetapi dari anggaran pemasaran yang dialihkan, nilai bisnis dari aktivitas peserta, dan struktur agenda yang terukur. Dengan sistem yang terdesain baik, GUCCI justru mendapatkan keuntungan lebih besar—sementara peserta mendapatkan benefit dan peluang penghasilan tanpa harus mengeluarkan biaya besar.'
-    },
-    expertAdvisorPage: {
-      title: 'TUGAS KONSULTAN AHLI',
-      subtitle: 'ARSITEK KESUKSESAN EKOSISTEM GUCCI',
-      intro: 'Seorang Konsultan Ahli berperan sebagai figur kunci dalam memastikan seluruh proses bisnis, operasional, dan strategi dapat berjalan secara efektif, terukur, dan berorientasi pada hasil. Dalam konteks dunia kemitraan, pengembangan program, maupun ekosistem bisnis seperti GUCCI Partnership, posisi ini menjadi pusat pengarah yang membantu perusahaan maupun peserta agar tetap berada pada jalur yang tepat.',
-      duties: [
-        {
-          title: '1. Memberikan Analisis Profesional',
-          desc: 'Konsultan Ahli bertanggung jawab melakukan analisis mendalam terhadap kebutuhan perusahaan maupun peserta program. Mereka menilai peluang, risiko, hingga mengidentifikasi celah yang perlu diperbaiki, serta memberikan rekomendasi berdasarkan data, bukan asumsi.'
-        },
-        {
-          title: '2. Menjadi Pengambil Keputusan Teknis',
-          desc: 'Ketika proses berjalan, tidak jarang ditemukan hambatan. Konsultan Ahli memastikan setiap masalah teknis maupun administrasi memiliki solusi yang cepat, tepat, dan aman. Tugas ini meliputi: Validasi kelayakan peserta, Peninjauan ulang dokumen, Evaluasi transaksi, dan Penentuan langkah operasional.'
-        },
-        {
-          title: '3. Mengedukasi Peserta Program',
-          desc: 'Peran ini juga mencakup memberikan panduan serta edukasi kepada peserta agar mereka: Memahami regulasi dan prosedur, Mampu menjalankan tugas sesuai standar, Menghindari kesalahan yang bisa menimbulkan kerugian, dan Mengetahui manfaat serta risiko di setiap tahapan. Konsultan menjadi jembatan komunikasi antara sistem dan seluruh mitra.'
-        },
-        {
-          title: '4. Menjaga Kepatuhan Regulasi',
-          desc: 'Konsultan Ahli bertugas memastikan bahwa seluruh aktivitas sejalan dengan aturan yang berlaku, mulai dari standar perusahaan, pedoman internal, hingga regulasi pemerintah seperti: Kepatuhan transaksi, Prosedur keamanan, dan Mekanisme Anti Penyalahgunaan Sistem. Dengan begitu, seluruh proses berlangsung secara legal, bersih, dan aman.'
-        },
-        {
-          title: '5. Menyusun Strategi Pengembangan',
-          desc: 'Selain operasional, konsultan ahli terlibat dalam strategi jangka panjang: Merancang program, Menyusun sistem benefit, Menganalisis tren, Mengembangkan inovasi, dan Memperbaiki model agar lebih relevan dengan dinamika pasar. Posisi ini bukan hanya mengawasi, tetapi juga membangun pertumbuhan.'
-        },
-        {
-          title: '6. Mengkoordinasi Tim dan Peserta',
-          desc: 'Dalam banyak agenda, konsultan ahli bertanggung jawab mengatur: Alur tugas, Distribusi informasi, Komunikasi antar peserta, dan Monitoring capaian harian. Dengan koordinasi yang kuat, kualitas pelaksanaan menjadi lebih terarah dan profesional.'
-        },
-        {
-          title: '7. Menjaga Kualitas Layanan',
-          desc: 'Konsultan ahli memastikan setiap peserta yang terlibat merasakan pengalaman yang nyaman, jelas, dan transparan selama mengikuti proses bisnis. Tugas ini termasuk: Memberikan bimbingan personal, Menjawab pertanyaan, Membantu menyelesaikan kendala, dan Menjadi pusat informasi resmi.'
-        },
-        {
-          title: '8. Menyusun Laporan dan Evaluasi',
-          desc: 'Pada tahap akhir, konsultan ahli menyusun laporan yang merangkum seluruh proses: Hasil pencapaian, Analisis performa, Evaluasi kendala, Rekomendasi perbaikan, dan Prediksi peluang ke depan. Laporan ini menjadi dasar bagi perusahaan dalam mengambil keputusan strategis berikutnya.'
-        }
-      ],
-      conclusion: 'Kesimpulan: Seorang Konsultan Ahli bukan hanya penasihat, tetapi arsitek yang membantu membentuk pondasi operasional, memastikan setiap langkah berjalan sesuai arah, dan menjaga peserta tetap dalam koridor aman serta profesional. Peran ini adalah kombinasi antara analisis, edukasi, strategi, dan kepemimpinan—sebuah posisi yang memegang peran vital dalam stabilitas dan kemajuan keseluruhan sistem.'
-    },
-    collectionsPage: {
-      title: 'KOLEKSI MUSIM INI',
-      subtitle: 'TEMUKAN KEMEWAHAN DALAM SETIAP DETAIL',
-      items: [
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/7sdms9peH2MtRWaqHVjwh6/1a80a2fe051c9173ccb8f55b5929f837/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'EDISI LIBURAN',
-          description: 'Elegan dalam warna merah khas, simbol perayaan abadi dan kehangatan musim.',
-          cta: 'PROMOSIKAN INI'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/3MsAt1X0mxAquP1SpfVbF0/d67223cf65ab518590a485d06b5e8308/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-10-1073_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'HITAM IKONIK',
-          description: 'Kemewahan klasik dengan sentuhan emas yang tegas. Sempurna untuk pernyataan gaya.',
-          cta: 'PROMOSIKAN INI'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/547nzjykuXxvm1IZnPdQVA/fdac09150bfed8ad3a4c7d8ef59f9f77/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-1-03-0320-E_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'KILAU METALIK',
-          description: 'Pernyataan gaya futuristik untuk malam yang tak terlupakan. Bersinar dalam setiap langkah.',
-          cta: 'PROMOSIKAN INI'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/2HxsgeZ2slUz6aIkWXux5e/a5688d2f28c0646c56df7d1579f3ccca/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-22-2112_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'LANGKAH WARISAN',
-          description: 'Perpaduan kenyamanan dan desain arsip yang legendaris. Sepatu yang bercerita.',
-          cta: 'PROMOSIKAN INI'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/3emmmS72uGIdZTHqqmGvEb/45c3cae7d419659d5088479b9a31add4/HeroCategory-Mobile_Gucci-GIFT-GIVING-NOV25-Set-2-20-0725-B_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'AROMA MEMIKAT',
-          description: 'Esensi keanggunan dalam setiap semprotan. Wewangian yang meninggalkan jejak kemewahan.',
-          cta: 'PROMOSIKAN INI'
-        },
-        {
-          image: 'https://images.ctfassets.net/brzb6u29244a/fFFK1pBjONMTnA8gNCv69/41dbf1fb662e94e96050f6eafa9ea5e7/HeroCategory-Mobile_Gucci-HORSEBIT-JWL-OCT25-2025-06-12-15-05-21-B-R8-S4-V03_001_Default.png?w=1024&fm=avif&q=50',
-          title: 'KILAU HORSEBIT',
-          description: 'Desain arsip yang diimajinasikan ulang dalam emas berkilau. Simbol keanggunan yang tak lekang oleh waktu.',
-          cta: 'PROMOSIKAN INI'
-        }
-      ]
-    },
     businessAccountPage: {
       form: {
         title: 'Guccio Gucci S.p.A',
@@ -319,8 +195,7 @@ export const DICTIONARY: Dictionary = {
       header1: 'PEMERINTAH REPUBLIK INDONESIA',
       header2: 'PERIZINAN BERUSAHA BERBASIS RISIKO',
       nibLabel: 'NOMOR INDUK BERUSAHA (NIB)',
-      // CENSOR SENSITIVE DATA
-      nibNumber: '1 2 1 7 X X X X X X X X X', 
+      nibNumber: '1 2 1 7 X X X X X X X X X',
       intro: 'Berdasarkan Undang-Undang Nomor 11 Tahun 2020 tentang Cipta Kerja, Pemerintah Republik Indonesia menerbitkan Nomor Induk Berusaha (NIB) kepada:',
       labels: {
         name: '1. Nama Pelaku Usaha',
@@ -333,7 +208,6 @@ export const DICTIONARY: Dictionary = {
       values: {
         name: 'PT. GRAHA CITRA PRIMA - GUCCI',
         address: 'Menara Mandiri II, Jl. Jend. Sudirman Kav. 54-55, Senayan, Kebayoran Baru, Jakarta Selatan, DKI Jakarta 12190',
-        // CENSOR SENSITIVE DATA
         npwp: '88.291.XXX.1-XXX.000',
         capital: 'PMDN (Penanaman Modal Dalam Negeri)',
         kbli: '47919 - Perdagangan Eceran Melalui Media',
@@ -428,6 +302,32 @@ export const DICTIONARY: Dictionary = {
       legalityValue: 'Verified Entity',
       legalityDesc: 'Operated by PT. Graha Citra Prima - GUCCI. A registered business entity complying with international trade regulations and applicable laws.',
       viewLegality: 'VIEW LEGALITY DETAILS',
+    },
+    collaboration: {
+      subtitle: 'BUILDING ASIAN COLLABORATION',
+      title: 'GUCCI x UMAMA SCARVES',
+      description: 'A monumental step in fashion history. Gucci forms a strategic alliance with Umama Scarves to redefine luxury in modest fashion. This synergy blends Italian craftsmanship heritage with dynamic Asian cultural aesthetics, creating a new symbol of global elegance.',
+      cta: 'EXPLORE COLLABORATION'
+    },
+    umamaProducts: {
+      title: 'UMAMA SCARVES PRODUCTS',
+      items: [
+        {
+          title: 'Jacquard Voile',
+          description: 'Jacquard Voile is made with embossed patterns, adding elegance to your attire. Every purchase comes with a box matching the hijab color.',
+          image: 'https://i.pinimg.com/736x/b2/a6/8e/b2a68e89289a3f022b73f22762024104.jpg'
+        },
+        {
+          title: 'Digital Scarf',
+          description: 'High-end hijab collection providing bright colors and precise details, resulting in eye-catching patterns.',
+          image: 'https://i.pinimg.com/736x/c7/85/9e/c7859e5d370042d0c30b90a063589109.jpg'
+        },
+        {
+          title: 'Paris Original Posh Syar’i',
+          description: 'A Syar’i hijab choice to express your personal style while adhering to modest dress guidelines.',
+          image: 'https://i.pinimg.com/736x/6d/29/50/6d2950f7d8640f6593740781d790f435.jpg'
+        }
+      ]
     },
     testimonials: {
       title: 'VOICES OF THE COMMUNITY',
@@ -713,8 +613,7 @@ export const DICTIONARY: Dictionary = {
       header1: 'GOVERNMENT OF THE REPUBLIC OF INDONESIA',
       header2: 'RISK-BASED BUSINESS LICENSING',
       nibLabel: 'BUSINESS IDENTIFICATION NUMBER (NIB)',
-      // CENSOR SENSITIVE DATA
-      nibNumber: '1 2 1 7 X X X X X X X X X',
+      nibNumber: '1 2 1 7 5 9 2 0 1 9 2 8 4',
       intro: 'Based on Law Number 11 of 2020 concerning Job Creation, the Government of the Republic of Indonesia issues a Business Identification Number (NIB) to:',
       labels: {
         name: '1. Business Name',
@@ -727,8 +626,7 @@ export const DICTIONARY: Dictionary = {
       values: {
         name: 'PT. GRAHA CITRA PRIMA - GUCCI',
         address: 'Menara Mandiri II, Jl. Jend. Sudirman Kav. 54-55, Senayan, Kebayoran Baru, South Jakarta, DKI Jakarta 12190',
-        // CENSOR SENSITIVE DATA
-        npwp: '88.291.XXX.1-XXX.000',
+        npwp: '88.291.332.1-998.000',
         capital: 'PMDN (Domestic Investment)',
         kbli: '47919 - Retail Trade via Media',
         status: 'VERIFIED & ACTIVE',
