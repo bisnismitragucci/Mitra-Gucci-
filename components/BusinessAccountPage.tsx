@@ -11,7 +11,7 @@ interface BusinessAccountPageProps {
 const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) => {
   const content = t.businessAccountPage;
   const [showPassword, setShowPassword] = React.useState(false);
-  const waLink = "https://wa.me/6281385616100?text=Hallo%20saya%20ingin%20mendaftar%20akun%20bisnis";
+  const waLink = "https://wa.me/6281374192171?text=Hallo%20saya%20ingin%20mendaftar%20akun%20bisnis";
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col fade-in">

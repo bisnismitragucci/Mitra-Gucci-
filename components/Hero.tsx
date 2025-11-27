@@ -8,7 +8,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ t }) => {
-  const waLink = "https://wa.me/6281385616100?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+  const waLink = "https://wa.me/6281374192171?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   
   // URL Gambar Background Baru
   const bgImage = "https://i.pinimg.com/1200x/a7/aa/07/a7aa07ceb345373550f004b449bb831d.jpg";
