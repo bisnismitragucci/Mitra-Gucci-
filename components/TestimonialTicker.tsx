@@ -9,7 +9,7 @@ interface TestimonialTickerProps {
 
 const TestimonialTicker: React.FC<TestimonialTickerProps> = ({ t }) => {
   const items = t.testimonials.items;
-  const waLink = "https://wa.me/6282315436514?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+  const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   
   // Double the items array to create seamless loop effect
   const loopItems = [...items, ...items];

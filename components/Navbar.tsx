@@ -12,7 +12,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const waLink = "https://wa.me/6282315436514?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+  const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
 
   const handleNavClick = (page: PageView) => {
     if (onNavigate) {
