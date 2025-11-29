@@ -10,8 +10,8 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ t }) => {
   const waLink = "https://wa.me/6281374192171?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   
-  // URL Gambar Background Baru
-  const bgImage = "https://i.pinimg.com/1200x/a7/aa/07/a7aa07ceb345373550f004b449bb831d.jpg";
+  // URL Gambar Background Baru sesuai permintaan ("Fokus di sini")
+  const bgImage = "https://i.pinimg.com/1200x/fb/03/e5/fb03e5edf1ed52e9bdf6dcb64f497864.jpg";
 
   return (
     <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
