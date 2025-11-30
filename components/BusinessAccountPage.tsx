@@ -22,11 +22,11 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
          <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900 rounded-full mix-blend-screen filter blur-[150px] opacity-10"></div>
       </div>
 
-      {/* Navigation - Fixed with higher Z-Index than Navbar (z-50) */}
-      <div className="p-6 md:p-12 fixed w-full z-[100] pointer-events-none">
+      {/* Navigation - Fixed with higher Z-Index than Navbar (z-50) - Pushed down to avoid overlap */}
+      <div className="fixed top-0 left-0 w-full pt-28 px-6 md:pt-36 md:px-12 z-[100] pointer-events-none">
         <button 
           onClick={onBack}
-          className="pointer-events-auto flex items-center space-x-3 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 hover:text-white transition-colors bg-black/40 backdrop-blur-md px-5 py-3 rounded-full border border-white/5 hover:border-white/20"
+          className="pointer-events-auto flex items-center space-x-3 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 hover:text-white transition-colors bg-black/40 backdrop-blur-md px-5 py-3 rounded-full border border-white/5 hover:border-white/20 shadow-lg"
         >
           <ArrowLeft className="w-3 h-3" />
           <span>{t.nav.backToHome}</span>

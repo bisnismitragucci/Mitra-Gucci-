@@ -16,11 +16,11 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#0F221B] fade-in font-sans selection:bg-[#781016] selection:text-white">
       
-      {/* 1. Header / Navigation - Glassy Fixed with High Z-Index to overlap Navbar */}
-      <div className="fixed top-0 left-0 w-full p-6 md:p-8 flex justify-between items-center z-[100] pointer-events-none">
+      {/* 1. Header / Navigation - Fixed with padding top to clear Navbar */}
+      <div className="fixed top-0 left-0 w-full pt-28 px-6 md:pt-36 md:px-8 flex justify-between items-center z-[100] pointer-events-none">
         <button 
           onClick={onBack}
-          className="pointer-events-auto group flex items-center space-x-3 text-[10px] font-bold tracking-[0.2em] uppercase text-[#0F221B] bg-[#F9F8F6]/80 backdrop-blur-md px-6 py-3 border border-[#0F221B]/10 hover:border-[#0F221B] transition-all duration-500 shadow-sm"
+          className="pointer-events-auto group flex items-center space-x-3 text-[10px] font-bold tracking-[0.2em] uppercase text-[#0F221B] bg-[#F9F8F6]/80 backdrop-blur-md px-6 py-3 border border-[#0F221B]/10 hover:border-[#0F221B] transition-all duration-500 shadow-lg rounded-sm"
         >
           <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform duration-300" />
           <span className="group-hover:opacity-70 transition-opacity">{t.nav.backToHome}</span>
