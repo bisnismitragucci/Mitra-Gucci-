@@ -14,35 +14,44 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
   const bgImage = "https://i.pinimg.com/1200x/f4/8a/29/f48a2941b1d34d86360343f926ff57f3.jpg";
 
   return (
-    <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-black">
-      {/* Background Image with Zoom Effect Removed */}
+    <div className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden bg-black">
+      {/* Background Image with Slow Parallax/Zoom Effect */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-[3s] ease-out"
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-[10s] ease-out scale-100 hover:scale-105"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
       
+      {/* Dark Overlay for better text contrast */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      
       {/* Center Content - Clean Editorial Look */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
-        <h5 className="text-white text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-4 shadow-black drop-shadow-md">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 mt-16 md:mt-0">
+        <h5 className="text-white text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase mb-6 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
            {t.hero.subtitle}
         </h5>
-        <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-serif tracking-wide mb-8 drop-shadow-lg">
+        <h1 className="text-white text-4xl md:text-7xl lg:text-8xl font-serif tracking-tight mb-10 drop-shadow-2xl opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
           {t.hero.title}
         </h1>
         
+        {/* Modern Elegant Button */}
         <a 
           href={waLink}
           target="_blank" 
           rel="noopener noreferrer"
-          className="group relative inline-flex items-center px-8 py-3 bg-white text-black hover:bg-[#F5F5F0] transition-colors duration-300"
+          className="group relative inline-flex items-center justify-center px-10 py-4 overflow-hidden transition-all duration-500 border border-white text-white hover:text-black opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]"
         >
-           <span className="text-xs font-bold tracking-[0.2em] uppercase">{t.hero.websiteLink}</span>
-           <ArrowRight className="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" />
+           {/* Fill effect from bottom */}
+           <span className="absolute inset-0 w-full h-full bg-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></span>
+           
+           <span className="relative z-10 text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase flex items-center">
+             {t.hero.websiteLink}
+             <ArrowRight className="w-3 h-3 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
+           </span>
         </a>
       </div>
 
-      {/* Gradient Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
+      {/* Gradient Overlay for Bottom Fade */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"></div>
     </div>
   );
 };

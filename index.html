@@ -17,16 +17,17 @@
 
       /* Custom scrollbar for a premium feel */
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: #1a1a1a; 
+        background: #0a0a0a; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #444; 
+        background: #333; 
+        border-radius: 3px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #666; 
+        background: #555; 
       }
       
       .font-serif {
@@ -38,11 +39,11 @@
       }
 
       .fade-in {
-        animation: fadeIn 0.8s ease-in-out;
+        animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1);
       }
       
       @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
+        from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
       }
 
@@ -58,6 +59,30 @@
 
       .animate-scroll:hover {
         animation-play-state: paused;
+      }
+
+      /* Modern Hover Underline Animation */
+      .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+      }
+
+      .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -2px;
+        left: 0;
+        background-color: currentColor;
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
       }
     </style>
 <script type="importmap">
