@@ -13,7 +13,7 @@ const CollectionsPage: React.FC<CollectionsPageProps> = ({ t, onBack }) => {
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20tertarik%20dengan%20koleksi%20ini";
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-black py-16 px-6 md:px-12 fade-in">
+    <div className="min-h-screen bg-[#fafafa] text-black pt-24 pb-16 px-6 md:px-12 fade-in">
       <div className="max-w-[1920px] mx-auto">
         
         {/* Navigation Back */}

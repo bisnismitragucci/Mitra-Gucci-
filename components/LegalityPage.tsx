@@ -13,7 +13,7 @@ const LegalityPage: React.FC<LegalityPageProps> = ({ t, onBack }) => {
   const garudaUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/National_emblem_of_Indonesia_Garuda_Pancasila.svg/1200px-National_emblem_of_Indonesia_Garuda_Pancasila.svg.png";
 
   return (
-    <div className="w-full min-h-screen bg-gray-100 flex flex-col items-center py-4 md:py-12 px-2 sm:px-6 lg:px-8 fade-in">
+    <div className="w-full min-h-screen bg-gray-100 flex flex-col items-center pt-24 pb-12 px-2 sm:px-6 lg:px-8 fade-in">
       
       {/* Navigation Bar (Top) */}
       <div className="w-full md:max-w-[210mm] mb-4 md:mb-8 flex justify-between items-center mx-auto px-2 md:px-0">

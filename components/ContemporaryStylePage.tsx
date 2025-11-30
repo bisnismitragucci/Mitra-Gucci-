@@ -12,7 +12,7 @@ const ContemporaryStylePage: React.FC<ContemporaryStylePageProps> = ({ t, onBack
   const content = t.contemporaryStylePage;
 
   return (
-    <div className="min-h-screen bg-white text-black py-16 px-6 md:px-12 fade-in">
+    <div className="min-h-screen bg-white text-black pt-24 pb-16 px-6 md:px-12 fade-in">
       <div className="max-w-5xl mx-auto">
         
         {/* Navigation Back */}

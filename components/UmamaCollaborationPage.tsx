@@ -16,8 +16,8 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
   return (
     <div className="min-h-screen bg-white text-black fade-in font-sans selection:bg-[#b91c1c] selection:text-white">
       
-      {/* 1. Header / Navigation - Glassy Fixed */}
-      <div className="fixed top-0 left-0 w-full p-6 md:p-8 flex justify-between items-center z-50 pointer-events-none">
+      {/* 1. Header / Navigation - Glassy Fixed with High Z-Index to overlap Navbar */}
+      <div className="fixed top-0 left-0 w-full p-6 md:p-8 flex justify-between items-center z-[60] pointer-events-none">
         <button 
           onClick={onBack}
           className="pointer-events-auto group flex items-center space-x-3 text-[10px] font-bold tracking-[0.2em] uppercase text-black bg-white/80 backdrop-blur-md px-6 py-3 border border-gray-200 hover:border-black transition-all duration-500"

@@ -16,8 +16,8 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
   return (
     <div className="min-h-screen bg-[#050505] text-white flex flex-col fade-in font-sans">
       
-      {/* Navigation */}
-      <div className="p-6 md:p-12 fixed w-full z-10 pointer-events-none">
+      {/* Navigation - Fixed with higher Z-Index than Navbar (z-50) */}
+      <div className="p-6 md:p-12 fixed w-full z-[60] pointer-events-none">
         <button 
           onClick={onBack}
           className="pointer-events-auto flex items-center space-x-3 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 hover:text-white transition-colors bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10"

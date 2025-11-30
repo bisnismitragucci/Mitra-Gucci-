@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { Translations } from '../types';
@@ -11,7 +12,7 @@ const ExpertAdvisorPage: React.FC<ExpertAdvisorPageProps> = ({ t, onBack }) => {
   const content = t.expertAdvisorPage;
 
   return (
-    <div className="min-h-screen bg-white text-black py-16 px-6 md:px-12 fade-in">
+    <div className="min-h-screen bg-white text-black pt-24 pb-16 px-6 md:px-12 fade-in">
       <div className="max-w-5xl mx-auto">
         
         {/* Navigation Back */}
