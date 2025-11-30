@@ -42,30 +42,30 @@ const FilterBar: React.FC<FilterBarProps> = ({ lang, t, onViewLegality }) => {
   }, []);
   
   return (
-    <div className="w-full bg-white pt-24 pb-24 px-6 md:px-12 flex flex-col items-center justify-center fade-in">
+    <div className="w-full bg-[#F9F8F6] pt-24 pb-24 px-6 md:px-12 flex flex-col items-center justify-center fade-in">
       
       {/* Editorial Header */}
       <div className="text-center mb-24 max-w-3xl mx-auto">
-        <p className="text-[10px] tracking-[0.25em] font-bold text-gray-500 uppercase mb-6">
+        <p className="text-[10px] tracking-[0.25em] font-bold text-[#781016] uppercase mb-6">
           EST. FLORENCE 1921
         </p>
-        <h2 className="text-3xl md:text-5xl font-serif text-black leading-tight mb-8">
+        <h2 className="text-3xl md:text-5xl font-serif text-[#0F221B] leading-tight mb-8">
           {t.hero.description}
         </h2>
-        <div className="w-16 h-[1px] bg-black mx-auto"></div>
+        <div className="w-16 h-[2px] bg-[#D4AF37] mx-auto"></div>
       </div>
 
       {/* Info / Stats Row - 3 Columns */}
       <div className="w-full max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-b border-gray-100 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-b border-[#D4AF37]/30 py-16">
           
           {/* Column 1: Followers */}
-          <div className="flex flex-col items-center text-center px-4 md:border-r border-gray-100">
-            <Users className="w-8 h-8 text-black mb-6 opacity-80" strokeWidth={1} />
-            <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-4">
+          <div className="flex flex-col items-center text-center px-4 md:border-r border-[#D4AF37]/30">
+            <Users className="w-8 h-8 text-[#0F221B] mb-6 opacity-100" strokeWidth={1} />
+            <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#781016] mb-4">
               {t.stats.followersLabel}
             </h4>
-            <div className="text-3xl md:text-4xl font-serif text-black mb-2 transition-all duration-500">
+            <div className="text-3xl md:text-4xl font-serif text-[#0F221B] mb-2 transition-all duration-500">
               {followerDisplay}
             </div>
             <p className="text-xs text-gray-500 font-medium tracking-wide">
@@ -74,16 +74,16 @@ const FilterBar: React.FC<FilterBarProps> = ({ lang, t, onViewLegality }) => {
           </div>
 
           {/* Column 2: Rating */}
-          <div className="flex flex-col items-center text-center px-4 md:border-r border-gray-100">
+          <div className="flex flex-col items-center text-center px-4 md:border-r border-[#D4AF37]/30">
             <div className="flex gap-1 mb-6">
                {[1, 2, 3, 4, 5].map((star) => (
-                 <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400 drop-shadow-md" />
+                 <Star key={star} className="w-5 h-5 fill-[#D4AF37] text-[#D4AF37] drop-shadow-sm" />
                ))}
             </div>
-            <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-4">
+            <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#781016] mb-4">
               {t.stats.ratingLabel}
             </h4>
-            <div className="text-3xl md:text-4xl font-serif text-black mb-2">
+            <div className="text-3xl md:text-4xl font-serif text-[#0F221B] mb-2">
               {t.stats.ratingValue}
             </div>
             <p className="text-xs text-gray-500 font-medium tracking-wide">
@@ -93,17 +93,17 @@ const FilterBar: React.FC<FilterBarProps> = ({ lang, t, onViewLegality }) => {
 
           {/* Column 3: Legality - Clickable Feature */}
           <div className="flex flex-col items-center text-center px-4">
-            <ShieldCheck className="w-8 h-8 text-green-600 mb-6 drop-shadow-sm" strokeWidth={1.5} />
-            <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-4">
+            <ShieldCheck className="w-8 h-8 text-[#781016] mb-6 drop-shadow-sm" strokeWidth={1.5} />
+            <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#781016] mb-4">
               {t.stats.legalityLabel}
             </h4>
-            <div className="text-xl md:text-2xl font-serif text-black mb-6">
+            <div className="text-xl md:text-2xl font-serif text-[#0F221B] mb-6">
               {t.stats.legalityValue}
             </div>
             
             <button 
               onClick={onViewLegality}
-              className="group flex items-center space-x-2 text-[10px] tracking-[0.2em] uppercase font-bold border-b border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors"
+              className="group flex items-center space-x-2 text-[10px] tracking-[0.2em] uppercase font-bold border-b border-[#0F221B] pb-1 hover:text-[#781016] hover:border-[#781016] transition-colors text-[#0F221B]"
             >
               <span>{t.stats.viewLegality}</span>
               <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />

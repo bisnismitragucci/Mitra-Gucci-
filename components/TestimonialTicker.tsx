@@ -15,7 +15,7 @@ const TestimonialTicker: React.FC<TestimonialTickerProps> = ({ t }) => {
   const loopItems = [...items, ...items];
 
   return (
-    <div className="w-full bg-[#0F221B] py-20 overflow-hidden relative border-t border-b border-[#1A3329]">
+    <div className="w-full bg-[#0F221B] py-20 overflow-hidden relative border-t border-b border-[#D4AF37]/30">
       {/* Background Pattern/Texture overlay */}
       <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 

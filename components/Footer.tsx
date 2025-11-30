@@ -8,7 +8,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ t }) => {
   return (
-    <footer className="bg-[#0F221B] text-white w-full pt-32 pb-12 border-t border-white/5 relative overflow-hidden">
+    <footer className="bg-[#0F221B] text-white w-full pt-32 pb-12 border-t-4 border-[#781016] relative overflow-hidden">
       
       {/* Background Ambience */}
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-white/5 via-[#0F221B] to-[#0F221B] pointer-events-none"></div>
@@ -29,26 +29,28 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
            {/* Links Column 1 */}
            <div className="flex flex-col space-y-4">
               <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-2">EXCLUSIVE SERVICES</h4>
-              <span className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Gucci Osteria</span>
-              <span className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Gucci Garden</span>
-              <span className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Book an Appointment</span>
+              <a href="https://www.gucciosteria.com" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Gucci Osteria</a>
+              <a href="https://www.gucci.com/us/en/st/stories/gucci-garden" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Gucci Garden</a>
+              <a href="https://www.gucci.com/us/en/st/book-an-appointment" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Book an Appointment</a>
            </div>
 
            {/* Links Column 2 */}
            <div className="flex flex-col space-y-4">
               <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-2">CORPORATE</h4>
-              <span className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">About Gucci</span>
-              <span className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Gucci Equilibrium</span>
-              <span className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Code of Ethics</span>
-              <span className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Careers</span>
+              <a href="https://www.gucci.com/us/en/st/about-gucci" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">About Gucci</a>
+              <a href="https://equilibrium.gucci.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">Gucci Equilibrium</a>
            </div>
 
             {/* Newsletter Simulation */}
            <div className="flex flex-col items-center md:items-start">
               <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-6">SIGN UP FOR UPDATES</h4>
-              <div className="flex w-full border-b border-gray-600 pb-2 mb-4 hover:border-white transition-colors">
-                 <span className="text-xs text-gray-400 italic flex-grow text-left">Email Address...</span>
-                 <span className="text-xs text-white font-bold cursor-pointer hover:text-[#D4AF37] transition-colors">SUBSCRIBE</span>
+              <div className="flex w-full border-b border-gray-600 pb-2 mb-4 hover:border-white transition-colors group">
+                 <input 
+                   type="email" 
+                   placeholder="Email Address..." 
+                   className="bg-transparent border-none outline-none text-xs text-white placeholder-gray-400 italic flex-grow w-full"
+                 />
+                 <a href="https://www.gucci.com/us/en/profile/account/create" target="_blank" rel="noopener noreferrer" className="text-xs text-white font-bold cursor-pointer hover:text-[#D4AF37] transition-colors ml-2">SUBSCRIBE</a>
               </div>
               <p className="text-[9px] text-gray-500 leading-tight text-left">
                 By signing up, you accept the terms of Gucci's Privacy Policy.
@@ -63,9 +65,9 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
               {t.footer.copyright}
             </span>
             <div className="flex space-x-6">
-               <span className="text-[10px] text-gray-500 hover:text-white cursor-pointer transition-colors">PRIVACY POLICY</span>
-               <span className="text-[10px] text-gray-500 hover:text-white cursor-pointer transition-colors">TERMS OF USE</span>
-               <span className="text-[10px] text-gray-500 hover:text-white cursor-pointer transition-colors">COOKIES SETTINGS</span>
+               <a href="https://www.gucci.com/us/en/st/privacy-landing" target="_blank" rel="noopener noreferrer" className="text-[10px] text-gray-500 hover:text-white cursor-pointer transition-colors">PRIVACY POLICY</a>
+               <a href="https://www.gucci.com/us/en/st/legal-landing" target="_blank" rel="noopener noreferrer" className="text-[10px] text-gray-500 hover:text-white cursor-pointer transition-colors">TERMS OF USE</a>
+               <a href="https://www.gucci.com/us/en/st/cookie-policy" target="_blank" rel="noopener noreferrer" className="text-[10px] text-gray-500 hover:text-white cursor-pointer transition-colors">COOKIES SETTINGS</a>
             </div>
         </div>
         

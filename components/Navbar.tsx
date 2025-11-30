@@ -37,12 +37,15 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
   return (
     <>
       <nav 
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out border-b border-white/5 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
           scrolled 
-            ? 'bg-[#0F221B]/90 backdrop-blur-md py-2' 
-            : 'bg-gradient-to-b from-[#0F221B]/80 to-transparent py-6'
+            ? 'bg-[#0F221B]/95 backdrop-blur-md py-2 border-b border-[#D4AF37]/50 shadow-lg' 
+            : 'bg-gradient-to-b from-[#0F221B] to-transparent py-6 border-b border-transparent'
         }`}
       >
+        {/* Gucci Web Stripe Top Decoration */}
+        <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#0F221B] via-[#781016] to-[#0F221B] z-50"></div>
+
         <div className="max-w-[1920px] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
           
           {/* Left Actions (Language) */}
@@ -113,7 +116,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
         </div>
 
         {/* Mobile Menu Dropdown */}
-        <div className={`lg:hidden fixed inset-0 bg-[#0F221B]/95 backdrop-blur-xl z-40 transition-transform duration-500 ease-in-out flex flex-col justify-center px-8 ${
+        <div className={`lg:hidden fixed inset-0 bg-[#0F221B] z-40 transition-transform duration-500 ease-in-out flex flex-col justify-center px-8 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`} style={{ top: '0' }}>
             <button className="absolute top-6 right-6 text-white" onClick={() => setIsOpen(false)}>
@@ -137,7 +140,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
                 {t.nav.opportunities}
               </button>
               
-              <div className="w-12 h-[1px] bg-white/20 mx-auto my-4"></div>
+              <div className="w-12 h-[1px] bg-[#D4AF37]/30 mx-auto my-4"></div>
 
               <button 
                   onClick={() => {
@@ -152,8 +155,8 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
         </div>
       </nav>
       
-      {/* Login Notification Bar - Adjusted for fixed nav */}
-      <div className="fixed bottom-0 left-0 w-full z-40 bg-[#0F221B]/95 backdrop-blur-sm text-white py-3 flex justify-center items-center border-t border-white/10 lg:hidden">
+      {/* Login Notification Bar - Adjusted for fixed nav - Gucci Burgundy Color */}
+      <div className="fixed bottom-0 left-0 w-full z-40 bg-[#781016] text-white py-3 flex justify-center items-center border-t border-[#D4AF37]/30 lg:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.3)]">
         <a 
           href={waLink}
           target="_blank" 
