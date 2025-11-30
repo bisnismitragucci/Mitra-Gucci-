@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,16 @@
       
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #ffffff;
+        background-color: #F9F8F6; /* Warm Alabaster / Cream */
+        color: #1a1a1a;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Premium Selection Color - Deep Burgundy */
+      ::selection {
+        background: #781016;
+        color: white;
       }
 
       /* Custom scrollbar for a premium feel */
@@ -20,14 +29,14 @@
         width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: #0a0a0a; 
+        background: #F9F8F6; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #333; 
-        border-radius: 3px;
+        background: #0F221B; /* Deep Hunter Green */
+        border-radius: 0px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+        background: #D4AF37; /* Metallic Gold */
       }
       
       .font-serif {
@@ -39,12 +48,25 @@
       }
 
       .fade-in {
-        animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1);
+        animation: fadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
       }
       
       @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
+        from { opacity: 0; transform: translateY(30px); }
         to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Cinematic Noise Overlay */
+      .bg-noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.04;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
       }
 
       /* Infinite Scroll Animation */
@@ -77,7 +99,7 @@
         left: 0;
         background-color: currentColor;
         transform-origin: bottom right;
-        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
       }
 
       .hover-underline-animation:hover::after {
@@ -99,6 +121,7 @@
 </script>
 </head>
   <body>
+    <div class="bg-noise"></div>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

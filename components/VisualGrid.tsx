@@ -27,8 +27,8 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
       link: 'umamaCollab' as PageView
     },
     {
-      // Exclusive Collection
-      src: "https://i.pinimg.com/1200x/1b/33/eb/1b33eb6bd6be948bd06f5f7e128b2b75.jpg", 
+      // Exclusive Collection - Updated with New Gift Giving Asset
+      src: "https://images.ctfassets.net/brzb6u29244a/1r0xTJ5E4aYyYYlHkXFk01/3ea85491d43aa09216ad889fea64c1f1/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=2000&fm=avif&q=50", 
       title: t.grid.sustainability,
       isCenter: false,
       position: "object-top",

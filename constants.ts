@@ -173,20 +173,20 @@ export const DICTIONARY: Dictionary = {
       subtitle: 'TEMUKAN KEINDAHAN',
       items: [
         {
-          image: 'https://i.pinimg.com/736x/1b/33/eb/1b33eb6bd6be948bd06f5f7e128b2b75.jpg',
-          title: 'Gucci Ancora',
+          image: 'https://images.ctfassets.net/brzb6u29244a/1r0xTJ5E4aYyYYlHkXFk01/3ea85491d43aa09216ad889fea64c1f1/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=2000&fm=avif&q=50',
+          title: 'Gucci Gift Giving',
           description: 'Ekspresi kebebasan melalui siluet klasik yang didefinisikan ulang untuk era modern.',
           cta: 'LIHAT KOLEKSI'
         },
         {
-          image: 'https://i.pinimg.com/736x/8f/75/70/8f757050f65da6fc065d12a0f8c1b06d.jpg',
-          title: 'Valigeria',
+          image: 'https://images.ctfassets.net/brzb6u29244a/aulskRb1cIcYarJ0Gaxpp/973dfaa3557a8e510b5fbd7c8d6c30b1/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-2-20-0725-B_001_Default.png?w=2000&fm=avif&q=50',
+          title: 'Valigeria Heritage',
           description: 'Warisan perjalanan yang dihidupkan kembali dengan sentuhan kontemporer.',
           cta: 'LIHAT KOLEKSI'
         },
         {
-          image: 'https://i.pinimg.com/736x/e2/eb/fb/e2ebfb79c21cf0ca9ca64d94950cc7d2.jpg',
-          title: 'Gucci Horsebit',
+          image: 'https://images.ctfassets.net/brzb6u29244a/75LNsWDWjusBT37Qp0AfHx/96668fead6fa8a23ce8f277a6edef77a/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-1-09-1000-B_001_Default.png?w=2000&fm=avif&q=50',
+          title: 'Gucci Essentials',
           description: 'Ikon abadi yang terus berevolusi, merayakan keanggunan detail.',
           cta: 'LIHAT KOLEKSI'
         }
@@ -520,7 +520,7 @@ export const DICTIONARY: Dictionary = {
         subtitle: 'TRANSFORMATION FROM PARTICIPANT TO STRATEGIC PARTNER',
         description: 'The Gucci Affiliate Business Account is not just a login access, but the command center for your career in the Gucci ecosystem. It is a professional tool designed to separate hobbies from serious business.',
         activationTitle: 'PARTNERSHIP INITIATION',
-        activationDesc: 'To become an official partner, simply register a Business Account. Start your first business agenda with an activation fee of only IDR 100,000. Once joined, you are immediately entitled to exclusive benefits and profits from this program.',
+        activationDesc: 'To become an official partner, simply register a Business Account. Start your first business agenda with an activation fee of only IDR 100.000. Once joined, you are immediately entitled to exclusive benefits and profits from this program.',
         features: [
           {
             title: 'REAL-TIME EARNINGS DASHBOARD',
@@ -542,20 +542,20 @@ export const DICTIONARY: Dictionary = {
       subtitle: 'DISCOVER BEAUTY',
       items: [
         {
-          image: 'https://i.pinimg.com/736x/1b/33/eb/1b33eb6bd6be948bd06f5f7e128b2b75.jpg',
-          title: 'Gucci Ancora',
+          image: 'https://images.ctfassets.net/brzb6u29244a/1r0xTJ5E4aYyYYlHkXFk01/3ea85491d43aa09216ad889fea64c1f1/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=2000&fm=avif&q=50',
+          title: 'Gucci Gift Giving',
           description: 'An expression of freedom through classic silhouettes redefined for the modern era.',
           cta: 'VIEW COLLECTION'
         },
         {
-          image: 'https://i.pinimg.com/736x/8f/75/70/8f757050f65da6fc065d12a0f8c1b06d.jpg',
-          title: 'Valigeria',
+          image: 'https://images.ctfassets.net/brzb6u29244a/aulskRb1cIcYarJ0Gaxpp/973dfaa3557a8e510b5fbd7c8d6c30b1/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-2-20-0725-B_001_Default.png?w=2000&fm=avif&q=50',
+          title: 'Valigeria Heritage',
           description: 'A heritage of travel revived with a contemporary touch.',
           cta: 'VIEW COLLECTION'
         },
         {
-          image: 'https://i.pinimg.com/736x/e2/eb/fb/e2ebfb79c21cf0ca9ca64d94950cc7d2.jpg',
-          title: 'Gucci Horsebit',
+          image: 'https://images.ctfassets.net/brzb6u29244a/75LNsWDWjusBT37Qp0AfHx/96668fead6fa8a23ce8f277a6edef77a/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-1-09-1000-B_001_Default.png?w=2000&fm=avif&q=50',
+          title: 'Gucci Essentials',
           description: 'A timeless icon that continues to evolve, celebrating the elegance of detail.',
           cta: 'VIEW COLLECTION'
         }

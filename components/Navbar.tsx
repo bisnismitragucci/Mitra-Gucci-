@@ -37,10 +37,10 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
   return (
     <>
       <nav 
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out border-b border-white/10 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out border-b border-white/5 ${
           scrolled 
-            ? 'bg-black/80 backdrop-blur-md py-2' 
-            : 'bg-gradient-to-b from-black/80 to-transparent py-6'
+            ? 'bg-[#0F221B]/90 backdrop-blur-md py-2' 
+            : 'bg-gradient-to-b from-[#0F221B]/80 to-transparent py-6'
         }`}
       >
         <div className="max-w-[1920px] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
           <div className="hidden lg:flex items-center space-x-6 text-[10px] font-bold tracking-[0.2em] uppercase text-white">
              <button 
               onClick={() => setLang(lang === 'id' ? 'en' : 'id')}
-              className="group flex items-center space-x-2 hover:text-gray-300 transition-colors opacity-80 hover:opacity-100"
+              className="group flex items-center space-x-2 hover:text-[#D4AF37] transition-colors opacity-80 hover:opacity-100"
             >
               <span className="hover-underline-animation">{lang === 'id' ? 'INDONESIA' : 'ENGLISH'}</span>
               <ChevronDown className="w-3 h-3 group-hover:rotate-180 transition-transform duration-300" />
@@ -66,7 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
             }`}>
               GUCCI
             </span>
-            <span className={`tracking-[0.3em] uppercase text-gray-400 mt-1 font-semibold transition-all duration-500 ${
+            <span className={`tracking-[0.3em] uppercase text-[#D4AF37] mt-1 font-semibold transition-all duration-500 ${
               scrolled ? 'text-[7px] opacity-0 h-0 overflow-hidden' : 'text-[9px] opacity-100'
             }`}>
               AFFILIATE PROGRAM
@@ -75,14 +75,14 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
 
           {/* Right Actions (Links) */}
           <div className="hidden lg:flex items-center space-x-10 text-[10px] font-bold tracking-[0.2em] uppercase text-white">
-            <button onClick={() => handleNavClick('affiliateProgram')} className="hover-underline-animation opacity-80 hover:opacity-100 transition-all">
+            <button onClick={() => handleNavClick('affiliateProgram')} className="hover-underline-animation opacity-80 hover:text-[#D4AF37] hover:opacity-100 transition-all">
               {t.nav.opportunities}
             </button>
             <a 
               href={waLink} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="px-5 py-2 border border-white/30 hover:bg-white hover:text-black hover:border-white transition-all duration-500 rounded-[1px]"
+              className="px-5 py-2 border border-white/30 hover:bg-[#D4AF37] hover:text-[#0F221B] hover:border-[#D4AF37] transition-all duration-500 rounded-[1px]"
             >
               {t.nav.login}
             </a>
@@ -96,24 +96,24 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
 
         {/* Desktop Secondary Nav - Centered below logo (Only visible when not scrolled or mouse over nav) */}
         <div className={`hidden lg:flex justify-center items-center space-x-12 text-[10px] font-bold tracking-[0.2em] uppercase transition-all duration-500 overflow-hidden ${
-          scrolled ? 'h-0 opacity-0' : 'h-10 opacity-100 border-t border-white/10 mt-2'
+          scrolled ? 'h-0 opacity-0' : 'h-10 opacity-100 border-t border-white/5 mt-2'
         }`}>
-            <button onClick={() => handleNavClick('worldOfGucci')} className="text-white/80 hover:text-white hover-underline-animation">
+            <button onClick={() => handleNavClick('worldOfGucci')} className="text-white/80 hover:text-[#D4AF37] hover-underline-animation">
               {t.nav.people}
             </button>
-            <button onClick={() => handleNavClick('collections')} className="text-white/80 hover:text-white hover-underline-animation">
+            <button onClick={() => handleNavClick('collections')} className="text-white/80 hover:text-[#D4AF37] hover-underline-animation">
               {t.nav.partners}
             </button>
-            <button onClick={() => handleNavClick('umamaCollab')} className="text-[#c5a059] hover:text-[#e0b868] hover-underline-animation">
+            <button onClick={() => handleNavClick('umamaCollab')} className="text-[#c5a059] hover:text-white hover-underline-animation">
               {t.nav.collab}
             </button>
-            <button onClick={() => handleNavClick('businessAccount')} className="text-white/80 hover:text-white hover-underline-animation">
+            <button onClick={() => handleNavClick('businessAccount')} className="text-white/80 hover:text-[#D4AF37] hover-underline-animation">
               {t.nav.academy}
             </button>
         </div>
 
         {/* Mobile Menu Dropdown */}
-        <div className={`lg:hidden fixed inset-0 bg-black/95 backdrop-blur-xl z-40 transition-transform duration-500 ease-in-out flex flex-col justify-center px-8 ${
+        <div className={`lg:hidden fixed inset-0 bg-[#0F221B]/95 backdrop-blur-xl z-40 transition-transform duration-500 ease-in-out flex flex-col justify-center px-8 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`} style={{ top: '0' }}>
             <button className="absolute top-6 right-6 text-white" onClick={() => setIsOpen(false)}>
@@ -121,19 +121,19 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
             </button>
 
             <div className="flex flex-col space-y-8 text-center">
-              <button onClick={() => handleNavClick('worldOfGucci')} className="text-lg font-serif italic text-white hover:text-gray-300">
+              <button onClick={() => handleNavClick('worldOfGucci')} className="text-lg font-serif italic text-white hover:text-[#D4AF37]">
                 {t.nav.people}
               </button>
-              <button onClick={() => handleNavClick('umamaCollab')} className="text-lg font-serif italic text-[#c5a059] font-bold">
+              <button onClick={() => handleNavClick('umamaCollab')} className="text-lg font-serif italic text-[#D4AF37] font-bold">
                 {t.nav.collab}
               </button>
-              <button onClick={() => handleNavClick('collections')} className="text-lg font-serif italic text-white hover:text-gray-300">
+              <button onClick={() => handleNavClick('collections')} className="text-lg font-serif italic text-white hover:text-[#D4AF37]">
                 {t.nav.partners}
               </button>
-              <button onClick={() => handleNavClick('businessAccount')} className="text-lg font-serif italic text-white hover:text-gray-300">
+              <button onClick={() => handleNavClick('businessAccount')} className="text-lg font-serif italic text-white hover:text-[#D4AF37]">
                 {t.nav.academy}
               </button>
-              <button onClick={() => handleNavClick('affiliateProgram')} className="text-lg font-serif italic text-white hover:text-gray-300">
+              <button onClick={() => handleNavClick('affiliateProgram')} className="text-lg font-serif italic text-white hover:text-[#D4AF37]">
                 {t.nav.opportunities}
               </button>
               
@@ -144,7 +144,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
                     setLang(lang === 'id' ? 'en' : 'id');
                     setIsOpen(false);
                   }}
-                  className="text-xs tracking-[0.2em] uppercase text-gray-400"
+                  className="text-xs tracking-[0.2em] uppercase text-[#D4AF37]"
                 >
                   Switch to {lang === 'id' ? 'ENGLISH' : 'INDONESIA'}
                 </button>
@@ -153,7 +153,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
       </nav>
       
       {/* Login Notification Bar - Adjusted for fixed nav */}
-      <div className="fixed bottom-0 left-0 w-full z-40 bg-[#1a1a1a]/90 backdrop-blur-sm text-white py-3 flex justify-center items-center border-t border-white/10 lg:hidden">
+      <div className="fixed bottom-0 left-0 w-full z-40 bg-[#0F221B]/95 backdrop-blur-sm text-white py-3 flex justify-center items-center border-t border-white/10 lg:hidden">
         <a 
           href={waLink}
           target="_blank" 
@@ -161,7 +161,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
           className="group flex items-center space-x-2 text-[9px] tracking-[0.15em] uppercase font-medium"
         >
            <span>{t.loginBar.text}</span>
-           <span className="font-bold underline decoration-1 underline-offset-4 group-hover:text-[#c5a059] transition-colors">
+           <span className="font-bold underline decoration-1 underline-offset-4 group-hover:text-[#D4AF37] transition-colors">
              {t.loginBar.link}
            </span>
         </a>

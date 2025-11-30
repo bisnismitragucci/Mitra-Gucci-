@@ -12,13 +12,13 @@ const WorldOfGucciPage: React.FC<WorldOfGucciPageProps> = ({ t, onBack }) => {
   const content = t.worldOfGucci;
 
   return (
-    <div className="min-h-screen bg-white text-black pt-24 pb-16 px-6 md:px-12 fade-in">
+    <div className="min-h-screen bg-white text-black pt-48 pb-16 px-6 md:px-12 fade-in">
       <div className="max-w-4xl mx-auto">
         
         {/* Navigation Back */}
         <button 
           onClick={onBack}
-          className="flex items-center space-x-2 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 hover:text-black transition-colors mb-12"
+          className="relative z-[60] flex items-center space-x-2 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 hover:text-black transition-colors mb-12"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>{t.nav.backToHome}</span>

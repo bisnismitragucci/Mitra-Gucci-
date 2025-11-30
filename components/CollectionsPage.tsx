@@ -13,13 +13,13 @@ const CollectionsPage: React.FC<CollectionsPageProps> = ({ t, onBack }) => {
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20tertarik%20dengan%20koleksi%20ini";
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-black pt-24 pb-16 px-6 md:px-12 fade-in">
+    <div className="min-h-screen bg-[#fafafa] text-black pt-48 pb-16 px-6 md:px-12 fade-in">
       <div className="max-w-[1920px] mx-auto">
         
         {/* Navigation Back */}
         <button 
           onClick={onBack}
-          className="flex items-center space-x-2 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 hover:text-black transition-colors mb-16"
+          className="relative z-[60] flex items-center space-x-2 text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 hover:text-black transition-colors mb-16"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>{t.nav.backToHome}</span>
