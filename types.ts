@@ -1,5 +1,5 @@
 
-export type Language = 'id' | 'en';
+export type Language = 'id' | 'en' | 'it' | 'ja' | 'ko' | 'zh';
 export type PageView = 'home' | 'legality' | 'worldOfGucci' | 'collections' | 'businessAccount' | 'affiliateProgram' | 'expertAdvisor' | 'contemporaryStyle' | 'umamaCollab';
 
 export interface Translations {
@@ -193,4 +193,8 @@ export interface Translations {
 export interface Dictionary {
   id: Translations;
   en: Translations;
+  it: Translations;
+  ja: Translations;
+  ko: Translations;
+  zh: Translations;
 }

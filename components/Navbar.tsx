@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Language, Translations, PageView } from '../types';
 
 interface NavbarProps {
@@ -13,7 +13,19 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const langMenuRef = useRef<HTMLDivElement>(null);
+  
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+
+  const languages: { code: Language; label: string }[] = [
+    { code: 'id', label: 'INDONESIA' },
+    { code: 'en', label: 'ENGLISH' },
+    { code: 'it', label: 'ITALIANO' },
+    { code: 'ja', label: '日本語' },
+    { code: 'ko', label: '한국어' },
+    { code: 'zh', label: '中文' },
+  ];
 
   // Handle scroll effect for sticky navbar
   useEffect(() => {
@@ -24,6 +36,17 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close language menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (langMenuRef.current && !langMenuRef.current.contains(event.target as Node)) {
+        setLangMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const handleNavClick = (page: PageView) => {
@@ -49,14 +72,37 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
         <div className="max-w-[1920px] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
           
           {/* Left Actions (Language) */}
-          <div className="hidden lg:flex items-center space-x-6 text-[10px] font-bold tracking-[0.2em] uppercase text-white">
+          <div className="hidden lg:flex items-center space-x-6 text-[10px] font-bold tracking-[0.2em] uppercase text-white relative" ref={langMenuRef}>
              <button 
-              onClick={() => setLang(lang === 'id' ? 'en' : 'id')}
+              onClick={() => setLangMenuOpen(!langMenuOpen)}
               className="group flex items-center space-x-2 hover:text-[#D4AF37] transition-colors opacity-80 hover:opacity-100"
             >
-              <span className="hover-underline-animation">{lang === 'id' ? 'INDONESIA' : 'ENGLISH'}</span>
-              <ChevronDown className="w-3 h-3 group-hover:rotate-180 transition-transform duration-300" />
+              <Globe className="w-3 h-3" />
+              <span className="hover-underline-animation">
+                {languages.find(l => l.code === lang)?.label}
+              </span>
+              <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${langMenuOpen ? 'rotate-180' : ''}`} />
             </button>
+
+            {/* Language Dropdown */}
+            <div className={`absolute top-full left-0 mt-4 bg-[#0F221B] border border-[#D4AF37]/30 shadow-2xl py-2 min-w-[140px] transition-all duration-300 transform origin-top-left ${
+              langMenuOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
+            }`}>
+              {languages.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => {
+                    setLang(l.code);
+                    setLangMenuOpen(false);
+                  }}
+                  className={`block w-full text-left px-4 py-3 text-[9px] tracking-[0.2em] uppercase hover:bg-[#D4AF37] hover:text-[#0F221B] transition-colors ${
+                    lang === l.code ? 'text-[#D4AF37]' : 'text-white'
+                  }`}
+                >
+                  {l.label}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Logo Area - Absolute Center */}
@@ -97,7 +143,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
           </button>
         </div>
 
-        {/* Desktop Secondary Nav - Centered below logo (Only visible when not scrolled or mouse over nav) */}
+        {/* Desktop Secondary Nav - Centered below logo */}
         <div className={`hidden lg:flex justify-center items-center space-x-12 text-[10px] font-bold tracking-[0.2em] uppercase transition-all duration-500 overflow-hidden ${
           scrolled ? 'h-0 opacity-0' : 'h-10 opacity-100 border-t border-white/5 mt-2'
         }`}>
@@ -142,20 +188,28 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
               
               <div className="w-12 h-[1px] bg-[#D4AF37]/30 mx-auto my-4"></div>
 
-              <button 
-                  onClick={() => {
-                    setLang(lang === 'id' ? 'en' : 'id');
-                    setIsOpen(false);
-                  }}
-                  className="text-xs tracking-[0.2em] uppercase text-[#D4AF37]"
-                >
-                  Switch to {lang === 'id' ? 'ENGLISH' : 'INDONESIA'}
-                </button>
+              {/* Mobile Language Selector */}
+              <div className="grid grid-cols-2 gap-4">
+                 {languages.map((l) => (
+                    <button 
+                      key={l.code}
+                      onClick={() => {
+                        setLang(l.code);
+                        setIsOpen(false);
+                      }}
+                      className={`text-xs tracking-[0.2em] uppercase py-2 border border-white/10 rounded-sm ${
+                        lang === l.code ? 'bg-[#D4AF37] text-[#0F221B] border-[#D4AF37]' : 'text-white hover:border-[#D4AF37]'
+                      }`}
+                    >
+                      {l.label}
+                    </button>
+                 ))}
+              </div>
             </div>
         </div>
       </nav>
       
-      {/* Login Notification Bar - Adjusted for fixed nav - Gucci Burgundy Color */}
+      {/* Login Notification Bar */}
       <div className="fixed bottom-0 left-0 w-full z-40 bg-[#781016] text-white py-3 flex justify-center items-center border-t border-[#D4AF37]/30 lg:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.3)]">
         <a 
           href={waLink}
