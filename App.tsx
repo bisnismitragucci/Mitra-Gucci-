@@ -14,6 +14,7 @@ import ExpertAdvisorPage from './components/ExpertAdvisorPage';
 import ContemporaryStylePage from './components/ContemporaryStylePage';
 import UmamaCollaborationPage from './components/UmamaCollaborationPage';
 import TestimonialTicker from './components/TestimonialTicker';
+import ChristmasBanner from './components/ChristmasBanner';
 import { DICTIONARY } from './constants';
 import { Language, PageView } from './types';
 
@@ -34,6 +35,8 @@ function App() {
         {page === 'home' ? (
           <>
             <Hero t={t} />
+            {/* Christmas Banner moved to top as primary highlight for December Theme */}
+            <ChristmasBanner t={t} />
             <FilterBar lang={lang} t={t} onViewLegality={() => setPage('legality')} />
             <TestimonialTicker t={t} />
             <VisualGrid t={t} onNavigate={setPage} />

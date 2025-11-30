@@ -36,6 +36,12 @@ export interface Translations {
     legalityDesc: string;
     viewLegality: string;
   };
+  christmas: {
+    subtitle: string;
+    title: string;
+    description: string;
+    cta: string;
+  };
   testimonials: {
     title: string;
     items: {
