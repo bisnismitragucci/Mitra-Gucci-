@@ -13,7 +13,13 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
+    // Optimization: Only enable parallax on desktop (width > 768px)
+    // Mobile browsers struggle with scroll events + transform updates
+    if (window.innerWidth < 768) return;
+
     const handleScroll = () => {
+      // Use requestAnimationFrame for smoother performance if needed, 
+      // but simplistic throttling by check is okay for now
       setOffset(window.scrollY);
     };
     window.addEventListener('scroll', handleScroll);
@@ -22,11 +28,12 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-[#050505]">
-      {/* Cinematic Background with Parallax */}
+      {/* Cinematic Background with Parallax (Conditional) */}
       <div 
-        className="absolute inset-0 w-full h-[120%] bg-cover bg-center transition-transform duration-100 ease-out"
+        className="absolute inset-0 w-full h-[120%] bg-cover bg-center transition-transform duration-100 ease-out will-change-transform"
         style={{ 
           backgroundImage: `url(${bgImage})`,
+          // On mobile (offset is always 0), this transform is static. On desktop, it moves.
           transform: `translateY(${offset * 0.5}px) scale(1.1)` 
         }}
       >
@@ -86,7 +93,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
 
       </div>
 
-      {/* Decorative Side Elements */}
+      {/* Decorative Side Elements - Hidden on mobile to reduce DOM clutter */}
       <div className="absolute left-8 bottom-12 hidden md:block">
          <span className="text-[9px] text-white/50 tracking-[0.2em] uppercase vertical-text">
            Est. Florence 1921

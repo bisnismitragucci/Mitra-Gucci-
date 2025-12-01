@@ -26,7 +26,7 @@ const ChristmasBanner: React.FC<ChristmasBannerProps> = ({ t }) => {
            {/* Left: Image Side (60%) */}
            <div className="w-full md:w-[60%] relative h-[400px] md:h-full overflow-hidden">
               <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-[30s] ease-linear hover:scale-105"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-[30s] ease-linear hover:scale-105 will-change-transform"
                 style={{ backgroundImage: `url(${bgImage})` }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0F221B] opacity-90 md:opacity-100 mix-blend-multiply"></div>
@@ -80,8 +80,8 @@ const ChristmasBanner: React.FC<ChristmasBannerProps> = ({ t }) => {
 
       </div>
 
-      {/* Ambient Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#D4AF37] rounded-full filter blur-[200px] opacity-5 pointer-events-none"></div>
+      {/* Ambient Glow - Optimized for mobile */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#D4AF37] rounded-full filter blur-[200px] opacity-5 pointer-events-none hidden md:block"></div>
 
     </div>
   );

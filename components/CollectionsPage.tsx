@@ -47,7 +47,8 @@ const CollectionsPage: React.FC<CollectionsPageProps> = ({ t, onBack }) => {
                    <img 
                       src={item.image} 
                       alt={item.title} 
-                      className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out pointer-events-none"
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out pointer-events-none will-change-transform"
                    />
                    
                    {/* Overlay CTA on Hover */}

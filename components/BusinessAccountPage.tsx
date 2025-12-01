@@ -16,10 +16,10 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
   return (
     <div className="min-h-screen bg-[#050505] text-white flex flex-col fade-in font-sans relative overflow-x-hidden">
       
-      {/* Background Elements for Depth */}
-      <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-         <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-[#c5a059] rounded-full mix-blend-screen filter blur-[150px] opacity-10"></div>
-         <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900 rounded-full mix-blend-screen filter blur-[150px] opacity-10"></div>
+      {/* Background Elements for Depth - OPTIMIZED: Hidden on mobile (hidden md:block) */}
+      <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0 hidden md:block">
+         <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-[#c5a059] rounded-full mix-blend-screen filter blur-[150px] opacity-10 will-change-transform"></div>
+         <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-900 rounded-full mix-blend-screen filter blur-[150px] opacity-10 will-change-transform"></div>
       </div>
 
       {/* Navigation - Fixed with higher Z-Index than Navbar (z-50) - Pushed down to avoid overlap */}
@@ -43,6 +43,7 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
               <img 
                 src="https://api.gconline.online/upload/690309ac72101.png" 
                 alt="Gucci Logo" 
+                loading="lazy"
                 className="w-[160px] h-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] pointer-events-none"
               />
             </div>
@@ -51,8 +52,8 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
               {content.form.title}
             </h1>
 
-            {/* Form Container - Ultra Glassmorphism */}
-            <div className="w-full bg-gradient-to-br from-white/10 to-white/[0.02] backdrop-blur-2xl border border-white/10 rounded-xl p-10 shadow-2xl relative overflow-hidden group">
+            {/* Form Container - Ultra Glassmorphism - Optimized blur for mobile */}
+            <div className="w-full bg-gradient-to-br from-[#1a1a1a] md:from-white/10 to-transparent md:to-white/[0.02] md:backdrop-blur-2xl border border-white/10 rounded-xl p-8 md:p-10 shadow-2xl relative overflow-hidden group">
                
                {/* Shine Effect */}
                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/5 to-transparent pointer-events-none"></div>

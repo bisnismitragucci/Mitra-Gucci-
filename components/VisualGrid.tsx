@@ -70,7 +70,8 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
                <img 
                  src={item.src}
                  alt={item.title}
-                 className="w-full h-full object-cover transform transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110 pointer-events-none"
+                 loading="lazy" // Optimize loading
+                 className="w-full h-full object-cover transform transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110 pointer-events-none will-change-transform"
                />
                
                {/* Hover Reveal Button */}
