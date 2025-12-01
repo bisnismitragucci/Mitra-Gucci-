@@ -27,37 +27,37 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         className="absolute inset-0 w-full h-[120%] bg-cover bg-center transition-transform duration-100 ease-out"
         style={{ 
           backgroundImage: `url(${bgImage})`,
-          transform: `translateY(${offset * 0.5}px) scale(1.1)` // Slow parallax + slight zoom
+          transform: `translateY(${offset * 0.5}px) scale(1.1)` 
         }}
       >
-        {/* Cinematic Gradient Overlay */}
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/90"></div>
-        <div className="absolute inset-0 bg-black/20 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-black/30 mix-blend-multiply"></div>
       </div>
       
-      {/* Floating Elements - Editorial Layout */}
-      <div className="absolute inset-0 flex flex-col items-center justify-end md:justify-center pb-24 md:pb-0 z-10 px-6">
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-6 text-center">
         
         {/* Top Label */}
-        <div className="absolute top-32 md:top-40 left-1/2 -translate-x-1/2 overflow-hidden">
-           <h5 className="text-[#D4AF37] text-[9px] md:text-[11px] font-bold tracking-[0.6em] uppercase animate-[fadeIn_1s_ease-out_forwards] border border-[#D4AF37]/30 px-6 py-2 rounded-full bg-black/20 backdrop-blur-sm">
+        <div className="overflow-hidden mb-6">
+           <h5 className="text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase animate-[fadeIn_1s_ease-out_forwards] px-6 py-2 rounded-full bg-black/20 backdrop-blur-sm border border-[#D4AF37]/30">
              {t.hero.subtitle}
            </h5>
         </div>
 
-        {/* Main Title - Massive & Overlapping */}
-        <div className="relative text-center w-full max-w-[1920px]">
-          <h1 className="text-white text-[15vw] md:text-[13vw] leading-[0.85] font-serif font-medium tracking-tighter opacity-0 animate-[fadeIn_1.5s_ease-out_0.3s_forwards] mix-blend-overlay">
-            GUCCI
+        {/* Main Title */}
+        <div className="relative w-full max-w-5xl mx-auto">
+          <h1 className="text-white text-4xl md:text-7xl lg:text-8xl leading-none font-serif font-medium tracking-tight opacity-0 animate-[fadeIn_1.5s_ease-out_0.3s_forwards]">
+            {t.hero.title}
           </h1>
-          <h2 className="text-white text-3xl md:text-6xl font-light tracking-[0.2em] -mt-4 md:-mt-12 uppercase opacity-0 animate-[fadeIn_1.5s_ease-out_0.6s_forwards]">
-            <span className="font-serif italic text-[#D4AF37] pr-4">The</span>
-            Affiliate
-          </h2>
         </div>
+        
+        <p className="mt-8 text-gray-300 text-sm md:text-lg max-w-2xl font-light tracking-wide leading-relaxed opacity-0 animate-[fadeIn_1.5s_ease-out_0.6s_forwards]">
+            {t.hero.description}
+        </p>
 
         {/* Bottom Actions */}
-        <div className="mt-12 md:mt-16 flex flex-col md:flex-row items-center gap-6 opacity-0 animate-[fadeIn_1.5s_ease-out_0.9s_forwards]">
+        <div className="mt-12 flex flex-col md:flex-row items-center gap-6 opacity-0 animate-[fadeIn_1.5s_ease-out_0.9s_forwards]">
             
             {/* Primary CTA */}
             <a 
@@ -73,7 +73,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
               </span>
             </a>
 
-            {/* Secondary Action - Play Video Simulation */}
+            {/* Secondary Action */}
             <button className="flex items-center gap-4 group cursor-pointer">
               <div className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:border-[#D4AF37] group-hover:bg-[#D4AF37]/10 transition-all duration-500">
                  <Play className="w-4 h-4 text-white fill-white group-hover:text-[#D4AF37] group-hover:fill-[#D4AF37] transition-colors" />
@@ -91,12 +91,6 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
          <span className="text-[9px] text-white/50 tracking-[0.2em] uppercase vertical-text">
            Est. Florence 1921
          </span>
-      </div>
-      <div className="absolute right-8 bottom-12 hidden md:block">
-         <div className="flex flex-col gap-4 items-center">
-            <div className="w-[1px] h-12 bg-white/20"></div>
-            <span className="text-[9px] text-white/50 tracking-widest">SCROLL</span>
-         </div>
       </div>
     </div>
   );

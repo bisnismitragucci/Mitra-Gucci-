@@ -1,6 +1,6 @@
 
-import React from 'react';
-import { Quote, ArrowRight } from 'lucide-react';
+import React, { useRef } from 'react';
+import { Quote, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Translations } from '../types';
 
 interface TestimonialTickerProps {
@@ -10,80 +10,100 @@ interface TestimonialTickerProps {
 const TestimonialTicker: React.FC<TestimonialTickerProps> = ({ t }) => {
   const items = t.testimonials.items;
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
-  
-  // Double the items array to create seamless loop effect
-  const loopItems = [...items, ...items];
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = 400; // Approx card width
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   return (
-    <div className="w-full bg-[#050505] py-24 overflow-hidden relative border-t border-[#D4AF37]/20">
+    <div className="w-full bg-[#050505] py-24 border-t border-[#D4AF37]/20">
       
-      {/* Cinematic Background Elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#0F221B]/40 via-[#050505] to-[#050505]"></div>
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div>
-
-      {/* Section Header */}
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 mb-16 relative z-10 flex items-center justify-between">
+      {/* Header */}
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 mb-12 flex flex-col md:flex-row items-end justify-between">
         <div>
-           <h3 className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase mb-3 flex items-center gap-3">
+           <h3 className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase mb-4 flex items-center gap-3">
              <span className="w-8 h-[1px] bg-[#D4AF37]"></span>
              {t.testimonials.title}
            </h3>
            <h2 className="text-white text-3xl md:text-5xl font-serif">Community Voices</h2>
         </div>
+
+        {/* Navigation Buttons */}
+        <div className="flex gap-4 mt-8 md:mt-0">
+          <button onClick={() => scroll('left')} className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black text-white transition-all">
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button onClick={() => scroll('right')} className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black text-white transition-all">
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
       </div>
 
-      {/* Ticker Container */}
-      <div className="flex animate-scroll w-max hover:[animation-play-state:paused] py-4">
-        {loopItems.map((item, index) => (
-          <a 
-            href={waLink}
-            target="_blank"
-            rel="noopener noreferrer"
+      {/* Grid / Scroll Container */}
+      <div 
+        ref={scrollRef}
+        className="flex overflow-x-auto gap-6 px-6 md:px-12 pb-12 snap-x snap-mandatory hide-scrollbar"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      >
+        {items.map((item, index) => (
+          <div 
             key={index} 
-            className="w-[320px] md:w-[400px] h-[550px] mx-3 relative group flex-shrink-0 cursor-pointer overflow-hidden rounded-sm bg-[#111]"
+            className="w-full md:w-[23%] flex-shrink-0 relative group h-[450px] rounded-[2px] overflow-hidden bg-gray-900 snap-center cursor-pointer border border-white/5 hover:border-[#D4AF37]/50 transition-colors duration-500"
           >
-            {/* Background Image - Grayscale to Color */}
+             {/* Background Image */}
             <div 
-              className="absolute inset-0 bg-cover bg-center transition-all duration-700 filter grayscale group-hover:grayscale-0 group-hover:scale-110"
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
               style={{ backgroundImage: `url(${item.image})` }}
             />
             
-            {/* Dark Overlay - Stronger Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-500" />
-            
-            {/* Content Container */}
-            <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
-               
-               {/* Quote Icon - Large & Gold */}
-               <div className="mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                  <Quote className="w-10 h-10 text-[#D4AF37] fill-[#D4AF37] opacity-100" />
-               </div>
+            {/* Gradient Overlay - Darker at bottom for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-500" />
 
-               {/* Quote Text */}
-               <blockquote className="text-gray-200 font-serif text-lg leading-relaxed italic mb-8 border-l-2 border-[#D4AF37]/50 pl-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-150">
-                 "{item.quote}"
-               </blockquote>
+            {/* Content Overlay */}
+            <div className="absolute inset-0 p-6 flex flex-col justify-between z-10">
+                
+                {/* Top: Quote Icon */}
+                <div>
+                   <Quote className="w-8 h-8 text-[#D4AF37] fill-[#D4AF37] mb-4" />
+                   <p className="text-white/90 font-serif italic text-sm leading-relaxed line-clamp-4">
+                     "{item.quote}"
+                   </p>
+                </div>
 
-               {/* Person Details */}
-               <div className="flex justify-between items-end border-t border-white/10 pt-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-200">
-                  <div>
-                    <h4 className="text-white font-bold text-lg tracking-wide group-hover:text-[#D4AF37] transition-colors">{item.name}</h4>
-                    <p className="text-[10px] text-gray-400 font-bold tracking-[0.2em] uppercase mt-1">{item.role}</p>
-                  </div>
-
-                  {/* Join Button - Appears on hover */}
-                  <div className="bg-[#D4AF37] text-black pl-4 pr-3 py-2 flex items-center gap-2 rounded-[2px] opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-300 shadow-lg">
-                     <span className="text-[9px] font-bold tracking-widest uppercase">GABUNG</span>
-                     <ArrowRight className="w-3 h-3" />
-                  </div>
-               </div>
+                {/* Bottom: Info & Action */}
+                <div>
+                   <div className="w-8 h-[1px] bg-[#D4AF37] mb-4"></div>
+                   <h4 className="text-white font-bold text-lg">{item.name}</h4>
+                   <p className="text-[#D4AF37] text-[9px] font-bold tracking-widest uppercase mb-4">{item.role}</p>
+                   
+                   <a 
+                     href={waLink}
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="flex items-center gap-2 text-white group-hover:text-[#D4AF37] transition-colors"
+                   >
+                     <span className="text-[10px] font-bold tracking-widest uppercase">GABUNG</span>
+                     <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
+                   </a>
+                </div>
             </div>
-            
-            {/* Hover Border Glow */}
-            <div className="absolute inset-0 border border-[#D4AF37]/0 group-hover:border-[#D4AF37]/50 transition-colors duration-500 pointer-events-none"></div>
-          </a>
+          </div>
         ))}
       </div>
+
+      {/* CSS to hide scrollbar but keep functionality */}
+      <style>{`
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </div>
   );
 };

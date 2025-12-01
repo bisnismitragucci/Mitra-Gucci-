@@ -12,51 +12,10 @@
       
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #050505; /* Darker base for premium feel */
+        background-color: #050505;
         color: #1a1a1a;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        cursor: none; /* Hide default cursor for custom one */
-      }
-
-      /* Custom Luxury Cursor */
-      .cursor-dot,
-      .cursor-outline {
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        z-index: 9999;
-        pointer-events: none;
-      }
-
-      .cursor-dot {
-        width: 8px;
-        height: 8px;
-        background-color: #D4AF37;
-      }
-
-      .cursor-outline {
-        width: 40px;
-        height: 40px;
-        border: 1px solid rgba(212, 175, 55, 0.5);
-        transition: width 0.2s, height 0.2s, background-color 0.2s;
-      }
-
-      body:hover .cursor-outline {
-        width: 40px;
-        height: 40px;
-      }
-
-      /* Hover state for links/buttons */
-      a:hover ~ .cursor-outline,
-      button:hover ~ .cursor-outline,
-      .hover-target:hover ~ .cursor-outline {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(212, 175, 55, 0.1);
-        border-color: #D4AF37;
       }
 
       /* Premium Selection Color */
@@ -67,14 +26,15 @@
 
       /* Custom scrollbar */
       ::-webkit-scrollbar {
-        width: 4px;
+        width: 6px;
+        height: 6px;
       }
       ::-webkit-scrollbar-track {
         background: #000; 
       }
       ::-webkit-scrollbar-thumb {
         background: #333; 
-        border-radius: 2px;
+        border-radius: 3px;
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #D4AF37; 
@@ -95,19 +55,6 @@
       @keyframes fadeIn {
         from { opacity: 0; transform: translateY(30px); }
         to { opacity: 1; transform: translateY(0); }
-      }
-
-      /* Cinematic Noise Overlay */
-      .bg-noise {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        pointer-events: none;
-        z-index: 9998;
-        opacity: 0.03;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
       }
 
       /* Global Snow Effect for December Theme */
@@ -133,20 +80,6 @@
         opacity: 0.2;
       }
 
-      /* Infinite Scroll Animation */
-      @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-      
-      .animate-scroll {
-        animation: scroll 40s linear infinite;
-      }
-
-      .animate-scroll:hover {
-        animation-play-state: paused;
-      }
-
       /* Modern Hover Underline Animation */
       .hover-underline-animation {
         display: inline-block;
@@ -170,13 +103,6 @@
         transform: scaleX(1);
         transform-origin: bottom left;
       }
-
-      /* Custom Cursor Javascript helper styles handled in App.tsx typically, 
-         but for pure css fallback we ensure cursor is visible on touch devices */
-      @media (pointer: coarse) {
-        body { cursor: auto; }
-        .cursor-dot, .cursor-outline { display: none; }
-      }
     </style>
 <script type="importmap">
 {
@@ -192,32 +118,8 @@
 </script>
 </head>
   <body>
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-    <div class="bg-noise"></div>
     <div class="global-snow"></div>
     <div id="root"></div>
-    
-    <!-- Script to handle cursor movement -->
-    <script>
-      const cursorDot = document.querySelector('.cursor-dot');
-      const cursorOutline = document.querySelector('.cursor-outline');
-
-      window.addEventListener('mousemove', (e) => {
-        const posX = e.clientX;
-        const posY = e.clientY;
-
-        // Dot follows instantly
-        cursorDot.style.left = `${posX}px`;
-        cursorDot.style.top = `${posY}px`;
-
-        // Outline follows with slight delay for smooth feel
-        cursorOutline.animate({
-          left: `${posX}px`,
-          top: `${posY}px`
-        }, { duration: 500, fill: "forwards" });
-      });
-    </script>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
