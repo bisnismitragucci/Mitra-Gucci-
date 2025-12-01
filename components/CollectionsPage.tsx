@@ -10,7 +10,7 @@ interface CollectionsPageProps {
 
 const CollectionsPage: React.FC<CollectionsPageProps> = ({ t, onBack }) => {
   const data = t.collectionsPage;
-  const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20tertarik%20dengan%20koleksi%20ini";
+  const waLink = "https://wa.me/6282166912362?text=Hallo%20saya%20tertarik%20dengan%20koleksi%20ini";
 
   return (
     <div className="min-h-screen bg-[#fafafa] text-black pt-48 pb-16 px-6 md:px-12 fade-in">

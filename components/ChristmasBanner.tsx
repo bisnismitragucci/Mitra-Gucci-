@@ -9,7 +9,7 @@ interface ChristmasBannerProps {
 
 const ChristmasBanner: React.FC<ChristmasBannerProps> = ({ t }) => {
   const content = t.christmas;
-  const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20tertarik%20dengan%20edisi%20spesial%20natal%20dan%20tahun%20baru";
+  const waLink = "https://wa.me/6282166912362?text=Hallo%20saya%20tertarik%20dengan%20edisi%20spesial%20natal%20dan%20tahun%20baru";
   
   // Festive Christmas Tree Background
   const bgImage = "https://storage.googleapis.com/sahabat-pegadaian-asset-prd/20251128-022809_tema-natalwebp.webp";
