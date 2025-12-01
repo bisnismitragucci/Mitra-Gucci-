@@ -1,6 +1,7 @@
 
+
 export type Language = 'id' | 'en' | 'it' | 'ja' | 'ko' | 'zh';
-export type PageView = 'home' | 'legality' | 'worldOfGucci' | 'collections' | 'businessAccount' | 'affiliateProgram' | 'expertAdvisor' | 'contemporaryStyle' | 'umamaCollab';
+export type PageView = 'home' | 'legality' | 'worldOfGucci' | 'collections' | 'businessAccount' | 'affiliateProgram' | 'expertAdvisor' | 'contemporaryStyle' | 'luneraCollab';
 
 export interface Translations {
   nav: {
@@ -147,6 +148,34 @@ export interface Translations {
       content: string;
     }[];
     conclusion: string;
+  };
+  luneraCollab: {
+    heroTitle: string;
+    heroSubtitle: string;
+    heroCta: string;
+    mainHeadline: string;
+    mainDesc: string;
+    narrative: {
+      subtitle: string;
+      title: string;
+      p1: string;
+      p2: string;
+      p3: string;
+    };
+    boxFeature: {
+      title: string;
+      desc: string;
+    };
+    swarovski: {
+      title: string;
+      desc: string;
+    };
+    details: {
+      material: string;
+      size: string;
+      packaging: string;
+    };
+    shopNow: string;
   };
   umamaCollab: {
     heroTitle: string;

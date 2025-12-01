@@ -19,12 +19,12 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
       link: 'expertAdvisor' as PageView
     },
     {
-      // Main Highlight: Gucci x Umama (Sorotan Utama)
-      src: "https://i.pinimg.com/1200x/fb/03/e5/fb03e5edf1ed52e9bdf6dcb64f497864.jpg", 
-      title: t.grid.innovation, // "GUCCI x UMAMA"
+      // Main Highlight: Gucci x Lunera
+      src: "https://cf.shopee.co.id/file/id-11134201-7ra0t-mbotfmp5auul5d", 
+      title: t.grid.innovation, // "GUCCI x LUNERA"
       isCenter: true,
       position: "object-center",
-      link: 'umamaCollab' as PageView
+      link: 'luneraCollab' as PageView
     },
     {
       // Exclusive Collection - Updated with New Gift Giving Asset

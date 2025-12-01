@@ -15,70 +15,75 @@ const TestimonialTicker: React.FC<TestimonialTickerProps> = ({ t }) => {
   const loopItems = [...items, ...items];
 
   return (
-    <div className="w-full bg-[#0F221B] py-20 overflow-hidden relative border-t border-b border-[#D4AF37]/30">
-      {/* Background Pattern/Texture overlay */}
-      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <div className="w-full bg-[#050505] py-24 overflow-hidden relative border-t border-[#D4AF37]/20">
+      
+      {/* Cinematic Background Elements */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#0F221B]/40 via-[#050505] to-[#050505]"></div>
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent"></div>
 
-      {/* Section Title */}
-      <div className="absolute top-6 left-6 md:left-12 z-10">
-        <h3 className="text-[10px] tracking-[0.25em] font-bold text-[#D4AF37] uppercase">
-          {t.testimonials.title}
-        </h3>
+      {/* Section Header */}
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 mb-16 relative z-10 flex items-center justify-between">
+        <div>
+           <h3 className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase mb-3 flex items-center gap-3">
+             <span className="w-8 h-[1px] bg-[#D4AF37]"></span>
+             {t.testimonials.title}
+           </h3>
+           <h2 className="text-white text-3xl md:text-5xl font-serif">Community Voices</h2>
+        </div>
       </div>
 
-      <div className="flex animate-scroll w-max hover:[animation-play-state:paused]">
+      {/* Ticker Container */}
+      <div className="flex animate-scroll w-max hover:[animation-play-state:paused] py-4">
         {loopItems.map((item, index) => (
           <a 
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
             key={index} 
-            className="w-[300px] md:w-[400px] h-[500px] mx-4 relative group flex-shrink-0 cursor-pointer overflow-hidden border border-white/5 block bg-black/20"
+            className="w-[320px] md:w-[400px] h-[550px] mx-3 relative group flex-shrink-0 cursor-pointer overflow-hidden rounded-sm bg-[#111]"
           >
-            {/* Background Image - Scale effect removed */}
+            {/* Background Image - Grayscale to Color */}
             <div 
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-700"
+              className="absolute inset-0 bg-cover bg-center transition-all duration-700 filter grayscale group-hover:grayscale-0 group-hover:scale-110"
               style={{ backgroundImage: `url(${item.image})` }}
             />
             
-            {/* Dark Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0F221B] via-[#0F221B]/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-300" />
+            {/* Dark Overlay - Stronger Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-500" />
+            
+            {/* Content Container */}
+            <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
+               
+               {/* Quote Icon - Large & Gold */}
+               <div className="mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+                  <Quote className="w-10 h-10 text-[#D4AF37] fill-[#D4AF37] opacity-100" />
+               </div>
 
-            {/* Content */}
-            <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
-              
-              <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                <Quote className="w-8 h-8 text-[#D4AF37] mb-4 opacity-100" />
-                
-                <h4 className="text-xl md:text-2xl font-serif italic leading-relaxed mb-6 text-[#F9F8F6] line-clamp-3 group-hover:line-clamp-none transition-all">
-                  "{item.quote}"
-                </h4>
+               {/* Quote Text */}
+               <blockquote className="text-gray-200 font-serif text-lg leading-relaxed italic mb-8 border-l-2 border-[#D4AF37]/50 pl-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-150">
+                 "{item.quote}"
+               </blockquote>
 
-                <div className="border-t border-white/20 pt-4 mt-2 flex justify-between items-end">
+               {/* Person Details */}
+               <div className="flex justify-between items-end border-t border-white/10 pt-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-200">
                   <div>
-                    <p className="font-serif text-lg font-bold text-white mb-1">
-                      {item.name}
-                    </p>
-                    <p className="text-[9px] tracking-[0.2em] uppercase text-[#D4AF37] font-semibold">
-                      {item.role}
-                    </p>
+                    <h4 className="text-white font-bold text-lg tracking-wide group-hover:text-[#D4AF37] transition-colors">{item.name}</h4>
+                    <p className="text-[10px] text-gray-400 font-bold tracking-[0.2em] uppercase mt-1">{item.role}</p>
                   </div>
 
-                  {/* Join Button on Hover */}
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 bg-[#D4AF37] text-[#0F221B] px-4 py-2 flex items-center space-x-2">
-                    <span className="text-[9px] font-bold tracking-widest uppercase">GABUNG</span>
-                    <ArrowRight className="w-3 h-3" />
+                  {/* Join Button - Appears on hover */}
+                  <div className="bg-[#D4AF37] text-black pl-4 pr-3 py-2 flex items-center gap-2 rounded-[2px] opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-300 shadow-lg">
+                     <span className="text-[9px] font-bold tracking-widest uppercase">GABUNG</span>
+                     <ArrowRight className="w-3 h-3" />
                   </div>
-                </div>
-              </div>
+               </div>
             </div>
+            
+            {/* Hover Border Glow */}
+            <div className="absolute inset-0 border border-[#D4AF37]/0 group-hover:border-[#D4AF37]/50 transition-colors duration-500 pointer-events-none"></div>
           </a>
         ))}
       </div>
-      
-      {/* Fade edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0F221B] to-transparent z-10 pointer-events-none"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0F221B] to-transparent z-10 pointer-events-none"></div>
     </div>
   );
 };

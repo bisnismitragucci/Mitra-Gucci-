@@ -153,7 +153,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
             <button onClick={() => handleNavClick('collections')} className="text-white/80 hover:text-[#D4AF37] hover-underline-animation">
               {t.nav.partners}
             </button>
-            <button onClick={() => handleNavClick('umamaCollab')} className="text-[#c5a059] hover:text-white hover-underline-animation">
+            <button onClick={() => handleNavClick('luneraCollab')} className="text-[#c5a059] hover:text-white hover-underline-animation">
               {t.nav.collab}
             </button>
             <button onClick={() => handleNavClick('businessAccount')} className="text-white/80 hover:text-[#D4AF37] hover-underline-animation">
@@ -173,7 +173,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
               <button onClick={() => handleNavClick('worldOfGucci')} className="text-lg font-serif italic text-white hover:text-[#D4AF37]">
                 {t.nav.people}
               </button>
-              <button onClick={() => handleNavClick('umamaCollab')} className="text-lg font-serif italic text-[#D4AF37] font-bold">
+              <button onClick={() => handleNavClick('luneraCollab')} className="text-lg font-serif italic text-[#D4AF37] font-bold">
                 {t.nav.collab}
               </button>
               <button onClick={() => handleNavClick('collections')} className="text-lg font-serif italic text-white hover:text-[#D4AF37]">

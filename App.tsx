@@ -12,7 +12,7 @@ import BusinessAccountPage from './components/BusinessAccountPage';
 import AffiliateProgramPage from './components/AffiliateProgramPage';
 import ExpertAdvisorPage from './components/ExpertAdvisorPage';
 import ContemporaryStylePage from './components/ContemporaryStylePage';
-import UmamaCollaborationPage from './components/UmamaCollaborationPage';
+import LuneraCollaborationPage from './components/LuneraCollaborationPage';
 import TestimonialTicker from './components/TestimonialTicker';
 import ChristmasBanner from './components/ChristmasBanner';
 import { DICTIONARY } from './constants';
@@ -53,8 +53,8 @@ function App() {
           <ExpertAdvisorPage t={t} onBack={goHome} />
         ) : page === 'contemporaryStyle' ? (
           <ContemporaryStylePage t={t} onBack={goHome} />
-        ) : page === 'umamaCollab' ? (
-          <UmamaCollaborationPage t={t} onBack={goHome} />
+        ) : page === 'luneraCollab' ? (
+          <LuneraCollaborationPage t={t} onBack={goHome} />
         ) : (
           <CollectionsPage t={t} onBack={goHome} />
         )}

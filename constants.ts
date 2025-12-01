@@ -1,4 +1,5 @@
 
+
 import { Dictionary } from './types';
 
 // Using existing translations for ID and EN, and adding IT and JA
@@ -8,7 +9,7 @@ const ID_TRANS = {
       partners: 'KOLEKSI',
       academy: 'AKUN BISNIS',
       opportunities: 'SISTEM',
-      collab: 'GUCCI x UMAMA',
+      collab: 'GUCCI x LUNERA',
       login: 'MASUK',
       backToHome: 'KEMBALI KE BERANDA',
     },
@@ -336,37 +337,65 @@ const ID_TRANS = {
       ],
       conclusion: "Dunia GUCCI adalah perpaduan antara warisan sejarah yang kaya, kreativitas tanpa batas, nilai estetika yang kuat, inovasi teknologi, serta komitmen terhadap kualitas dan keberlanjutan. Itulah yang membuat GUCCI bukan sekadar merek fashion, tetapi simbol global seni, kemewahan, identitas, dan gaya hidup modern."
     },
+    luneraCollab: {
+      heroTitle: "GUCCI x LUNERA",
+      heroSubtitle: "KOLABORASI EKSKLUSIF",
+      heroCta: "JELAJAHI",
+      mainHeadline: "KOLEKSI HIJAB SIGNATURE",
+      mainDesc: "Menampilkan desain unik dengan sentuhan artistik, tersedia dalam berbagai pilihan warna terbaik & dilengkapi dengan kemasan premium yang elegan.",
+      narrative: {
+        subtitle: "KETIKA WARISAN ITALIA BERTEMU KEANGGUNAN MODERN",
+        title: "HARMONI DUA DUNIA",
+        p1: "Kolaborasi ini menandai tonggak baru dalam dunia fashion, di mana kemewahan maksimalis Gucci dan keberanian artistik berpadu harmonis dengan estetika LUNERA yang anggun dan berkelas. Ini adalah pertemuan antara tradisi pengrajin Italia yang legendaris dan nilai-nilai modest fashion kontemporer.",
+        p2: "Setiap helai dalam koleksi ini menceritakan kisah penyatuan budaya. Motif ikonik diinterpretasikan ulang dengan palet warna yang memukau dan material premium yang lembut namun mewah. Menciptakan aksesori yang tidak hanya indah dipandang, tetapi juga memancarkan karisma pemakainya.",
+        p3: "Lebih dari sekadar produk, GUCCI x LUNERA adalah pernyataan bahwa modest fashion memiliki tempat prestisius di panggung kemewahan global. Ini adalah perayaan bagi wanita modern yang ingin tampil berkelas tanpa meninggalkan jati diri mereka."
+      },
+      boxFeature: {
+        title: "KEMASAN EKSKLUSIF",
+        desc: "Dilengkapi dengan kotak signature LUNERA yang simpel dan elegan, merepresentasikan standar kualitas yang tak lekang oleh waktu."
+      },
+      swarovski: {
+        title: "DETAIL IKONIK",
+        desc: "Setiap karya dihiasi dengan detail presisi, memberikan kilau halus yang memancarkan kelas dan eksklusivitas tanpa berlebihan."
+      },
+      details: {
+        material: "Premium Voile",
+        size: "115 x 115 cm",
+        packaging: "Signature Hard Box"
+      },
+      shopNow: "BELANJA SEKARANG"
+    },
     umamaCollab: {
       heroTitle: "GUCCI x UMAMA",
       heroSubtitle: "KOLABORASI EKSKLUSIF",
       heroCta: "JELAJAHI",
-      mainHeadline: "KOTAK VERTIKAL PRINT DIGITAL",
-      mainDesc: "Menampilkan lima desain unik, masing-masing tersedia dalam sepuluh pilihan warna terbaik & dilengkapi dengan kotak vertikal putih yang simpel dan elegan.",
+      mainHeadline: "KOLEKSI HIJAB SIGNATURE",
+      mainDesc: "Menampilkan desain unik dengan sentuhan artistik, tersedia dalam berbagai pilihan warna terbaik & dilengkapi dengan kemasan premium yang elegan.",
       narrative: {
-        subtitle: "KETIKA WARISAN ITALIA BERTEMU KEANGGUNAN INDONESIA",
+        subtitle: "KETIKA WARISAN ITALIA BERTEMU KEANGGUNAN MODERN",
         title: "HARMONI DUA DUNIA",
-        p1: "Kolaborasi ini menandai tonggak baru dalam dunia fashion, di mana kemewahan maksimalis Gucci dan keberanian artistik berpadu harmonis dengan estetika sederhana dan kelembutan Umama Scarf. Ini adalah pertemuan antara tradisi pengrajin Italia yang legendaris dan nilai-nilai modest fashion modern.",
-        p2: "Setiap helai syal dalam koleksi ini menceritakan kisah penyatuan budaya. Motif Flora ikonik dan monogram GG diinterpretasikan ulang dengan warna-warna bumi yang hangat dan bahan voile premium yang ringan namun mewah. Menciptakan aksesori yang tidak hanya indah dipandang, tetapi juga penuh makna dan kenyamanan.",
+        p1: "Kolaborasi ini menandai tonggak baru dalam dunia fashion, di mana kemewahan maksimalis Gucci dan keberanian artistik berpadu harmonis dengan estetika UMAMA yang anggun dan berkelas. Ini adalah pertemuan antara tradisi pengrajin Italia yang legendaris dan nilai-nilai modest fashion kontemporer.",
+        p2: "Setiap helai dalam koleksi ini menceritakan kisah penyatuan budaya. Motif ikonik diinterpretasikan ulang dengan palet warna yang memukau dan material premium yang lembut namun mewah. Menciptakan aksesori yang tidak hanya indah dipandang, tetapi juga memancarkan karisma pemakainya.",
         p3: "Lebih dari sekadar produk, GUCCI x UMAMA adalah pernyataan bahwa modest fashion memiliki tempat prestisius di panggung kemewahan global. Ini adalah perayaan bagi wanita modern yang ingin tampil berkelas tanpa meninggalkan jati diri mereka."
       },
       boxFeature: {
         title: "KEMASAN EKSKLUSIF",
-        desc: "Dilengkapi dengan kotak vertikal putih yang simpel dan elegan, merepresentasikan standar kualitas Gucci yang tak lekang oleh waktu."
+        desc: "Dilengkapi dengan kotak signature UMAMA yang simpel dan elegan, merepresentasikan standar kualitas yang tak lekang oleh waktu."
       },
       swarovski: {
-        title: "DETAIL IKON SWAROVSKI",
-        desc: "Setiap syal dihiasi dengan kristal Swarovski asli dengan logo UM, memberikan kilau halus yang memancarkan kelas dan eksklusivitas."
+        title: "DETAIL IKONIK",
+        desc: "Setiap karya dihiasi dengan detail presisi, memberikan kilau halus yang memancarkan kelas dan eksklusivitas tanpa berlebihan."
       },
       details: {
-        material: "Voile Premium",
+        material: "Premium Voile",
         size: "115 x 115 cm",
-        packaging: "Hard Box Vertikal"
+        packaging: "Signature Hard Box"
       },
       shopNow: "BELANJA SEKARANG"
     },
     grid: {
       craftsmanship: 'PENASIHAT AHLI',
-      innovation: 'GUCCI x UMAMA',
+      innovation: 'GUCCI x LUNERA',
       sustainability: 'KOLEKSI EKSKLUSIF',
       readMore: 'JELAJAHI',
     },
@@ -384,7 +413,7 @@ const EN_TRANS = {
       partners: 'COLLECTIONS',
       academy: 'BUSINESS ACCOUNT',
       opportunities: 'SYSTEM',
-      collab: 'GUCCI x UMAMA',
+      collab: 'GUCCI x LUNERA',
       login: 'LOGIN',
       backToHome: 'BACK TO HOME',
     },
@@ -420,7 +449,7 @@ const EN_TRANS = {
     },
     testimonials: {
       title: 'VOICE OF THE COMMUNITY',
-      items: ID_TRANS.testimonials.items // Using same items but labels are localized below
+      items: ID_TRANS.testimonials.items 
     },
     businessAccountPage: {
       form: {
@@ -615,37 +644,65 @@ const EN_TRANS = {
       ],
       conclusion: "The World of GUCCI is a blend of rich historical heritage, boundless creativity, strong aesthetic value, technological innovation, and a commitment to quality and sustainability. That is what makes GUCCI not just a fashion brand, but a global symbol of art, luxury, identity, and modern lifestyle."
     },
-    umamaCollab: {
-      heroTitle: "GUCCI x UMAMA",
+    luneraCollab: {
+      heroTitle: "GUCCI x LUNERA",
       heroSubtitle: "EXCLUSIVE COLLABORATION",
       heroCta: "EXPLORE",
-      mainHeadline: "DIGITAL PRINT VERTICAL BOX",
-      mainDesc: "Featuring five unique designs, each available in ten of the best color choices & equipped with a simple and elegant white vertical box.",
+      mainHeadline: "SIGNATURE HIJAB COLLECTION",
+      mainDesc: "Featuring unique designs with an artistic touch, available in a variety of the best color choices & equipped with elegant premium packaging.",
       narrative: {
-        subtitle: "WHEN ITALIAN HERITAGE MEETS INDONESIAN ELEGANCE",
+        subtitle: "WHEN ITALIAN HERITAGE MEETS MODERN ELEGANCE",
         title: "A HARMONY OF TWO WORLDS",
-        p1: "This collaboration marks a new milestone in the fashion world, where Gucci's maximalist luxury and artistic boldness blend harmoniously with the modest aesthetics and softness of Umama Scarf. It is a meeting between legendary Italian artisan traditions and modern modest fashion values.",
-        p2: "Every strand of scarf in this collection tells a story of cultural unification. Iconic Flora motifs and GG monograms are reinterpreted with warm earth tones and premium voile material that is light yet luxurious. Creating accessories that are not only beautiful to behold, but also full of meaning and comfort.",
-        p3: "More than just a product, GUCCI x UMAMA is a statement that modest fashion has a prestigious place on the global luxury stage. It is a celebration for modern women who want to look classy without leaving their identity behind."
+        p1: "This collaboration marks a new milestone in the fashion world, where Gucci's maximalist luxury and artistic boldness blend harmoniously with LUNERA's graceful and classy aesthetics. It is a meeting between legendary Italian artisan traditions and contemporary modest fashion values.",
+        p2: "Every piece in this collection tells a story of cultural unification. Iconic motifs are reinterpreted with stunning color palettes and premium materials that are soft yet luxurious. Creating accessories that are not only beautiful to behold, but also radiate the wearer's charisma.",
+        p3: "More than just a product, GUCCI x LUNERA is a statement that modest fashion has a prestigious place on the global luxury stage. It is a celebration for modern women who want to look classy without leaving their identity behind."
       },
       boxFeature: {
         title: "EXCLUSIVE PACKAGING",
-        desc: "Equipped with a simple and elegant white vertical box, representing the timeless Gucci quality standard."
+        desc: "Equipped with the LUNERA signature box that is simple and elegant, representing timeless quality standards."
       },
       swarovski: {
-        title: "SWAROVSKI ICON DETAIL",
-        desc: "Each scarf is embellished with genuine Swarovski crystals with the UM logo, providing a subtle sparkle that radiates class and exclusivity."
+        title: "ICONIC DETAIL",
+        desc: "Each piece is embellished with precise details, providing a subtle sparkle that radiates class and exclusivity without being excessive."
       },
       details: {
         material: "Premium Voile",
         size: "115 x 115 cm",
-        packaging: "Vertical Hard Box"
+        packaging: "Signature Hard Box"
+      },
+      shopNow: "SHOP NOW"
+    },
+    umamaCollab: {
+      heroTitle: "GUCCI x UMAMA",
+      heroSubtitle: "EXCLUSIVE COLLABORATION",
+      heroCta: "EXPLORE",
+      mainHeadline: "SIGNATURE HIJAB COLLECTION",
+      mainDesc: "Featuring unique designs with an artistic touch, available in a variety of the best color choices & equipped with elegant premium packaging.",
+      narrative: {
+        subtitle: "WHEN ITALIAN HERITAGE MEETS MODERN ELEGANCE",
+        title: "A HARMONY OF TWO WORLDS",
+        p1: "This collaboration marks a new milestone in the fashion world, where Gucci's maximalist luxury and artistic boldness blend harmoniously with UMAMA's graceful and classy aesthetics. It is a meeting between legendary Italian artisan traditions and contemporary modest fashion values.",
+        p2: "Every piece in this collection tells a story of cultural unification. Iconic motifs are reinterpreted with stunning color palettes and premium materials that are soft yet luxurious. Creating accessories that are not only beautiful to behold, but also radiate the wearer's charisma.",
+        p3: "More than just a product, GUCCI x UMAMA is a statement that modest fashion has a prestigious place on the global luxury stage. It is a celebration for modern women who want to look classy without leaving their identity behind."
+      },
+      boxFeature: {
+        title: "EXCLUSIVE PACKAGING",
+        desc: "Equipped with the UMAMA signature box that is simple and elegant, representing timeless quality standards."
+      },
+      swarovski: {
+        title: "ICONIC DETAIL",
+        desc: "Each piece is embellished with precise details, providing a subtle sparkle that radiates class and exclusivity without being excessive."
+      },
+      details: {
+        material: "Premium Voile",
+        size: "115 x 115 cm",
+        packaging: "Signature Hard Box"
       },
       shopNow: "SHOP NOW"
     },
     grid: {
       craftsmanship: 'EXPERT ADVISOR',
-      innovation: 'GUCCI x UMAMA',
+      innovation: 'GUCCI x LUNERA',
       sustainability: 'EXCLUSIVE COLLECTION',
       readMore: 'EXPLORE',
     },
@@ -665,7 +722,7 @@ const IT_TRANS = {
       partners: 'COLLEZIONI',
       academy: 'ACCOUNT BUSINESS',
       opportunities: 'SISTEMA',
-      collab: 'GUCCI x UMAMA',
+      collab: 'GUCCI x LUNERA',
       login: 'ACCEDI',
       backToHome: 'TORNA ALLA HOME',
     },
@@ -725,7 +782,7 @@ const IT_TRANS = {
     },
     grid: {
         craftsmanship: 'CONSULENTE ESPERTO',
-        innovation: 'GUCCI x UMAMA',
+        innovation: 'GUCCI x LUNERA',
         sustainability: 'COLLEZIONE ESCLUSIVA',
         readMore: 'ESPLORA',
     }
@@ -739,7 +796,7 @@ const JA_TRANS = {
       partners: 'コレクション',
       academy: 'ビジネスアカウント',
       opportunities: 'システム',
-      collab: 'GUCCI x UMAMA',
+      collab: 'GUCCI x LUNERA',
       login: 'ログイン',
       backToHome: 'ホームに戻る',
     },
@@ -799,7 +856,7 @@ const JA_TRANS = {
     },
     grid: {
         craftsmanship: '専門アドバイザー',
-        innovation: 'GUCCI x UMAMA',
+        innovation: 'GUCCI x LUNERA',
         sustainability: '限定コレクション',
         readMore: '探検する',
     }
@@ -813,7 +870,7 @@ const KO_TRANS = {
       partners: '컬렉션',
       academy: '비즈니스 계정',
       opportunities: '시스템',
-      collab: 'GUCCI x UMAMA',
+      collab: 'GUCCI x LUNERA',
       login: '로그인',
       backToHome: '홈으로 돌아가기',
     },
@@ -873,7 +930,7 @@ const KO_TRANS = {
     },
     grid: {
         craftsmanship: '전문 고문',
-        innovation: 'GUCCI x UMAMA',
+        innovation: 'GUCCI x LUNERA',
         sustainability: '독점 컬렉션',
         readMore: '탐색하기',
     }
@@ -887,7 +944,7 @@ const ZH_TRANS = {
       partners: '系列',
       academy: '商业账户',
       opportunities: '系统',
-      collab: 'GUCCI x UMAMA',
+      collab: 'GUCCI x LUNERA',
       login: '登录',
       backToHome: '返回首页',
     },
@@ -947,7 +1004,7 @@ const ZH_TRANS = {
     },
     grid: {
         craftsmanship: '专家顾问',
-        innovation: 'GUCCI x UMAMA',
+        innovation: 'GUCCI x LUNERA',
         sustainability: '独家系列',
         readMore: '探索',
     }
