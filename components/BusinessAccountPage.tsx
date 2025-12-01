@@ -43,7 +43,7 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
               <img 
                 src="https://api.gconline.online/upload/690309ac72101.png" 
                 alt="Gucci Logo" 
-                className="w-[160px] h-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.15)]"
+                className="w-[160px] h-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] pointer-events-none"
               />
             </div>
 

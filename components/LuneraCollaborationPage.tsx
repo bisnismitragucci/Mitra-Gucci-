@@ -37,7 +37,7 @@ const LuneraCollaborationPage: React.FC<LuneraCollaborationPageProps> = ({ t, on
             <img 
               src={heroImage} 
               alt="Gucci x Lunera Hero" 
-              className="w-full h-auto object-cover transition-transform duration-[3s] ease-out group-hover:scale-105"
+              className="w-full h-auto object-cover transition-transform duration-[3s] ease-out group-hover:scale-105 pointer-events-none"
             />
          </div>
          
@@ -101,7 +101,7 @@ const LuneraCollaborationPage: React.FC<LuneraCollaborationPageProps> = ({ t, on
                   <img 
                     src={featureImage1} 
                     alt="Lunera Model" 
-                    className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105 pointer-events-none"
                   />
                   <div className="absolute inset-0 bg-[#0F221B]/10 group-hover:bg-transparent transition-colors duration-500"></div>
                   
@@ -115,7 +115,7 @@ const LuneraCollaborationPage: React.FC<LuneraCollaborationPageProps> = ({ t, on
                   <img 
                     src={featureImage2} 
                     alt="Lunera Detail" 
-                    className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105 pointer-events-none"
                   />
                   <div className="absolute inset-0 bg-[#0F221B]/10 group-hover:bg-transparent transition-colors duration-500"></div>
                   
@@ -133,7 +133,7 @@ const LuneraCollaborationPage: React.FC<LuneraCollaborationPageProps> = ({ t, on
                       <img 
                         src="https://cf.shopee.co.id/file/id-11134201-7ra0t-mbotfmp5auul5d" 
                         alt="Lunera Product" 
-                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 pointer-events-none"
                       />
                  </div>
                  <div className="text-center mt-10">

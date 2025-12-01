@@ -66,10 +66,11 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
             <div className="relative w-full aspect-[3/4] overflow-hidden rounded-[2px] mb-6">
                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700 z-10"></div>
                
+               {/* pointer-events-none prevents clicking the image file directly or dragging it */}
                <img 
                  src={item.src}
                  alt={item.title}
-                 className="w-full h-full object-cover transform transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
+                 className="w-full h-full object-cover transform transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110 pointer-events-none"
                />
                
                {/* Hover Reveal Button */}

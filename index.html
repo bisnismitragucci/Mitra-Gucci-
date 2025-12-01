@@ -16,12 +16,23 @@
         color: #1a1a1a;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        user-select: none; /* Prevent accidental text selection triggering drag */
       }
 
       /* Premium Selection Color */
       ::selection {
         background: #D4AF37;
         color: #000;
+      }
+
+      /* GLOBAL LOCK: Prevent Image Dragging & Downloading */
+      img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+        pointer-events: none; /* Makes images click-through by default unless specified */
       }
 
       /* Custom scrollbar */
@@ -117,9 +128,14 @@
 }
 </script>
 </head>
-  <body>
+  <body oncontextmenu="return false;"> <!-- Disable Right Click Globally -->
     <div class="global-snow"></div>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
+    <script>
+      // Prevent drag and drop on entire document
+      window.addEventListener('dragstart', function(e) { e.preventDefault(); });
+      window.addEventListener('drop', function(e) { e.preventDefault(); });
+    </script>
   </body>
 </html>
