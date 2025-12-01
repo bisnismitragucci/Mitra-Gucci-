@@ -11,28 +11,25 @@ interface VisualGridProps {
 const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
   const images = [
     {
-      // Advisor Image (Vertical Portrait)
       src: "https://i.pinimg.com/736x/e2/eb/fb/e2ebfb79c21cf0ca9ca64d94950cc7d2.jpg", 
       title: t.grid.craftsmanship,
-      isCenter: false,
-      position: "object-top",
-      link: 'expertAdvisor' as PageView
+      subtitle: "The Art of Advisory",
+      link: 'expertAdvisor' as PageView,
+      align: "items-start"
     },
     {
-      // Main Highlight: Gucci x Lunera
       src: "https://cf.shopee.co.id/file/id-11134201-7ra0t-mbotfmp5auul5d", 
-      title: t.grid.innovation, // "GUCCI x LUNERA"
-      isCenter: true,
-      position: "object-center",
-      link: 'luneraCollab' as PageView
+      title: t.grid.innovation, 
+      subtitle: "Gucci x Lunera",
+      link: 'luneraCollab' as PageView,
+      align: "items-center"
     },
     {
-      // Exclusive Collection - Updated with New Gift Giving Asset
       src: "https://images.ctfassets.net/brzb6u29244a/1r0xTJ5E4aYyYYlHkXFk01/3ea85491d43aa09216ad889fea64c1f1/HeroCategory-Desktop_Gucci-GIFT-GIVING-NOV25-Set-2-25-1268_001_Default.png?w=2000&fm=avif&q=50", 
       title: t.grid.sustainability,
-      isCenter: false,
-      position: "object-top",
-      link: 'collections' as PageView
+      subtitle: "Exclusive Gift Giving",
+      link: 'collections' as PageView,
+      align: "items-end"
     }
   ];
 
@@ -44,43 +41,57 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
   };
 
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-3 h-auto md:h-[90vh]">
-      {images.map((item, index) => (
-        <div 
-          key={index} 
-          onClick={() => handleItemClick(item.link)}
-          className={`relative group overflow-hidden h-[70vh] md:h-full border-r border-white/10 last:border-r-0 bg-[#f0f0f0] ${item.link ? 'cursor-pointer' : 'cursor-default'}`}
-        >
-          {/* Image Tag for better precision control - Removed scale animation */}
-          <img 
-            src={item.src}
-            alt={item.title}
-            className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out ${item.position} ${item.isCenter ? 'grayscale-0' : 'grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100'}`}
-          />
-          
-          {/* Overlay - Darker on center initially for text readability, lighter on sides */}
-          <div className={`absolute inset-0 transition-colors duration-500 ${item.isCenter ? 'bg-black/10 group-hover:bg-black/0' : 'bg-black/10 group-hover:bg-black/20'}`} />
+    <div className="w-full bg-[#050505] py-24 px-6 md:px-12">
+      
+      {/* Section Header */}
+      <div className="mb-16 flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-8">
+         <div>
+            <span className="text-[#D4AF37] text-[10px] tracking-[0.3em] font-bold uppercase block mb-4">Discover The World</span>
+            <h2 className="text-white text-3xl md:text-5xl font-serif">Curated Collections</h2>
+         </div>
+         <div className="hidden md:block text-gray-400 text-xs tracking-widest max-w-xs text-right">
+            EXPLORE THE INTERSECTION OF FASHION, BUSINESS, AND ARTISTRY THROUGH OUR LATEST CAMPAIGNS.
+         </div>
+      </div>
 
-          {/* Text Content - Ultra Minimalist Editorial Style */}
-          <div className="absolute inset-x-0 bottom-0 pb-12 flex flex-col items-center justify-end text-white text-center z-10 p-6">
-            
-            <h3 className={`font-bold tracking-[0.3em] uppercase mb-4 drop-shadow-md ${item.isCenter ? 'text-sm md:text-base text-white bg-black/50 px-4 py-2 backdrop-blur-sm' : 'text-[10px] md:text-xs'}`}>
-              {item.title}
-            </h3>
-            
-            {item.link && (
-              <>
-                <div className="w-6 h-[1px] bg-white mb-4 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+      {/* Grid Layout - More Artistic Spacing */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        {images.map((item, index) => (
+          <div 
+            key={index} 
+            onClick={() => handleItemClick(item.link)}
+            className={`group cursor-pointer relative flex flex-col ${index === 1 ? 'md:-mt-12' : ''}`} // Staggered Effect
+          >
+            {/* Image Container with Overflow Hidden */}
+            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-[2px] mb-6">
+               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700 z-10"></div>
+               
+               <img 
+                 src={item.src}
+                 alt={item.title}
+                 className="w-full h-full object-cover transform transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
+               />
+               
+               {/* Hover Reveal Button */}
+               <div className="absolute top-6 right-6 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                  <div className="w-10 h-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center">
+                     <ArrowRight className="w-4 h-4 text-white" />
+                  </div>
+               </div>
+            </div>
 
-                <span className="flex items-center space-x-1 text-[8px] tracking-[0.2em] uppercase font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 text-white/90">
-                   <span>{t.grid.readMore}</span>
-                   <ArrowRight className="w-2 h-2" />
-                </span>
-              </>
-            )}
+            {/* Typography Content - Below Image for cleaner look */}
+            <div className="flex flex-col items-start border-t border-white/10 pt-4 group-hover:border-[#D4AF37] transition-colors duration-700">
+               <span className="text-[9px] text-[#D4AF37] tracking-[0.2em] uppercase mb-1">
+                 0{index + 1} — {item.subtitle}
+               </span>
+               <h3 className="text-white text-2xl font-serif italic group-hover:text-[#D4AF37] transition-colors duration-500">
+                 {item.title}
+               </h3>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
