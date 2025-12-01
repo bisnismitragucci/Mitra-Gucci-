@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang, onNavigate }) => {
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
   
-  const waLink = "https://wa.me/6282166912362?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
+  const waLink = "https://wa.me/6285353123024?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
 
   const languages: { code: Language; label: string }[] = [
     { code: 'id', label: 'INDONESIA' },
