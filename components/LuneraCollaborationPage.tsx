@@ -131,7 +131,7 @@ const LuneraCollaborationPage: React.FC<LuneraCollaborationPageProps> = ({ t, on
              <div className="max-w-3xl w-full relative z-10">
                  <div className="aspect-square bg-white p-6 md:p-10 shadow-2xl mx-auto transform hover:scale-[1.01] transition-transform duration-700 border border-[#D4AF37]/20">
                       <img 
-                        src="https://cf.shopee.co.id/file/id-11134201-7ra0t-mbotfmp5auul5d" 
+                        src="https://i.pinimg.com/736x/09/99/15/099915ccb0847ca0592f78744ffb3bc4.jpg" 
                         alt="Lunera Product" 
                         className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 pointer-events-none"
                       />

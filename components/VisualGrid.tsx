@@ -18,7 +18,7 @@ const VisualGrid: React.FC<VisualGridProps> = ({ t, onNavigate }) => {
       align: "items-start"
     },
     {
-      src: "https://cf.shopee.co.id/file/id-11134201-7ra0t-mbotfmp5auul5d", 
+      src: "https://i.pinimg.com/736x/09/99/15/099915ccb0847ca0592f78744ffb3bc4.jpg", 
       title: t.grid.innovation, 
       subtitle: "Gucci x Lunera",
       link: 'luneraCollab' as PageView,
