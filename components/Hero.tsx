@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, Play, X } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Translations } from '../types';
 
 interface HeroProps {
@@ -10,10 +10,8 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ t }) => {
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20ingin%20bergabung%20dan%20mendaftar";
   const bgImage = "https://i.pinimg.com/1200x/f4/8a/29/f48a2941b1d34d86360343f926ff57f3.jpg";
-  const videoUrl = "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/1ae69177-dc03-40fd-8b6f-4de60b08a8db/052c4667-e7df-437d-b8d5-87ffbaaf1a5f/main.mp4?fastly_token=NjkyZGM3NDNfZGJiYzc2MzM5YTkxZGI2MTljYjM2MzUzYTEwZmQ3NmVlZjA0Yjk2MWQzZDNkZDYxNWJjMzVhMTc1NWE3YzE5MF8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS8xYWU2OTE3Ny1kYzAzLTQwZmQtOGI2Zi00ZGU2MGIwOGE4ZGIvMDUyYzQ2NjctZTdkZi00MzdkLWI4ZDUtODdmZmJhYWYxYTVmL21haW4ubXA0";
   
   const [offset, setOffset] = useState(0);
-  const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
     // Optimization: Only enable parallax on desktop (width > 768px)
@@ -67,7 +65,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         </p>
 
         {/* Bottom Actions */}
-        <div className="mt-12 flex flex-col md:flex-row items-center gap-6 opacity-0 animate-[fadeIn_1.5s_ease-out_0.9s_forwards]">
+        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6 opacity-0 animate-[fadeIn_1.5s_ease-out_0.9s_forwards]">
             
             {/* Primary CTA */}
             <a 
@@ -83,18 +81,6 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
               </span>
             </a>
 
-            {/* Secondary Action - Opens Video Modal */}
-            <button 
-              onClick={() => setShowVideo(true)}
-              className="flex items-center gap-4 group cursor-pointer"
-            >
-              <div className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:border-[#D4AF37] group-hover:bg-[#D4AF37]/10 transition-all duration-500">
-                 <Play className="w-4 h-4 text-white fill-white group-hover:text-[#D4AF37] group-hover:fill-[#D4AF37] transition-colors" />
-              </div>
-              <span className="text-white text-[10px] tracking-[0.2em] font-bold uppercase group-hover:text-[#D4AF37] transition-colors">
-                Watch Film
-              </span>
-            </button>
         </div>
 
       </div>
@@ -106,35 +92,6 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
          </span>
       </div>
 
-      {/* Video Modal Overlay */}
-      {showVideo && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm p-4 animate-[fadeIn_0.3s_ease-out]">
-            {/* Close Button */}
-            <button 
-                onClick={() => setShowVideo(false)}
-                className="absolute top-6 right-6 text-white hover:text-[#D4AF37] transition-colors p-2 z-50 group"
-            >
-                <div className="flex items-center gap-2">
-                    <span className="text-[10px] uppercase tracking-widest font-bold opacity-0 group-hover:opacity-100 transition-opacity">Close</span>
-                    <X className="w-8 h-8" />
-                </div>
-            </button>
-            
-            {/* Video Container */}
-            <div className="relative w-full max-w-6xl aspect-video bg-black rounded-sm shadow-2xl overflow-hidden border border-[#D4AF37]/30">
-                <video 
-                    className="w-full h-full object-cover"
-                    controls 
-                    autoPlay
-                    playsInline
-                    controlsList="nodownload"
-                >
-                    <source src={videoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-      )}
     </div>
   );
 };
