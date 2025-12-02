@@ -1,5 +1,8 @@
 
 
+
+
+
 import { Dictionary } from './types';
 
 // Using existing translations for ID and EN, and adding IT and JA
@@ -38,10 +41,10 @@ const ID_TRANS = {
       viewLegality: 'LIHAT DETAIL LEGALITAS',
     },
     christmas: {
-      subtitle: 'KEMITRAAN & KESEJAHTERAAN',
-      title: 'GUCCI PROSPERITY 2026',
-      description: 'Di bawah kilauan tahun 2026, Gucci mengundang UMKM dan mitra visioner untuk tumbuh bersama. Ciptakan peluang pendapatan tanpa batas dan wujudkan ekonomi makmur melalui kolaborasi bisnis yang elegan, strategis, dan menguntungkan.',
-      cta: 'PELUANG BISNIS 2026'
+      subtitle: 'THE GUCCI GIFT GIVING',
+      title: 'GUCCI Winter Tale 2026',
+      description: 'Rayakan magisnya Natal di bawah kilauan pohon cemara dan sambut kemewahan Tahun Baru 2026. Koleksi kurasi yang memancarkan estetika Florence, menghadirkan kehangatan dan gaya abadi dalam setiap momen spesial Anda.',
+      cta: 'JELAJAHI KEINDAHAN NATAL'
     },
     testimonials: {
       title: 'SUARA DARI KOMUNITAS',
@@ -51,12 +54,6 @@ const ID_TRANS = {
           role: 'MEDIA ENTREPRENEUR',
           quote: 'Kolaborasi dengan Gucci membawa RANS Entertainment ke level kemewahan baru. Sinergi bisnis yang luar biasa.',
           image: 'https://i.pinimg.com/736x/62/3a/60/623a60ebb2b74f90addfc8449324cf9f.jpg'
-        },
-        {
-          name: 'Deddy Corbuzier',
-          role: 'PODCAST MOGUL',
-          quote: 'Smart people choose quality. Program ini memberikan nilai eksklusif yang tidak main-main. Konsistensi adalah kunci.',
-          image: 'https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/245/2025/11/02/WhatsApp-Image-2025-11-02-at-151748_a27e18cf-2454101546.jpg'
         },
         {
           name: 'Mahalini',
@@ -71,22 +68,10 @@ const ID_TRANS = {
           image: 'https://i.pinimg.com/1200x/d0/c5/ad/d0c5ad88af24e460c502560a65605f56.jpg'
         },
         {
-          name: 'Willie Salim',
-          role: 'VIRAL CREATOR',
-          quote: 'Borong Gucci buat bagi-bagi ke followers setia! Semangat berbagi dalam kemewahan bareng komunitas.',
-          image: 'https://awsimages.detik.net.id/community/media/visual/2024/07/19/willie-salim-2_43.jpeg?w=1200'
-        },
-        {
           name: 'Fadil Jaidi',
           role: 'FAMILY ENTERTAINER',
           quote: 'Pak Muh setuju banget kalau Gucci emang paling keren! Endorse paling seru dan berkelas sepanjang masa.',
           image: 'https://i.pinimg.com/736x/a9/e6/fd/a9e6fd622e2ae7c5eb4264d09583858e.jpg'
-        },
-        {
-          name: 'Tanboy Kun',
-          role: 'CULINARY EXPLORER',
-          quote: 'Pedasnya tantangan bisnis ini seenak rasanya! Energi baru buat konten yang lebih berkelas dan "membara".',
-          image: 'https://upload.wikimedia.org/wikipedia/id/d/dc/Foto_Tanboy_Kun.jpeg'
         },
         {
           name: 'Elena R.',
@@ -442,10 +427,10 @@ const EN_TRANS = {
       viewLegality: 'VIEW LEGALITY DETAILS',
     },
     christmas: {
-      subtitle: 'PARTNERSHIP & PROSPERITY',
-      title: 'GUCCI PROSPERITY 2026',
-      description: 'Under the glittering lights of 2026, Gucci invites MSMEs and visionary partners to grow together. Create limitless income opportunities and realize a prosperous economy through elegant, strategic, and profitable business collaborations.',
-      cta: '2026 BUSINESS OPPORTUNITY'
+      subtitle: 'THE GUCCI GIFT GIVING',
+      title: 'GUCCI Winter Tale 2026',
+      description: 'Celebrate the magic of Christmas under the sparkle of pine trees and welcome the luxury of New Year 2026. A curated collection radiating Florentine aesthetics, bringing warmth and timeless style to your every special moment.',
+      cta: 'EXPLORE CHRISTMAS BEAUTY'
     },
     testimonials: {
       title: 'VOICE OF THE COMMUNITY',

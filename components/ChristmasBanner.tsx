@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { Translations } from '../types';
 
 interface ChristmasBannerProps {
@@ -11,77 +11,77 @@ const ChristmasBanner: React.FC<ChristmasBannerProps> = ({ t }) => {
   const content = t.christmas;
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20tertarik%20dengan%20edisi%20spesial%20natal%20dan%20tahun%20baru";
   
-  // Festive Background - Keeping the requested tree image but with better overlay treatment
+  // Image Source
   const bgImage = "https://storage.googleapis.com/sahabat-pegadaian-asset-prd/20251128-022809_tema-natalwebp.webp";
 
   return (
-    <div className="relative w-full py-32 bg-[#050505] overflow-hidden">
+    <div className="relative w-full h-[85vh] md:h-[95vh] bg-[#050505] overflow-hidden flex flex-col items-center justify-end">
       
-      {/* Container */}
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
-        {/* The Card Layout */}
-        <div className="relative bg-[#0F221B] overflow-hidden rounded-[2px] shadow-2xl border border-[#D4AF37]/20 flex flex-col md:flex-row h-auto md:h-[600px]">
-           
-           {/* Left: Image Side (60%) */}
-           <div className="w-full md:w-[60%] relative h-[400px] md:h-full overflow-hidden">
-              <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-[30s] ease-linear hover:scale-105 will-change-transform"
-                style={{ backgroundImage: `url(${bgImage})` }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0F221B] opacity-90 md:opacity-100 mix-blend-multiply"></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F221B] to-transparent opacity-100 md:opacity-0"></div>
-           </div>
+      {/* FULL BACKGROUND IMAGE - Filling all edges */}
+      <div className="absolute inset-0 w-full h-full z-0">
+         <img 
+            src={bgImage} 
+            alt="Gucci Winter Tale Family"
+            // object-cover: Memaksa gambar mengisi penuh container (memotong jika rasio beda)
+            // object-center: Fokus di tengah gambar
+            className="w-full h-full object-cover object-center scale-105"
+         />
+      </div>
 
-           {/* Right: Content Side (40%) */}
-           <div className="w-full md:w-[40%] p-10 md:p-16 flex flex-col justify-center relative bg-[#0F221B]">
-              
-              {/* Decorative Corner Lines */}
-              <div className="absolute top-6 right-6 w-16 h-16 border-t border-r border-[#D4AF37]/30"></div>
-              <div className="absolute bottom-6 left-6 w-16 h-16 border-b border-l border-[#D4AF37]/30"></div>
+      {/* OVERLAYS - Agar teks terbaca & Nuansa Mewah */}
+      
+      {/* 1. Darkening Layer (Agar foto tidak terlalu terang menabrak teks) */}
+      <div className="absolute inset-0 bg-black/20 z-10"></div>
 
-              <div className="mb-8">
-                 <div className="flex items-center gap-2 mb-4">
-                    <Star className="w-3 h-3 text-[#D4AF37] fill-[#D4AF37]" />
-                    <span className="text-[#D4AF37] text-[9px] tracking-[0.3em] font-bold uppercase">
-                      {content.subtitle}
-                    </span>
-                 </div>
-                 
-                 <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight mb-2">
-                   Winter <br/>
-                   <span className="text-[#D4AF37] italic">Prosperity</span>
-                 </h2>
-                 <h3 className="text-white/50 text-6xl font-sans font-bold tracking-tighter opacity-10">
-                   2026
-                 </h3>
-              </div>
+      {/* 2. Gold Tint Overlay (Memberikan nuansa hangat Gucci) */}
+      <div className="absolute inset-0 bg-[#382c0a]/30 mix-blend-overlay z-10"></div>
 
-              <p className="text-gray-400 text-sm leading-7 font-light tracking-wide mb-10 border-l border-[#D4AF37]/30 pl-6">
-                 {content.description}
-              </p>
+      {/* 3. Gradient Bottom (Transisi halus untuk teks di bawah) */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent z-10"></div>
 
-              <a 
-                href={waLink}
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-4 text-white hover:text-[#D4AF37] transition-colors w-max"
-              >
-                <span className="text-xs font-bold tracking-[0.25em] uppercase border-b border-transparent group-hover:border-[#D4AF37] pb-1">
-                   {content.cta}
+      {/* LAYER 4: Content Overlay (Bagian Bawah) */}
+      <div className="relative z-30 w-full max-w-7xl mx-auto px-6 pb-16 md:pb-24 text-center">
+         
+         {/* Floating Badge */}
+         <div className="flex justify-center mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D4AF37]/40 bg-black/60 backdrop-blur-md shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                <Sparkles className="w-3 h-3 text-[#D4AF37] fill-[#D4AF37] animate-pulse" />
+                <span className="text-[#D4AF37] text-[10px] tracking-[0.3em] font-bold uppercase">
+                  {content.subtitle}
                 </span>
-                <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#D4AF37] group-hover:bg-[#D4AF37] transition-all">
-                   <ArrowRight className="w-3 h-3 group-hover:text-[#0F221B]" />
-                </div>
-              </a>
-           </div>
+            </div>
+         </div>
 
-        </div>
+         {/* Typography - Big & Bold */}
+         <h1 className="font-serif text-4xl md:text-7xl text-white leading-tight mb-4 drop-shadow-2xl">
+            GUCCI <span className="italic font-light text-[#D4AF37]">Winter Tale</span> 2026
+         </h1>
+
+         {/* Description with Max Width */}
+         <p className="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-10 font-light tracking-wide drop-shadow-md hidden md:block text-shadow-sm">
+            {content.description}
+         </p>
+
+         {/* CTA Button - Luxurious */}
+         <div className="flex justify-center">
+            <a 
+              href={waLink}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative px-10 py-4 bg-[#D4AF37] text-[#0F221B] overflow-hidden rounded-[2px] shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:shadow-[0_0_50px_rgba(212,175,55,0.7)] transition-all duration-500"
+            >
+              <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+              <span className="relative z-10 text-xs font-bold tracking-[0.25em] uppercase flex items-center gap-3 group-hover:text-[#0F221B] transition-colors">
+                {content.cta}
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </a>
+         </div>
 
       </div>
 
-      {/* Ambient Glow - Optimized for mobile */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#D4AF37] rounded-full filter blur-[200px] opacity-5 pointer-events-none hidden md:block"></div>
+      {/* Decorative Border Frame (Optional - menambah kesan premium) */}
+      <div className="absolute inset-4 md:inset-8 border border-[#D4AF37]/30 z-20 pointer-events-none rounded-[2px]"></div>
 
     </div>
   );

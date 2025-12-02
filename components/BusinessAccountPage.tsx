@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowLeft, Smartphone, Lock, Eye, EyeOff, Sparkles, ChevronRight } from 'lucide-react';
 import { Translations } from '../types';
@@ -41,7 +40,7 @@ const BusinessAccountPage: React.FC<BusinessAccountPageProps> = ({ t, onBack }) 
             {/* Logo Image */}
             <div className="mb-10 transform hover:scale-105 transition-transform duration-700">
               <img 
-                src="https://api.gconline.online/upload/690309ac72101.png" 
+                src="https://cdn.wallpapersafari.com/39/61/YPfpNu.jpg" 
                 alt="Gucci Logo" 
                 loading="lazy"
                 className="w-[160px] h-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] pointer-events-none"

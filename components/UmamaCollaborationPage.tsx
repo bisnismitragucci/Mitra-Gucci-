@@ -1,4 +1,6 @@
 
+
+
 import React from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Translations } from '../types';
@@ -11,7 +13,7 @@ interface UmamaCollaborationPageProps {
 const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBack }) => {
   const content = t.umamaCollab;
   const waLink = "https://wa.me/6281325808529?text=Hallo%20saya%20tertarik%20dengan%20koleksi%20Gucci%20x%20Umama";
-  const bannerUrl = "https://www.umamascarves.co.id/wp-content/uploads/2024/07/ummama-rev-3.png";
+  const bannerUrl = "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=2000&auto=format&fit=crop&q=60";
 
   return (
     <div className="min-h-screen bg-[#F9F8F6] text-[#0F221B] fade-in font-sans selection:bg-[#781016] selection:text-white">
@@ -95,7 +97,7 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
               {/* Image 1 */}
               <div className="relative overflow-hidden w-full h-full group border border-[#0F221B]/10">
                   <img 
-                    src="https://www.umamascarves.co.id/wp-content/uploads/2024/04/IMG-20231214-WA0008.jpg" 
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60" 
                     alt="Umama Box Vertical Stack" 
                     className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   />
@@ -109,7 +111,7 @@ const UmamaCollaborationPage: React.FC<UmamaCollaborationPageProps> = ({ t, onBa
               {/* Image 2 */}
               <div className="relative overflow-hidden w-full h-full group border border-[#0F221B]/10">
                   <img 
-                    src="https://www.umamascarves.co.id/wp-content/uploads/2025/04/ginee_20241120091038258_2951882380-1.jpeg" 
+                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=60" 
                     alt="Umama Scarf Detail" 
                     className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   />
